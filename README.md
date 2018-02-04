@@ -22,6 +22,7 @@ This allows you to install all the Python dependencies in a "box" so they are no
 ## Install Python dependencies 
 
 1. Go inside the `backend` directory: `cd backend`
+2. Run `pip3 install -r requirements.txt`
 
 ## Deactivate the virtual environment 
 
