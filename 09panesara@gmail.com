@@ -31,9 +31,4 @@ This allows you to install all the Python dependencies in a "box" so they are no
 
 .. to be updated
 
-## Running the project locally
 
-1. Go inside the django app directory: cd pdfbackend
-2. Run django server: python manage.py runserver
-3. Go to 127.0.0.1:8000
-4. You may see a message that you have unapplied migrations. When you see this simply run the command below which will create any tables and fields in the database: python manage.py migrate
