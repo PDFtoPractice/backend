@@ -1,5 +1,7 @@
 import pandas as pd
-import io
 
-pd.read_csv("drug_instructions")
+
+# Read csv file into data frame
+dataFrame = pd.read_csv("drug_instructions")
+
 
