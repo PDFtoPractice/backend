@@ -1,9 +1,32 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <pages>
 <page id="1" bbox="0.000,0.000,907.039,907.039" rotate="0">
-<textbox id="0" bbox="56.669,408.449,242.001,738.106">
-<textline bbox="56.669,719.311,59.494,738.106"> </textline>
-<textline bbox="56.669,719.698,229.492,735.808">Package leaﬂ et: Information for the user</textline>
+<textbox id="0" bbox="304.889,861.105,346.631,871.761">
+<textline bbox="304.889,861.105,346.631,871.761">GB-IE - 37018B</textline>
+</textbox>
+<textbox id="1" bbox="389.927,861.105,431.669,871.761">
+<textline bbox="389.927,861.105,431.669,871.761">GB-IE - 37018B</textline>
+</textbox>
+<textbox id="2" bbox="317.750,781.757,331.538,823.741">
+<textline bbox="317.750,815.461,331.538,823.741">R</textline>
+<textline bbox="317.750,810.277,331.538,815.389">e</textline>
+<textline bbox="317.750,804.241,331.538,810.277">o</textline>
+<textline bbox="317.750,796.849,331.538,804.241">P</textline>
+<textline bbox="317.750,792.265,331.538,796.849">r</textline>
+<textline bbox="317.750,786.337,331.538,792.373">o</textline>
+<textline bbox="323.071,781.757,329.965,786.317">®</textline>
+</textbox>
+<textbox id="3" bbox="402.789,781.757,416.577,823.741">
+<textline bbox="402.789,815.461,416.577,823.741">R</textline>
+<textline bbox="402.789,810.277,416.577,815.389">e</textline>
+<textline bbox="402.789,804.241,416.577,810.277">o</textline>
+<textline bbox="402.789,796.849,416.577,804.241">P</textline>
+<textline bbox="402.789,792.265,416.577,796.849">r</textline>
+<textline bbox="402.789,786.337,416.577,792.373">o</textline>
+<textline bbox="408.111,781.757,415.005,786.317">®</textline>
+</textbox>
+<textbox id="4" bbox="56.669,408.449,242.001,738.106">
+<textline bbox="56.669,719.311,229.492,738.106"> Package leaﬂ et: Information for the user</textline>
 <textline bbox="56.669,680.705,239.649,704.834">ReoPro® 2 mg/mL solution </textline>
 <textline bbox="56.669,667.370,194.765,683.456">for injection or infusion</textline>
 <textline bbox="56.669,651.420,104.681,665.088">abciximab</textline>
@@ -11,14 +34,11 @@
 <textline bbox="56.680,608.558,241.695,627.353">before you start using this medicine </textline>
 <textline bbox="56.680,597.061,210.344,615.856">because it contains important </textline>
 <textline bbox="56.680,585.563,155.987,604.358">information for you.</textline>
-<textline bbox="56.669,572.942,226.355,588.927">- <text> </text>
-Keep this leaﬂ et. You may need to read it </textline>
+<textline bbox="56.669,572.942,226.355,588.927">- Keep this leaﬂ et. You may need to read it </textline>
 <textline bbox="63.761,562.943,88.124,578.928">again.</textline>
-<textline bbox="56.678,552.944,216.300,568.928">- <text> </text>
-If you have further questions, ask your </textline>
+<textline bbox="56.678,552.944,216.300,568.928">- If you have further questions, ask your </textline>
 <textline bbox="63.761,542.945,91.049,558.929">doctor.</textline>
-<textline bbox="56.678,532.946,225.128,548.930">- <text> </text>
-If you get any of side eﬀ ects, talk to your </textline>
+<textline bbox="56.678,532.946,225.128,548.930">- If you get any of side eﬀ ects, talk to your </textline>
 <textline bbox="63.770,522.947,218.282,538.931">doctor. This includes any possible side </textline>
 <textline bbox="63.770,512.948,242.001,528.932">eﬀ ects not listed in this leaﬂ et. See section 4.</textline>
 <textline bbox="56.669,491.055,162.519,509.851">What is in this leaﬂ et</textline>
@@ -31,7 +51,7 @@ If you get any of side eﬀ ects, talk to your </textline>
 <textline bbox="56.669,418.448,206.316,434.558">6. Contents of the pack and other </textline>
 <textline bbox="69.422,408.449,118.976,424.559">information</textline>
 </textbox>
-<textbox id="1" bbox="56.669,66.447,242.160,385.882">
+<textbox id="5" bbox="56.669,66.447,242.160,385.882">
 <textline bbox="56.669,365.298,238.247,385.882">1. What ReoPro is and what it is </textline>
 <textline bbox="72.263,352.797,118.021,373.382">used for</textline>
 <textline bbox="56.669,331.555,141.014,350.351">What ReoPro is?</textline>
@@ -60,7 +80,7 @@ If you get any of side eﬀ ects, talk to your </textline>
 <textline bbox="63.752,76.446,235.881,92.430">blood supply to the heart (unstable angina) </textline>
 <textline bbox="63.752,66.447,242.160,82.431">and have not responded to the usual therapy.</textline>
 </textbox>
-<textbox id="2" bbox="255.803,581.629,442.629,737.030">
+<textbox id="6" bbox="255.803,581.629,442.629,737.030">
 <textline bbox="255.803,718.235,428.755,737.030">What is an angioplasty operation?</textline>
 <textline bbox="255.803,705.622,410.306,721.606">An angioplasty operation aims to open </textline>
 <textline bbox="255.803,695.623,442.317,711.607">blocked arteries around the heart. A doctor will </textline>
@@ -76,7 +96,7 @@ If you get any of side eﬀ ects, talk to your </textline>
 <textline bbox="255.803,591.628,423.975,607.612">• Inserting an expandable metal sheath to </textline>
 <textline bbox="262.886,581.629,370.402,597.613">keep an artery open (stent)</textline>
 </textbox>
-<textbox id="3" bbox="255.794,85.626,443.000,559.062">
+<textbox id="7" bbox="255.794,85.626,443.000,559.062">
 <textline bbox="255.803,538.477,443.000,559.062">2. What you need to know before </textline>
 <textline bbox="271.397,525.976,390.200,546.561">you are given ReoPro</textline>
 <textline bbox="255.803,504.735,351.056,523.530">Do not use ReoPro</textline>
@@ -120,7 +140,7 @@ If you get any of side eﬀ ects, talk to your </textline>
 <textline bbox="262.886,95.625,404.366,111.609">or blood platelets (see “Using other </textline>
 <textline bbox="262.886,85.626,342.630,101.610">medicines” section).</textline>
 </textbox>
-<textbox id="4" bbox="454.928,304.199,640.953,735.682">
+<textbox id="8" bbox="454.928,304.199,640.953,735.682">
 <textline bbox="454.937,719.698,619.983,735.682">• if you have previously received ReoPro, </textline>
 <textline bbox="462.020,709.699,629.406,725.683">since this could be associated with higher </textline>
 <textline bbox="462.020,699.700,638.517,715.684">risk of reduction in blood platelets or allergic </textline>
@@ -159,7 +179,7 @@ If you get any of side eﬀ ects, talk to your </textline>
 <textline bbox="454.946,314.198,629.634,330.182">given ReoPro, since it is not known whether </textline>
 <textline bbox="454.946,304.199,588.272,320.183">ReoPro is secreted in breast milk.</textline>
 </textbox>
-<textbox id="5" bbox="454.937,57.711,640.715,281.638">
+<textbox id="9" bbox="454.937,57.711,640.715,281.638">
 <textline bbox="454.937,261.053,576.719,281.638">3. How to use ReoPro</textline>
 <textline bbox="454.937,241.698,631.713,257.682">Your nurse or doctor will inject ReoPro liquid </textline>
 <textline bbox="454.937,231.699,630.010,247.683">from a syringe into one of your veins. This is </textline>
@@ -181,10 +201,10 @@ If you get any of side eﬀ ects, talk to your </textline>
 <textline bbox="462.020,67.710,510.470,83.694">operation is </textline>
 <textline bbox="462.020,57.711,506.300,73.695">completed.</textline>
 </textbox>
-<textbox id="6" bbox="649.073,52.867,656.233,74.467">
+<textbox id="10" bbox="649.073,52.867,656.233,74.467">
 <textline bbox="649.073,52.867,656.233,74.467">£</textline>
 </textbox>
-<textbox id="7" bbox="665.402,173.721,852.548,735.699">
+<textbox id="11" bbox="665.402,173.721,852.548,735.699">
 <textline bbox="665.402,719.715,825.291,735.699">The following informa tion is intended for </textline>
 <textline bbox="665.402,709.716,783.561,725.700">healthcare professionals only:</textline>
 <textline bbox="665.402,695.712,809.380,711.822">Instructions for use and handling</textline>
@@ -237,18 +257,6 @@ If you get any of side eﬀ ects, talk to your </textline>
 <textline bbox="665.411,193.719,833.679,209.703">8. Any unused medicinal product or waste </textline>
 <textline bbox="675.329,183.720,808.754,199.704">material should be disposed of in </textline>
 <textline bbox="675.329,173.721,818.215,189.705">accordance with local requirements.</textline>
-</textbox>
-<textbox id="8" bbox="304.889,861.105,346.631,871.761">
-<textline bbox="304.889,861.105,346.631,871.761">GB-IE - 37018B</textline>
-</textbox>
-<textbox id="9" bbox="389.927,861.105,431.669,871.761">
-<textline bbox="389.927,861.105,431.669,871.761">GB-IE - 37018B</textline>
-</textbox>
-<textbox id="10" bbox="402.789,781.757,416.577,823.741" wmode="vertical">
-<textline bbox="402.789,781.757,416.577,823.741">ReoPro®</textline>
-</textbox>
-<textbox id="11" bbox="317.750,781.757,331.538,823.741" wmode="vertical">
-<textline bbox="317.750,781.757,331.538,823.741">ReoPro®</textline>
 </textbox>
 <rect linewidth="0" bbox="331.630,844.417,333.047,845.834" />
 <rect linewidth="0" bbox="325.961,844.417,327.378,845.834" />
@@ -476,37 +484,37 @@ If you get any of side eﬀ ects, talk to your </textline>
 </figure>
 <layout>
 <textgroup bbox="56.669,52.867,852.548,871.761">
+<textgroup bbox="304.889,781.757,431.669,871.761">
+<textgroup bbox="304.889,861.105,431.669,871.761">
+<textbox id="0" bbox="304.889,861.105,346.631,871.761" />
+<textbox id="1" bbox="389.927,861.105,431.669,871.761" />
+</textgroup>
+<textgroup bbox="317.750,781.757,416.577,823.741">
+<textbox id="2" bbox="317.750,781.757,331.538,823.741" />
+<textbox id="3" bbox="402.789,781.757,416.577,823.741" />
+</textgroup>
+</textgroup>
 <textgroup bbox="56.669,52.867,852.548,738.106">
 <textgroup bbox="56.669,52.867,656.233,738.106">
 <textgroup bbox="56.669,66.447,443.000,738.106">
 <textgroup bbox="56.669,66.447,242.160,738.106">
-<textbox id="0" bbox="56.669,408.449,242.001,738.106" />
-<textbox id="1" bbox="56.669,66.447,242.160,385.882" />
+<textbox id="4" bbox="56.669,408.449,242.001,738.106" />
+<textbox id="5" bbox="56.669,66.447,242.160,385.882" />
 </textgroup>
 <textgroup bbox="255.794,85.626,443.000,737.030">
-<textbox id="2" bbox="255.803,581.629,442.629,737.030" />
-<textbox id="3" bbox="255.794,85.626,443.000,559.062" />
+<textbox id="6" bbox="255.803,581.629,442.629,737.030" />
+<textbox id="7" bbox="255.794,85.626,443.000,559.062" />
 </textgroup>
 </textgroup>
 <textgroup bbox="454.928,52.867,656.233,735.682">
 <textgroup bbox="454.928,57.711,640.953,735.682">
-<textbox id="4" bbox="454.928,304.199,640.953,735.682" />
-<textbox id="5" bbox="454.937,57.711,640.715,281.638" />
+<textbox id="8" bbox="454.928,304.199,640.953,735.682" />
+<textbox id="9" bbox="454.937,57.711,640.715,281.638" />
 </textgroup>
-<textbox id="6" bbox="649.073,52.867,656.233,74.467" />
+<textbox id="10" bbox="649.073,52.867,656.233,74.467" />
 </textgroup>
 </textgroup>
-<textbox id="7" bbox="665.402,173.721,852.548,735.699" />
-</textgroup>
-<textgroup bbox="304.889,781.757,431.669,871.761">
-<textgroup bbox="304.889,861.105,431.669,871.761">
-<textbox id="8" bbox="304.889,861.105,346.631,871.761" />
-<textbox id="9" bbox="389.927,861.105,431.669,871.761" />
-</textgroup>
-<textgroup bbox="317.750,781.757,416.577,823.741">
-<textbox id="10" bbox="402.789,781.757,416.577,823.741" />
-<textbox id="11" bbox="317.750,781.757,331.538,823.741" />
-</textgroup>
+<textbox id="11" bbox="665.402,173.721,852.548,735.699" />
 </textgroup>
 </textgroup>
 </layout>
