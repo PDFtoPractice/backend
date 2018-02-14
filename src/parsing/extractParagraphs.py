@@ -7,7 +7,7 @@ url2 = "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1510895758
 
 def extract_paragraphs(xml_string):
     root = ET.fromstring(xml_string + "</pages>")
-    print(root.tag)
+    # print(root.tag)
 
     paragraphs = []
 
@@ -58,7 +58,7 @@ def extract_paragraphs(xml_string):
 
         # Make a pragraph division
         if line_font_size > (previous_line_font_size + 2):
-            print(current_paragraph)
+            # print(current_paragraph)
             paragraphs.append(current_paragraph)
             current_paragraph = ""
 
@@ -80,7 +80,7 @@ def extract_paragraphs(xml_string):
         previous_line_font_size = line_font_size
         line_num += 1
 
-    print(paragraphs)
+    # print(paragraphs)
     return paragraphs
 
 
