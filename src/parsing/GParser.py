@@ -10,7 +10,13 @@ url = "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con15163388222
 def convert_pdf(url, format='text', codec='utf-8', password=''):
     rsrcmgr = PDFResourceManager()
     retstr = BytesIO()
-    laparams = LAParams()
+    laparams = LAParams(line_overlap=0.5,
+                 char_margin=2.0,
+                 line_margin=0.9,
+                 word_margin=0.1,
+                 boxes_flow=0.5,
+                 detect_vertical=False,
+                 all_texts=False)
     if format == 'text':
         device = TextConverter(rsrcmgr, retstr, codec=codec, laparams=laparams)
     elif format == 'html':
@@ -56,7 +62,7 @@ def convert_pdf_to_txt(url):
     return str
 
 def write_to_file(str):
-    file = open('sample_outputs/testfile.txt', 'w')
+    file = open('sample_outputs/testfile.txt', 'w', encoding="utf8")
     file.write(str)
 
 str = convert_pdf_to_txt(url)

@@ -1,0 +1,773 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<pages>
+<page id="1" bbox="0.000,0.000,907.039,907.039" rotate="0">
+<textbox id="0" bbox="56.669,408.449,242.001,738.106">
+<textline bbox="56.669,719.311,59.494,738.106"> </textline>
+<textline bbox="56.669,719.698,229.492,735.808">Package leaﬂ et: Information for the user</textline>
+<textline bbox="56.669,680.705,239.649,704.834">ReoPro® 2 mg/mL solution </textline>
+<textline bbox="56.669,667.370,194.765,683.456">for injection or infusion</textline>
+<textline bbox="56.669,651.420,104.681,665.088">abciximab</textline>
+<textline bbox="56.669,620.056,215.501,638.851">Read all of this leaﬂ et carefully </textline>
+<textline bbox="56.680,608.558,241.695,627.353">before you start using this medicine </textline>
+<textline bbox="56.680,597.061,210.344,615.856">because it contains important </textline>
+<textline bbox="56.680,585.563,155.987,604.358">information for you.</textline>
+<textline bbox="56.669,572.942,226.355,588.927">- <text> </text>
+Keep this leaﬂ et. You may need to read it </textline>
+<textline bbox="63.761,562.943,88.124,578.928">again.</textline>
+<textline bbox="56.678,552.944,216.300,568.928">- <text> </text>
+If you have further questions, ask your </textline>
+<textline bbox="63.761,542.945,91.049,558.929">doctor.</textline>
+<textline bbox="56.678,532.946,225.128,548.930">- <text> </text>
+If you get any of side eﬀ ects, talk to your </textline>
+<textline bbox="63.770,522.947,218.282,538.931">doctor. This includes any possible side </textline>
+<textline bbox="63.770,512.948,242.001,528.932">eﬀ ects not listed in this leaﬂ et. See section 4.</textline>
+<textline bbox="56.669,491.055,162.519,509.851">What is in this leaﬂ et</textline>
+<textline bbox="56.669,478.442,235.383,494.553">1. What ReoPro is and what it is used for</textline>
+<textline bbox="56.669,468.443,238.687,484.553">2. What you need to know before you are </textline>
+<textline bbox="69.422,458.444,127.444,474.554">given ReoPro</textline>
+<textline bbox="56.669,448.445,152.534,464.555">3. How to use ReoPro</textline>
+<textline bbox="56.669,438.446,159.166,454.556">4. Possible side eﬀ ects</textline>
+<textline bbox="56.669,428.447,159.032,444.557">5. How to store ReoPro</textline>
+<textline bbox="56.669,418.448,206.316,434.558">6. Contents of the pack and other </textline>
+<textline bbox="69.422,408.449,118.976,424.559">information</textline>
+</textbox>
+<textbox id="1" bbox="56.669,66.447,242.160,385.882">
+<textline bbox="56.669,365.298,238.247,385.882">1. What ReoPro is and what it is </textline>
+<textline bbox="72.263,352.797,118.021,373.382">used for</textline>
+<textline bbox="56.669,331.555,141.014,350.351">What ReoPro is?</textline>
+<textline bbox="56.669,318.942,236.835,334.926">The active ingredient, abciximab, is a ‘murine </textline>
+<textline bbox="56.669,308.943,237.472,324.927">monoclonal antibody’. Monoclonal antibodies </textline>
+<textline bbox="56.669,298.944,234.409,314.928">are proteins that recognise and bind to other </textline>
+<textline bbox="56.669,288.945,230.922,304.929">unique proteins. ReoPro belongs to a group </textline>
+<textline bbox="56.669,278.946,230.306,294.930">of medicines known as antithrombotics and </textline>
+<textline bbox="56.669,268.947,217.699,284.931">binds to proteins in your blood to help to </textline>
+<textline bbox="56.669,258.948,134.175,274.932">prevent blood clots.</textline>
+<textline bbox="56.669,237.055,185.899,255.851">What is ReoPro used for?</textline>
+<textline bbox="56.669,224.442,207.882,240.426">ReoPro is used when you undergo an </textline>
+<textline bbox="56.669,214.443,230.189,230.427">operation known as angioplasty (see “What </textline>
+<textline bbox="56.669,204.444,229.347,220.428">is an angioplasty operation?” below) for the </textline>
+<textline bbox="56.669,194.445,133.335,210.429">following purposes:</textline>
+<textline bbox="56.669,180.441,233.247,196.425">• ReoPro is used (together with heparin and </textline>
+<textline bbox="63.752,170.442,238.793,186.426">acetylsalicylic acid) to prevent the formation </textline>
+<textline bbox="63.752,160.443,236.639,176.427">of blood clots in the heart during or after an </textline>
+<textline bbox="63.752,150.444,151.443,166.428">angioplasty operation.</textline>
+<textline bbox="56.669,136.440,234.660,152.424">• ReoPro is also used (together with heparin </textline>
+<textline bbox="63.752,126.441,230.895,142.425">and acetylsalicylic acid) to lower the short </textline>
+<textline bbox="63.752,116.442,236.023,132.426">term risk of getting a heart attack before an </textline>
+<textline bbox="63.752,106.443,232.412,122.427">angioplasty operation, which is planned to </textline>
+<textline bbox="63.752,96.444,231.042,112.428">take place within the next 1-month. This is </textline>
+<textline bbox="63.752,86.445,236.995,102.429">for patients who have chest pain due to low </textline>
+<textline bbox="63.752,76.446,235.881,92.430">blood supply to the heart (unstable angina) </textline>
+<textline bbox="63.752,66.447,242.160,82.431">and have not responded to the usual therapy.</textline>
+</textbox>
+<textbox id="2" bbox="255.803,581.629,442.629,737.030">
+<textline bbox="255.803,718.235,428.755,737.030">What is an angioplasty operation?</textline>
+<textline bbox="255.803,705.622,410.306,721.606">An angioplasty operation aims to open </textline>
+<textline bbox="255.803,695.623,442.317,711.607">blocked arteries around the heart. A doctor will </textline>
+<textline bbox="255.803,685.624,442.629,701.608">carefully guide a special instrument through an </textline>
+<textline bbox="255.803,675.625,437.947,691.609">artery (which is usually in the groin) to reduce </textline>
+<textline bbox="255.803,665.626,351.340,681.610">or remove the blockage.</textline>
+<textline bbox="255.803,651.622,400.838,667.606">There are three types of angioplasty </textline>
+<textline bbox="255.803,641.623,410.684,657.607">operations where ReoPro can be used:</textline>
+<textline bbox="255.803,631.624,433.765,647.608">• Using an inﬂ atable balloon to compress an </textline>
+<textline bbox="262.886,621.625,409.720,637.609">artery blockage (balloon angioplasty)</textline>
+<textline bbox="255.803,611.626,425.961,627.610">• Using a cutting device to open a blocked </textline>
+<textline bbox="262.886,601.627,343.511,617.611">artery (atherectomy)</textline>
+<textline bbox="255.803,591.628,423.975,607.612">• Inserting an expandable metal sheath to </textline>
+<textline bbox="262.886,581.629,370.402,597.613">keep an artery open (stent)</textline>
+</textbox>
+<textbox id="3" bbox="255.794,85.626,443.000,559.062">
+<textline bbox="255.803,538.477,443.000,559.062">2. What you need to know before </textline>
+<textline bbox="271.397,525.976,390.200,546.561">you are given ReoPro</textline>
+<textline bbox="255.803,504.735,351.056,523.530">Do not use ReoPro</textline>
+<textline bbox="255.803,492.122,437.988,508.106">Your doctor will review your medical history to </textline>
+<textline bbox="255.803,482.123,439.376,498.107">see if you are at an increased risk for any side </textline>
+<textline bbox="255.803,472.124,428.976,488.108">eﬀ ects associated with being given ReoPro.</textline>
+<textline bbox="255.803,458.120,440.262,474.104">To prevent risks of increased bleeding ReoPro </textline>
+<textline bbox="255.803,448.121,328.759,464.105">must not be given:</textline>
+<textline bbox="255.803,438.122,373.631,454.106">• if you have internal bleeding</textline>
+<textline bbox="255.803,428.123,431.798,444.107">• if you have had a stroke within the last two </textline>
+<textline bbox="262.886,418.124,284.513,434.108">years</textline>
+<textline bbox="255.803,408.125,424.798,424.109">• if you have had any head, spinal surgery </textline>
+<textline bbox="262.886,398.126,439.936,414.110">(or trauma) or other major surgery in the last </textline>
+<textline bbox="262.886,388.127,308.637,404.111">two months</textline>
+<textline bbox="255.803,378.128,357.116,394.112">• if you have brain cancer</textline>
+<textline bbox="255.803,368.129,425.217,384.113">• if you have serious bleeding problems or </textline>
+<textline bbox="262.886,358.130,430.662,374.114">have very low amounts of platelets in your </textline>
+<textline bbox="262.886,348.131,285.143,364.115">blood</textline>
+<textline bbox="255.803,338.132,437.907,354.116">• if you have uncontrolled high blood pressure</textline>
+<textline bbox="255.803,328.133,440.402,344.117">• if you have an abnormal bulge in one of your </textline>
+<textline bbox="262.886,318.134,364.980,334.118">blood vessels (aneurysm)</textline>
+<textline bbox="255.803,308.135,432.610,324.119">• if you have serious problems with your liver</textline>
+<textline bbox="255.803,298.136,410.677,314.120">• if you are on dialysis for kidney failure</textline>
+<textline bbox="255.803,284.132,430.360,300.116">ReoPro must not be given if you are allergic </textline>
+<textline bbox="255.803,274.133,321.197,290.117">(hypersensitive):</textline>
+<textline bbox="255.803,264.134,438.226,280.118">• to abciximab, to any of the other ingredients </textline>
+<textline bbox="262.886,254.135,439.270,270.119">of ReoPro or to a group of medicines known </textline>
+<textline bbox="262.886,244.136,399.913,260.120">as ‘murine monoclonal antibodies’.</textline>
+<textline bbox="255.803,234.137,437.195,250.121">• to a protein called papain (or to papaya fruit </textline>
+<textline bbox="262.886,224.138,428.436,240.122">which contains papain). Papain is used in </textline>
+<textline bbox="262.886,214.139,424.449,230.123">the production of ReoPro and very small </textline>
+<textline bbox="262.886,204.140,363.562,220.124">amounts may be present.</textline>
+<textline bbox="255.803,190.136,387.578,206.120">If you think that you ﬁ t into any of </textline>
+<textline bbox="255.794,180.137,440.802,196.121">the categories described above, it is important </textline>
+<textline bbox="255.794,170.138,428.520,186.122">that you discuss it with your doctor. ReoPro </textline>
+<textline bbox="255.794,160.139,402.561,176.123">must not be given in these situations.</textline>
+<textline bbox="255.803,138.235,388.521,157.030">Warnings and precautions</textline>
+<textline bbox="255.803,125.622,412.524,141.606">Talk to your doctor before using ReoPro</textline>
+<textline bbox="255.803,115.623,440.157,131.607">• if you are taking blood-thinning medicines or </textline>
+<textline bbox="262.886,105.624,442.582,121.608">any other medicines that aﬀ ect blood clotting </textline>
+<textline bbox="262.886,95.625,404.366,111.609">or blood platelets (see “Using other </textline>
+<textline bbox="262.886,85.626,342.630,101.610">medicines” section).</textline>
+</textbox>
+<textbox id="4" bbox="454.928,304.199,640.953,735.682">
+<textline bbox="454.937,719.698,619.983,735.682">• if you have previously received ReoPro, </textline>
+<textline bbox="462.020,709.699,629.406,725.683">since this could be associated with higher </textline>
+<textline bbox="462.020,699.700,638.517,715.684">risk of reduction in blood platelets or allergic </textline>
+<textline bbox="462.020,689.701,570.321,705.685">reactions (hypersensitivity).</textline>
+<textline bbox="454.937,679.702,615.360,695.686">• if you have serious problems with your </textline>
+<textline bbox="462.020,669.703,623.347,685.687">kidneys, since this may put you at risk of </textline>
+<textline bbox="462.020,659.704,638.811,675.688">increased bleeding. In this case, your doctor </textline>
+<textline bbox="462.020,649.705,603.784,665.689">might monitor your blood frequently.</textline>
+<textline bbox="454.937,639.706,626.720,655.690">• if you are more than 65 years of age (see </textline>
+<textline bbox="462.020,629.707,611.667,645.691">“Adults over 65 years of age” section).</textline>
+<textline bbox="454.937,615.703,601.570,631.687">If you think that you ﬁ t into any of the </textline>
+<textline bbox="454.928,605.704,625.073,621.688">categories described above, it is important </textline>
+<textline bbox="454.928,595.705,593.586,611.689">that you discuss it with your doctor.</textline>
+<textline bbox="454.937,573.811,593.122,592.606">Adults over 65 years of age</textline>
+<textline bbox="454.937,561.198,618.046,577.182">In patients who are over 65 years of age, </textline>
+<textline bbox="454.937,551.199,640.953,567.183">ReoPro should be given with caution, because </textline>
+<textline bbox="454.937,541.200,573.571,557.184">of risks of increased bleeding.</textline>
+<textline bbox="454.937,519.311,600.443,538.106">Other medicines and ReoPro</textline>
+<textline bbox="454.937,506.698,634.183,522.682">Tell your doctor if you have been given blood-</textline>
+<textline bbox="454.937,496.699,626.738,512.683">thinning medicines, or any other medicines </textline>
+<textline bbox="454.937,486.700,632.759,502.684">that aﬀ ect blood clotting (‘anticoagulants’) or </textline>
+<textline bbox="454.937,476.701,635.099,492.685">blood platelets (‘anti-platelet medicines’). It is </textline>
+<textline bbox="454.937,466.702,635.535,482.686">particularly important that you tell your doctor </textline>
+<textline bbox="454.937,456.703,636.498,472.687">if ‘thrombolytic’ medicines have been given to </textline>
+<textline bbox="454.937,446.704,623.462,462.688">unblock your arteries. Being given ReoPro </textline>
+<textline bbox="454.937,436.705,636.303,452.689">together with these medicines may put you at </textline>
+<textline bbox="454.937,426.706,559.222,442.690">risk of increased bleeding.</textline>
+<textline bbox="454.937,412.702,640.375,428.686">Tell your doctor if you are taking, have recently </textline>
+<textline bbox="454.937,402.703,615.297,418.687">taken  or might take any other medicines.</textline>
+<textline bbox="454.937,380.811,607.122,399.606">Pregnancy and breast-feeding</textline>
+<textline bbox="454.937,368.198,638.856,384.182">ReoPro should not be given during pregnancy </textline>
+<textline bbox="454.937,358.199,629.220,374.183">unless clearly necessary, since the eﬀ ect of </textline>
+<textline bbox="454.946,348.200,609.251,364.184">ReoPro on pregnant women or unborn </textline>
+<textline bbox="454.946,338.201,540.988,354.185">children is not known.</textline>
+<textline bbox="454.946,324.197,636.404,340.181">Breast-feeding must be stopped before being </textline>
+<textline bbox="454.946,314.198,629.634,330.182">given ReoPro, since it is not known whether </textline>
+<textline bbox="454.946,304.199,588.272,320.183">ReoPro is secreted in breast milk.</textline>
+</textbox>
+<textbox id="5" bbox="454.937,57.711,640.715,281.638">
+<textline bbox="454.937,261.053,576.719,281.638">3. How to use ReoPro</textline>
+<textline bbox="454.937,241.698,631.713,257.682">Your nurse or doctor will inject ReoPro liquid </textline>
+<textline bbox="454.937,231.699,630.010,247.683">from a syringe into one of your veins. This is </textline>
+<textline bbox="454.937,221.700,565.318,237.684">known as a ‘bolus injection’.</textline>
+<textline bbox="454.937,211.701,629.105,227.685">After you have had the injection, your nurse, </textline>
+<textline bbox="454.937,201.702,618.827,217.686">doctor or pharmacist will put more diluted </textline>
+<textline bbox="454.937,191.703,640.715,207.687">ReoPro liquid into a bag which is connected by </textline>
+<textline bbox="454.937,181.704,637.930,197.688">a tube to a needle which goes into one of your </textline>
+<textline bbox="454.937,171.705,621.302,187.689">veins. This is known as a ‘drip’ or ‘infusion’.</textline>
+<textline bbox="454.937,157.701,631.119,173.685">Depending on your condition ReoPro will be </textline>
+<textline bbox="454.937,147.702,546.622,163.686">given to you as follows:</textline>
+<textline bbox="454.937,137.703,631.188,153.687">• If you are about to undergo an angioplasty </textline>
+<textline bbox="462.020,127.704,640.320,143.688">operation, your doctor will give you the bolus </textline>
+<textline bbox="462.020,117.705,608.178,133.689">injection 10 to 60 minutes before the </textline>
+<textline bbox="462.020,107.706,620.353,123.690">operation begins. After the bolus injection </textline>
+<textline bbox="462.020,97.707,593.902,113.691">your doctor will start the infusion. </textline>
+<textline bbox="462.020,87.708,576.853,103.692">The infusion will continue for </textline>
+<textline bbox="462.020,77.709,534.127,93.693">12 hours after the </textline>
+<textline bbox="462.020,67.710,510.470,83.694">operation is </textline>
+<textline bbox="462.020,57.711,506.300,73.695">completed.</textline>
+</textbox>
+<textbox id="6" bbox="649.073,52.867,656.233,74.467">
+<textline bbox="649.073,52.867,656.233,74.467">£</textline>
+</textbox>
+<textbox id="7" bbox="665.402,173.721,852.548,735.699">
+<textline bbox="665.402,719.715,825.291,735.699">The following informa tion is intended for </textline>
+<textline bbox="665.402,709.716,783.561,725.700">healthcare professionals only:</textline>
+<textline bbox="665.402,695.712,809.380,711.822">Instructions for use and handling</textline>
+<textline bbox="665.402,681.708,825.093,697.692">1. Calculate the number of ReoPro vials </textline>
+<textline bbox="675.320,671.709,851.495,687.693">needed. The recommended dose of ReoPro </textline>
+<textline bbox="675.320,661.710,810.122,677.694">is a 0.25 mg/kg intravenous bolus </textline>
+<textline bbox="675.320,651.711,845.942,667.695">immediately followed by a 0.125 μg/kg/min </textline>
+<textline bbox="675.320,641.712,837.315,657.696">(to a maximum of 10 μg/min) continuous </textline>
+<textline bbox="675.320,631.713,756.819,647.697">intravenous infusion.</textline>
+<textline bbox="665.402,617.709,836.924,633.693">2. Parenteral medicinal products should be </textline>
+<textline bbox="675.320,607.710,852.548,623.694">inspected visually for particulate matter prior </textline>
+<textline bbox="675.320,597.711,840.331,613.695">to administration. Preparations of ReoPro </textline>
+<textline bbox="675.320,587.712,842.860,603.696">containing visibly opaque particles should </textline>
+<textline bbox="675.320,577.713,730.965,593.697">NOT be used.</textline>
+<textline bbox="665.402,563.709,840.078,579.693">3. As with all parenteral medicinal products, </textline>
+<textline bbox="675.320,553.710,844.286,569.694">aseptic procedures should be used during </textline>
+<textline bbox="675.320,543.711,790.396,559.695">the administration of ReoPro.</textline>
+<textline bbox="665.402,529.707,850.293,545.691">4. Preparation of Bolus Injection: Withdraw the </textline>
+<textline bbox="675.320,519.708,844.731,535.692">necessary amount of ReoPro for the bolus </textline>
+<textline bbox="675.320,509.709,828.711,525.693">injection into a syringe. Filter the bolus </textline>
+<textline bbox="675.320,499.710,845.357,515.694">injection using a sterile non-pyrogenic, low </textline>
+<textline bbox="675.320,489.711,831.580,505.695">protein binding 0.2 / 0.22 μm or 5.0 μm </textline>
+<textline bbox="675.320,479.712,809.845,495.696">syringe ﬁ lter. The bolus should be </textline>
+<textline bbox="675.320,469.713,808.651,485.697">administered over one (1) minute.</textline>
+<textline bbox="665.402,455.709,816.850,471.693">5. Preparation of intravenous infusion: </textline>
+<textline bbox="675.320,445.710,847.778,461.694">Withdraw the necessary amount of ReoPro </textline>
+<textline bbox="675.320,435.711,839.007,451.695">for the continuous infusion into a syringe. </textline>
+<textline bbox="675.320,425.712,851.463,441.696">Inject into an appropriate container of sterile </textline>
+<textline bbox="675.320,415.713,849.834,431.697">sodium chloride 9 mg/ml (0.9%) solution for </textline>
+<textline bbox="675.320,405.714,846.873,421.698">injection or 5% glucose solution and infuse </textline>
+<textline bbox="675.320,395.715,827.550,411.699">at the calculated rate via a continuous </textline>
+<textline bbox="675.320,385.716,831.520,401.700">infusion pump. The continuous infusion </textline>
+<textline bbox="675.320,375.717,834.765,391.701">should be ﬁ ltered either upon admixture </textline>
+<textline bbox="675.320,365.718,839.736,381.702">using a sterile, non-pyrogenic low protein </textline>
+<textline bbox="675.320,355.719,852.226,371.703">binding 0.2 / 0.22 μm or 5.0 μm syringe ﬁ lter </textline>
+<textline bbox="675.320,345.720,830.840,361.704">or upon administration using an in-line, </textline>
+<textline bbox="675.320,335.721,843.064,351.705">sterile, non-pyrogenic, low protein-binding </textline>
+<textline bbox="675.320,325.722,850.845,341.706">0.2 μm or 0.22 μm ﬁ lter. Discard the unused </textline>
+<textline bbox="675.329,315.723,833.331,331.707">portion at the end of the infusion period.</textline>
+<textline bbox="665.411,301.719,845.577,317.703">6. No incompatibilities have been shown with </textline>
+<textline bbox="675.329,291.720,833.801,307.704">intravenous infusion ﬂ uids or commonly </textline>
+<textline bbox="675.329,281.721,836.314,297.705">used cardiovascular medicinal products. </textline>
+<textline bbox="675.329,271.722,825.121,287.706">Nevertheless, it is recommended that </textline>
+<textline bbox="675.329,261.723,827.744,277.707">ReoPro be administered in a separate </textline>
+<textline bbox="675.329,251.724,848.336,267.708">intravenous line whenever possible and not </textline>
+<textline bbox="675.329,241.725,820.189,257.709">mixed with other medicinal products.</textline>
+<textline bbox="665.411,227.721,838.508,243.705">7. No incompatibilities have been observed </textline>
+<textline bbox="675.329,217.722,848.880,233.706">with glass bottles or polyvinyl chloride bags </textline>
+<textline bbox="675.329,207.723,762.690,223.707">or administration sets.</textline>
+<textline bbox="665.411,193.719,833.679,209.703">8. Any unused medicinal product or waste </textline>
+<textline bbox="675.329,183.720,808.754,199.704">material should be disposed of in </textline>
+<textline bbox="675.329,173.721,818.215,189.705">accordance with local requirements.</textline>
+</textbox>
+<textbox id="8" bbox="304.889,861.105,346.631,871.761">
+<textline bbox="304.889,861.105,346.631,871.761">GB-IE - 37018B</textline>
+</textbox>
+<textbox id="9" bbox="389.927,861.105,431.669,871.761">
+<textline bbox="389.927,861.105,431.669,871.761">GB-IE - 37018B</textline>
+</textbox>
+<textbox id="10" bbox="402.789,781.757,416.577,823.741" wmode="vertical">
+<textline bbox="402.789,781.757,416.577,823.741">ReoPro®</textline>
+</textbox>
+<textbox id="11" bbox="317.750,781.757,331.538,823.741" wmode="vertical">
+<textline bbox="317.750,781.757,331.538,823.741">ReoPro®</textline>
+</textbox>
+<rect linewidth="0" bbox="331.630,844.417,333.047,845.834" />
+<rect linewidth="0" bbox="325.961,844.417,327.378,845.834" />
+<rect linewidth="0" bbox="320.291,844.417,321.708,845.834" />
+<rect linewidth="0" bbox="327.378,845.835,328.795,847.252" />
+<rect linewidth="0" bbox="320.291,845.835,324.543,847.252" />
+<rect linewidth="0" bbox="328.795,847.252,331.630,848.669" />
+<rect linewidth="0" bbox="323.126,847.252,324.543,848.669" />
+<rect linewidth="0" bbox="318.874,847.252,321.709,848.669" />
+<rect linewidth="0" bbox="324.543,848.669,325.960,850.086" />
+<rect linewidth="0" bbox="331.630,850.087,333.047,851.504" />
+<rect linewidth="0" bbox="324.543,850.087,328.795,851.504" />
+<rect linewidth="0" bbox="318.874,850.087,321.709,851.504" />
+<rect linewidth="0" bbox="325.961,851.504,331.630,852.921" />
+<rect linewidth="0" bbox="321.709,851.504,323.126,852.921" />
+<rect linewidth="0" bbox="318.874,851.504,320.291,852.921" />
+<rect linewidth="0" bbox="330.213,852.921,331.630,854.338" />
+<rect linewidth="0" bbox="325.961,852.921,327.378,854.338" />
+<rect linewidth="0" bbox="321.709,852.921,323.126,854.338" />
+<rect linewidth="0" bbox="330.213,854.339,331.630,855.756" />
+<rect linewidth="0" bbox="325.961,854.339,327.378,855.756" />
+<rect linewidth="0" bbox="324.543,855.756,330.212,857.173" />
+<rect linewidth="0" bbox="320.291,855.756,321.708,857.173" />
+<rect linewidth="0" bbox="328.795,857.173,333.047,858.590" />
+<rect linewidth="0" bbox="324.543,857.173,327.378,858.590" />
+<rect linewidth="0" bbox="318.874,857.173,320.291,858.590" />
+<rect linewidth="0" bbox="333.047,843.000,334.464,858.590" />
+<curve linewidth="0" bbox="317.457,858.591,334.465,860.008" pts="334.465,858.591,317.457,858.591,317.457,860.008,334.465,860.008"/>
+<rect linewidth="0" bbox="330.213,843.000,331.630,844.417" />
+<rect linewidth="0" bbox="327.378,843.000,328.795,844.417" />
+<rect linewidth="0" bbox="324.543,843.000,325.960,844.417" />
+<rect linewidth="0" bbox="321.709,843.000,323.126,844.417" />
+<rect linewidth="0" bbox="318.874,843.000,320.291,844.417" />
+<rect linewidth="0" bbox="317.457,844.417,318.874,845.834" />
+<rect linewidth="0" bbox="317.457,847.252,318.874,848.669" />
+<rect linewidth="0" bbox="317.457,850.087,318.874,851.504" />
+<rect linewidth="0" bbox="317.457,852.921,318.874,854.338" />
+<rect linewidth="0" bbox="317.457,855.756,318.874,857.173" />
+<rect linewidth="0" bbox="331.630,746.906,333.047,748.323" />
+<rect linewidth="0" bbox="325.961,746.906,327.378,748.323" />
+<rect linewidth="0" bbox="320.291,746.906,321.708,748.323" />
+<rect linewidth="0" bbox="327.378,748.323,328.795,749.740" />
+<rect linewidth="0" bbox="320.291,748.323,324.543,749.740" />
+<rect linewidth="0" bbox="328.795,749.740,331.630,751.157" />
+<rect linewidth="0" bbox="323.126,749.740,324.543,751.157" />
+<rect linewidth="0" bbox="318.874,749.740,321.709,751.157" />
+<rect linewidth="0" bbox="324.543,751.157,325.960,752.574" />
+<rect linewidth="0" bbox="331.630,752.575,333.047,753.992" />
+<rect linewidth="0" bbox="324.543,752.575,328.795,753.992" />
+<rect linewidth="0" bbox="318.874,752.575,321.709,753.992" />
+<rect linewidth="0" bbox="325.961,753.992,331.630,755.409" />
+<rect linewidth="0" bbox="321.709,753.992,323.126,755.409" />
+<rect linewidth="0" bbox="318.874,753.992,320.291,755.409" />
+<rect linewidth="0" bbox="330.213,755.409,331.630,756.826" />
+<rect linewidth="0" bbox="325.961,755.409,327.378,756.826" />
+<rect linewidth="0" bbox="321.709,755.409,323.126,756.826" />
+<rect linewidth="0" bbox="330.213,756.827,331.630,758.244" />
+<rect linewidth="0" bbox="325.961,756.827,327.378,758.244" />
+<rect linewidth="0" bbox="324.543,758.244,330.212,759.661" />
+<rect linewidth="0" bbox="320.291,758.244,321.708,759.661" />
+<rect linewidth="0" bbox="328.795,759.661,333.047,761.078" />
+<rect linewidth="0" bbox="324.543,759.661,327.378,761.078" />
+<rect linewidth="0" bbox="318.874,759.661,320.291,761.078" />
+<rect linewidth="0" bbox="333.047,745.488,334.464,761.079" />
+<curve linewidth="0" bbox="317.457,761.079,334.465,762.496" pts="334.465,761.079,317.457,761.079,317.457,762.496,334.465,762.496"/>
+<rect linewidth="0" bbox="330.213,745.488,331.630,746.905" />
+<rect linewidth="0" bbox="327.378,745.488,328.795,746.905" />
+<rect linewidth="0" bbox="324.543,745.488,325.960,746.905" />
+<rect linewidth="0" bbox="321.709,745.488,323.126,746.905" />
+<rect linewidth="0" bbox="318.874,745.488,320.291,746.905" />
+<rect linewidth="0" bbox="317.457,746.906,318.874,748.323" />
+<rect linewidth="0" bbox="317.457,749.740,318.874,751.157" />
+<rect linewidth="0" bbox="317.457,752.575,318.874,753.992" />
+<rect linewidth="0" bbox="317.457,755.409,318.874,756.826" />
+<rect linewidth="0" bbox="317.457,758.244,318.874,759.661" />
+<rect linewidth="0" bbox="416.669,844.417,418.086,845.834" />
+<rect linewidth="0" bbox="411.000,844.417,412.417,845.834" />
+<rect linewidth="0" bbox="405.331,844.417,406.748,845.834" />
+<rect linewidth="0" bbox="412.417,845.835,413.834,847.252" />
+<rect linewidth="0" bbox="405.331,845.835,409.583,847.252" />
+<rect linewidth="0" bbox="413.835,847.252,416.670,848.669" />
+<rect linewidth="0" bbox="408.165,847.252,409.582,848.669" />
+<rect linewidth="0" bbox="403.913,847.252,406.748,848.669" />
+<rect linewidth="0" bbox="409.583,848.669,411.000,850.086" />
+<rect linewidth="0" bbox="416.669,850.087,418.086,851.504" />
+<rect linewidth="0" bbox="409.583,850.087,413.835,851.504" />
+<rect linewidth="0" bbox="403.913,850.087,406.748,851.504" />
+<rect linewidth="0" bbox="411.000,851.504,416.669,852.921" />
+<rect linewidth="0" bbox="406.748,851.504,408.165,852.921" />
+<rect linewidth="0" bbox="403.913,851.504,405.330,852.921" />
+<rect linewidth="0" bbox="415.252,852.921,416.669,854.338" />
+<rect linewidth="0" bbox="411.000,852.921,412.417,854.338" />
+<rect linewidth="0" bbox="406.748,852.921,408.165,854.338" />
+<rect linewidth="0" bbox="415.252,854.339,416.669,855.756" />
+<rect linewidth="0" bbox="411.000,854.339,412.417,855.756" />
+<rect linewidth="0" bbox="409.583,855.756,415.252,857.173" />
+<rect linewidth="0" bbox="405.331,855.756,406.748,857.173" />
+<rect linewidth="0" bbox="413.835,857.173,418.087,858.590" />
+<rect linewidth="0" bbox="409.583,857.173,412.418,858.590" />
+<rect linewidth="0" bbox="403.913,857.173,405.330,858.590" />
+<rect linewidth="0" bbox="418.087,843.000,419.504,858.590" />
+<curve linewidth="0" bbox="402.496,858.591,419.504,860.008" pts="419.504,858.591,402.496,858.591,402.496,860.008,419.504,860.008"/>
+<rect linewidth="0" bbox="415.252,843.000,416.669,844.417" />
+<rect linewidth="0" bbox="412.417,843.000,413.834,844.417" />
+<rect linewidth="0" bbox="409.583,843.000,411.000,844.417" />
+<rect linewidth="0" bbox="406.748,843.000,408.165,844.417" />
+<rect linewidth="0" bbox="403.913,843.000,405.330,844.417" />
+<rect linewidth="0" bbox="402.496,844.417,403.913,845.834" />
+<rect linewidth="0" bbox="402.496,847.252,403.913,848.669" />
+<rect linewidth="0" bbox="402.496,850.087,403.913,851.504" />
+<rect linewidth="0" bbox="402.496,852.921,403.913,854.338" />
+<rect linewidth="0" bbox="402.496,855.756,403.913,857.173" />
+<rect linewidth="0" bbox="416.669,746.906,418.086,748.323" />
+<rect linewidth="0" bbox="411.000,746.906,412.417,748.323" />
+<rect linewidth="0" bbox="405.331,746.906,406.748,748.323" />
+<rect linewidth="0" bbox="412.417,748.323,413.834,749.740" />
+<rect linewidth="0" bbox="405.331,748.323,409.583,749.740" />
+<rect linewidth="0" bbox="413.835,749.740,416.670,751.157" />
+<rect linewidth="0" bbox="408.165,749.740,409.582,751.157" />
+<rect linewidth="0" bbox="403.913,749.740,406.748,751.157" />
+<rect linewidth="0" bbox="409.583,751.157,411.000,752.574" />
+<rect linewidth="0" bbox="416.669,752.575,418.086,753.992" />
+<rect linewidth="0" bbox="409.583,752.575,413.835,753.992" />
+<rect linewidth="0" bbox="403.913,752.575,406.748,753.992" />
+<rect linewidth="0" bbox="411.000,753.992,416.669,755.409" />
+<rect linewidth="0" bbox="406.748,753.992,408.165,755.409" />
+<rect linewidth="0" bbox="403.913,753.992,405.330,755.409" />
+<rect linewidth="0" bbox="415.252,755.409,416.669,756.826" />
+<rect linewidth="0" bbox="411.000,755.409,412.417,756.826" />
+<rect linewidth="0" bbox="406.748,755.409,408.165,756.826" />
+<rect linewidth="0" bbox="415.252,756.827,416.669,758.244" />
+<rect linewidth="0" bbox="411.000,756.827,412.417,758.244" />
+<rect linewidth="0" bbox="409.583,758.244,415.252,759.661" />
+<rect linewidth="0" bbox="405.331,758.244,406.748,759.661" />
+<rect linewidth="0" bbox="413.835,759.661,418.087,761.078" />
+<rect linewidth="0" bbox="409.583,759.661,412.418,761.078" />
+<rect linewidth="0" bbox="403.913,759.661,405.330,761.078" />
+<rect linewidth="0" bbox="418.087,745.488,419.504,761.079" />
+<curve linewidth="0" bbox="402.496,761.079,419.504,762.496" pts="419.504,761.079,402.496,761.079,402.496,762.496,419.504,762.496"/>
+<rect linewidth="0" bbox="415.252,745.488,416.669,746.905" />
+<rect linewidth="0" bbox="412.417,745.488,413.834,746.905" />
+<rect linewidth="0" bbox="409.583,745.488,411.000,746.905" />
+<rect linewidth="0" bbox="406.748,745.488,408.165,746.905" />
+<rect linewidth="0" bbox="403.913,745.488,405.330,746.905" />
+<rect linewidth="0" bbox="402.496,746.906,403.913,748.323" />
+<rect linewidth="0" bbox="402.496,749.740,403.913,751.157" />
+<rect linewidth="0" bbox="402.496,752.575,403.913,753.992" />
+<rect linewidth="0" bbox="402.496,755.409,403.913,756.826" />
+<rect linewidth="0" bbox="402.496,758.244,403.913,759.661" />
+<line linewidth="5" bbox="56.669,711.016,241.630,711.016" />
+<line linewidth="0" bbox="56.669,645.260,241.630,645.260" />
+<line linewidth="2" bbox="56.669,383.438,241.630,383.438" />
+<line linewidth="2" bbox="255.803,556.617,440.764,556.617" />
+<line linewidth="2" bbox="454.937,279.194,639.898,279.194" />
+<line linewidth="0" bbox="652.634,20.669,652.634,878.717" />
+<rect linewidth="0" bbox="650.291,61.715,655.318,63.019" />
+<curve linewidth="0" bbox="490.464,-4.233,667.422,141.709" pts="667.422,141.709,667.410,141.694,666.575,-4.134,490.464,-4.233,667.422,141.709"/>
+<curve linewidth="0" bbox="543.363,53.516,591.584,74.059" pts="591.584,62.612,571.927,53.516,571.927,56.731,553.612,56.731,550.644,56.731,548.068,56.888,545.940,58.495,543.420,60.337,543.420,62.219,543.363,64.611,543.363,74.059,545.603,74.059,545.603,73.432,545.603,68.727,548.796,68.375,554.509,68.414,571.927,68.414,571.927,71.707,591.584,62.612"/>
+<curve linewidth="0" bbox="593.424,64.771,596.080,70.195" pts="595.248,68.955,596.080,68.955,596.080,68.195,595.248,68.195,595.248,66.147,595.248,65.763,595.344,65.667,595.728,65.667,595.848,65.667,595.960,65.675,596.080,65.699,596.080,64.812,595.888,64.779,595.640,64.771,595.416,64.771,594.720,64.771,594.112,64.931,594.112,65.755,594.112,68.195,593.424,68.195,593.424,68.955,594.112,68.955,594.112,70.195,595.248,70.195,595.248,68.955"/>
+<curve linewidth="0" bbox="596.624,64.707,600.504,68.955" pts="600.504,64.819,599.424,64.819,599.424,65.395,599.400,65.395,599.112,64.931,598.616,64.707,598.136,64.707,596.928,64.707,596.624,65.387,596.624,66.411,596.624,68.955,597.760,68.955,597.760,66.619,597.760,65.939,597.960,65.603,598.488,65.603,599.104,65.603,599.368,65.947,599.368,66.787,599.368,68.955,600.504,68.955,600.504,64.819"/>
+<curve linewidth="0" bbox="601.368,64.819,604.032,69.067" pts="601.368,68.955,602.448,68.955,602.448,68.187,602.464,68.187,602.672,68.707,603.231,69.067,603.784,69.067,603.863,69.067,603.960,69.051,604.032,69.027,604.032,67.971,603.928,67.995,603.760,68.011,603.624,68.011,602.792,68.011,602.504,67.411,602.504,66.683,602.504,64.819,601.368,64.819,601.368,68.955"/>
+<curve linewidth="0" bbox="604.480,64.819,608.360,69.067" pts="604.480,68.955,605.560,68.955,605.560,68.379,605.585,68.379,605.873,68.843,606.369,69.067,606.848,69.067,608.056,69.067,608.360,68.387,608.360,67.363,608.360,64.819,607.224,64.819,607.224,67.155,607.224,67.835,607.024,68.171,606.497,68.171,605.880,68.171,605.616,67.827,605.616,66.987,605.616,64.819,604.480,64.819,604.480,68.955"/>
+<curve linewidth="0" bbox="593.680,56.714,597.961,61.074" pts="595.817,61.074,597.121,61.074,597.961,60.210,597.961,58.890,597.961,57.578,597.121,56.714,595.817,56.714,594.520,56.714,593.680,57.578,593.680,58.890,593.680,60.210,594.520,61.074,595.817,61.074,595.817,57.570,596.592,57.570,596.825,58.234,596.825,58.890,596.825,59.553,596.592,60.217,595.817,60.217,595.049,60.217,594.817,59.553,594.817,58.890,594.817,58.234,595.049,57.570,595.817,57.570"/>
+<curve linewidth="0" bbox="598.304,56.826,602.384,60.962" pts="600.984,56.826,599.720,56.826,598.304,60.962,599.497,60.962,600.369,58.138,600.384,58.138,601.257,60.962,602.384,60.962,600.984,56.826"/>
+<curve linewidth="0" bbox="602.656,56.714,606.855,61.074" pts="603.792,58.618,603.824,57.898,604.176,57.570,604.808,57.570,605.264,57.570,605.632,57.850,605.704,58.106,606.704,58.106,606.384,57.130,605.704,56.714,604.768,56.714,603.464,56.714,602.656,57.610,602.656,58.891,602.656,60.130,603.512,61.074,604.768,61.074,606.176,61.074,606.855,59.890,606.775,58.618,603.792,58.618,605.640,59.338,605.536,59.914,605.288,60.218,604.735,60.218,604.016,60.218,603.808,59.658,603.792,59.338,605.640,59.338"/>
+<curve linewidth="0" bbox="607.447,56.826,610.111,61.074" pts="607.447,60.962,608.527,60.962,608.527,60.194,608.544,60.194,608.752,60.714,609.311,61.074,609.863,61.074,609.943,61.074,610.040,61.059,610.111,61.034,610.111,59.979,610.007,60.002,609.840,60.019,609.704,60.019,608.872,60.019,608.584,59.418,608.584,58.690,608.584,56.826,607.447,56.826,607.447,60.962"/>
+<line linewidth="1" bbox="0.000,878.717,15.000,878.717" />
+<line linewidth="1" bbox="892.039,878.717,907.039,878.717" />
+<line linewidth="1" bbox="0.000,28.323,15.000,28.323" />
+<line linewidth="1" bbox="892.039,28.323,907.039,28.323" />
+<line linewidth="1" bbox="28.323,892.039,28.323,907.039" />
+<line linewidth="1" bbox="28.323,0.000,28.323,15.000" />
+<line linewidth="1" bbox="878.717,892.039,878.717,907.039" />
+<line linewidth="1" bbox="878.717,0.000,878.717,15.000" />
+<line linewidth="0" bbox="0.000,878.717,15.000,878.717" />
+<line linewidth="0" bbox="892.039,878.717,907.039,878.717" />
+<line linewidth="0" bbox="0.000,28.323,15.000,28.323" />
+<line linewidth="0" bbox="892.039,28.323,907.039,28.323" />
+<line linewidth="0" bbox="28.323,892.039,28.323,907.039" />
+<line linewidth="0" bbox="28.323,0.000,28.323,15.000" />
+<line linewidth="0" bbox="878.717,892.039,878.717,907.039" />
+<line linewidth="0" bbox="878.717,0.000,878.717,15.000" />
+<curve linewidth="1" bbox="448.520,894.539,458.520,904.539" pts="458.520,899.539,458.520,896.778,456.281,894.539,453.520,894.539,450.759,894.539,448.520,896.778,448.520,899.539,448.520,902.300,450.759,904.539,453.520,904.539,456.281,904.539,458.520,902.300,458.520,899.539"/>
+<line linewidth="1" bbox="447.520,899.539,459.520,899.539" />
+<line linewidth="1" bbox="453.520,893.539,453.520,905.539" />
+<curve linewidth="1" bbox="450.520,896.539,456.520,902.539" pts="456.520,899.539,456.520,897.882,455.177,896.539,453.520,896.539,451.863,896.539,450.520,897.882,450.520,899.539,450.520,901.196,451.863,902.539,453.520,902.539,455.177,902.539,456.520,901.196,456.520,899.539"/>
+<curve linewidth="0" bbox="448.520,894.539,458.520,904.539" pts="458.520,899.539,458.520,896.778,456.281,894.539,453.520,894.539,450.759,894.539,448.520,896.778,448.520,899.539,448.520,902.300,450.759,904.539,453.520,904.539,456.281,904.539,458.520,902.300,458.520,899.539"/>
+<line linewidth="0" bbox="447.520,899.539,459.520,899.539" />
+<line linewidth="0" bbox="453.520,893.539,453.520,905.539" />
+<curve linewidth="0" bbox="450.520,896.539,456.520,902.539" pts="456.520,899.539,456.520,897.882,455.177,896.539,453.520,896.539,451.863,896.539,450.520,897.882,450.520,899.539,450.520,901.196,451.863,902.539,453.520,902.539,455.177,902.539,456.520,901.196,456.520,899.539"/>
+<line linewidth="0" bbox="450.520,899.539,456.520,899.539" />
+<line linewidth="0" bbox="453.520,896.539,453.520,902.539" />
+<curve linewidth="1" bbox="448.520,2.500,458.520,12.500" pts="458.520,7.500,458.520,4.739,456.281,2.500,453.520,2.500,450.759,2.500,448.520,4.739,448.520,7.500,448.520,10.261,450.759,12.500,453.520,12.500,456.281,12.500,458.520,10.261,458.520,7.500"/>
+<line linewidth="1" bbox="447.520,7.500,459.520,7.500" />
+<line linewidth="1" bbox="453.520,1.500,453.520,13.500" />
+<curve linewidth="1" bbox="450.520,4.500,456.520,10.500" pts="456.520,7.500,456.520,5.843,455.177,4.500,453.520,4.500,451.863,4.500,450.520,5.843,450.520,7.500,450.520,9.157,451.863,10.500,453.520,10.500,455.177,10.500,456.520,9.157,456.520,7.500"/>
+<curve linewidth="0" bbox="448.520,2.500,458.520,12.500" pts="458.520,7.500,458.520,4.739,456.281,2.500,453.520,2.500,450.759,2.500,448.520,4.739,448.520,7.500,448.520,10.261,450.759,12.500,453.520,12.500,456.281,12.500,458.520,10.261,458.520,7.500"/>
+<line linewidth="0" bbox="447.520,7.500,459.520,7.500" />
+<line linewidth="0" bbox="453.520,1.500,453.520,13.500" />
+<curve linewidth="0" bbox="450.520,4.500,456.520,10.500" pts="456.520,7.500,456.520,5.843,455.177,4.500,453.520,4.500,451.863,4.500,450.520,5.843,450.520,7.500,450.520,9.157,451.863,10.500,453.520,10.500,455.177,10.500,456.520,9.157,456.520,7.500"/>
+<line linewidth="0" bbox="450.520,7.500,456.520,7.500" />
+<line linewidth="0" bbox="453.520,4.500,453.520,10.500" />
+<curve linewidth="1" bbox="2.500,448.520,12.500,458.520" pts="12.500,453.520,12.500,450.759,10.261,448.520,7.500,448.520,4.739,448.520,2.500,450.759,2.500,453.520,2.500,456.281,4.739,458.520,7.500,458.520,10.261,458.520,12.500,456.281,12.500,453.520"/>
+<line linewidth="1" bbox="1.500,453.520,13.500,453.520" />
+<line linewidth="1" bbox="7.500,447.520,7.500,459.520" />
+<curve linewidth="1" bbox="4.500,450.520,10.500,456.520" pts="10.500,453.520,10.500,451.863,9.157,450.520,7.500,450.520,5.843,450.520,4.500,451.863,4.500,453.520,4.500,455.177,5.843,456.520,7.500,456.520,9.157,456.520,10.500,455.177,10.500,453.520"/>
+<curve linewidth="0" bbox="2.500,448.520,12.500,458.520" pts="12.500,453.520,12.500,450.759,10.261,448.520,7.500,448.520,4.739,448.520,2.500,450.759,2.500,453.520,2.500,456.281,4.739,458.520,7.500,458.520,10.261,458.520,12.500,456.281,12.500,453.520"/>
+<line linewidth="0" bbox="1.500,453.520,13.500,453.520" />
+<line linewidth="0" bbox="7.500,447.520,7.500,459.520" />
+<curve linewidth="0" bbox="4.500,450.520,10.500,456.520" pts="10.500,453.520,10.500,451.863,9.157,450.520,7.500,450.520,5.843,450.520,4.500,451.863,4.500,453.520,4.500,455.177,5.843,456.520,7.500,456.520,9.157,456.520,10.500,455.177,10.500,453.520"/>
+<line linewidth="0" bbox="4.500,453.520,10.500,453.520" />
+<line linewidth="0" bbox="7.500,450.520,7.500,456.520" />
+<curve linewidth="1" bbox="894.539,448.520,904.539,458.520" pts="904.539,453.520,904.539,450.759,902.300,448.520,899.539,448.520,896.778,448.520,894.539,450.759,894.539,453.520,894.539,456.281,896.778,458.520,899.539,458.520,902.300,458.520,904.539,456.281,904.539,453.520"/>
+<line linewidth="1" bbox="893.539,453.520,905.539,453.520" />
+<line linewidth="1" bbox="899.539,447.520,899.539,459.520" />
+<curve linewidth="1" bbox="896.539,450.520,902.539,456.520" pts="902.539,453.520,902.539,451.863,901.196,450.520,899.539,450.520,897.882,450.520,896.539,451.863,896.539,453.520,896.539,455.177,897.882,456.520,899.539,456.520,901.196,456.520,902.539,455.177,902.539,453.520"/>
+<curve linewidth="0" bbox="894.539,448.520,904.539,458.520" pts="904.539,453.520,904.539,450.759,902.300,448.520,899.539,448.520,896.778,448.520,894.539,450.759,894.539,453.520,894.539,456.281,896.778,458.520,899.539,458.520,902.300,458.520,904.539,456.281,904.539,453.520"/>
+<line linewidth="0" bbox="893.539,453.520,905.539,453.520" />
+<line linewidth="0" bbox="899.539,447.520,899.539,459.520" />
+<curve linewidth="0" bbox="896.539,450.520,902.539,456.520" pts="902.539,453.520,902.539,451.863,901.196,450.520,899.539,450.520,897.882,450.520,896.539,451.863,896.539,453.520,896.539,455.177,897.882,456.520,899.539,456.520,901.196,456.520,902.539,455.177,902.539,453.520"/>
+<line linewidth="0" bbox="896.539,453.520,902.539,453.520" />
+<line linewidth="0" bbox="899.539,450.520,899.539,456.520" />
+<figure name="Fm0" bbox="40.815,10.717,225.002,34.091">
+<curve linewidth="0" bbox="41.315,11.217,182.687,21.873" pts="41.315,11.217,182.687,11.217,182.687,21.873,41.315,21.873,41.315,11.217"/>
+</figure>
+<layout>
+<textgroup bbox="56.669,52.867,852.548,871.761">
+<textgroup bbox="56.669,52.867,852.548,738.106">
+<textgroup bbox="56.669,52.867,656.233,738.106">
+<textgroup bbox="56.669,66.447,443.000,738.106">
+<textgroup bbox="56.669,66.447,242.160,738.106">
+<textbox id="0" bbox="56.669,408.449,242.001,738.106" />
+<textbox id="1" bbox="56.669,66.447,242.160,385.882" />
+</textgroup>
+<textgroup bbox="255.794,85.626,443.000,737.030">
+<textbox id="2" bbox="255.803,581.629,442.629,737.030" />
+<textbox id="3" bbox="255.794,85.626,443.000,559.062" />
+</textgroup>
+</textgroup>
+<textgroup bbox="454.928,52.867,656.233,735.682">
+<textgroup bbox="454.928,57.711,640.953,735.682">
+<textbox id="4" bbox="454.928,304.199,640.953,735.682" />
+<textbox id="5" bbox="454.937,57.711,640.715,281.638" />
+</textgroup>
+<textbox id="6" bbox="649.073,52.867,656.233,74.467" />
+</textgroup>
+</textgroup>
+<textbox id="7" bbox="665.402,173.721,852.548,735.699" />
+</textgroup>
+<textgroup bbox="304.889,781.757,431.669,871.761">
+<textgroup bbox="304.889,861.105,431.669,871.761">
+<textbox id="8" bbox="304.889,861.105,346.631,871.761" />
+<textbox id="9" bbox="389.927,861.105,431.669,871.761" />
+</textgroup>
+<textgroup bbox="317.750,781.757,416.577,823.741">
+<textbox id="10" bbox="402.789,781.757,416.577,823.741" />
+<textbox id="11" bbox="317.750,781.757,331.538,823.741" />
+</textgroup>
+</textgroup>
+</textgroup>
+</layout>
+</page>
+<page id="2" bbox="0.000,0.000,907.039,907.039" rotate="0">
+<textbox id="0" bbox="267.142,380.708,453.705,735.682">
+<textline bbox="267.142,719.698,448.655,735.682">• If you have unstable angina (chest pain due </textline>
+<textline bbox="274.225,709.699,436.200,725.683">to low blood supply to the heart) and are </textline>
+<textline bbox="274.225,699.700,432.774,715.684">scheduled for an angioplasty operation, </textline>
+<textline bbox="274.225,689.701,445.673,705.685">your doctor will give you the bolus injection </textline>
+<textline bbox="274.225,679.702,419.659,695.686">up to 24 hours before the scheduled </textline>
+<textline bbox="274.225,669.703,430.870,685.687">operation. After the bolus injection your </textline>
+<textline bbox="274.225,659.704,452.054,675.688">doctor will start the infusion. The infusion will </textline>
+<textline bbox="274.225,649.705,444.089,665.689">continue for 12 hours after the operation is </textline>
+<textline bbox="274.225,639.706,318.505,655.690">completed.</textline>
+<textline bbox="267.142,617.811,305.530,636.606">Dosage</textline>
+<textline bbox="267.142,605.198,446.627,621.182">Your doctor will calculate the dose of ReoPro </textline>
+<textline bbox="267.142,595.199,363.802,611.183">to give to you as follows:</textline>
+<textline bbox="267.142,585.200,452.484,601.184">• The dose of the bolus injection will be based </textline>
+<textline bbox="274.225,575.201,406.681,591.185">on your body weight. The dose is </textline>
+<textline bbox="274.225,565.202,439.000,581.186">0.25 milligrams for every kilogram of your </textline>
+<textline bbox="274.225,555.203,324.691,571.187">body weight.</textline>
+<textline bbox="267.142,545.204,452.448,561.188">• The infusion dose will also be based on your </textline>
+<textline bbox="274.225,535.205,448.765,551.189">body weight. The dose is 0.125 micrograms </textline>
+<textline bbox="274.225,525.206,451.131,541.190">per kilogram per minute up to a maximum of </textline>
+<textline bbox="274.225,515.207,380.409,531.191">10 micrograms per minute.</textline>
+<textline bbox="267.142,493.311,362.196,512.106">After the operation</textline>
+<textline bbox="267.142,480.698,448.324,496.682">After the angioplasty operation your doctor or </textline>
+<textline bbox="267.142,470.699,453.705,486.683">nurse will gently press a dressing on the artery </textline>
+<textline bbox="267.142,460.700,451.248,476.684">to stop any bleeding. Total bed rest is required </textline>
+<textline bbox="267.142,450.701,422.402,466.685">by the patient and the leg on which the </textline>
+<textline bbox="267.142,440.702,450.997,456.686">angioplasty has been performed must be kept </textline>
+<textline bbox="267.142,430.703,444.037,446.687">in a straight position for at least 6 to 8 hours. </textline>
+<textline bbox="267.142,420.704,436.709,436.688">You will also be carefully observed by your </textline>
+<textline bbox="267.142,410.705,453.017,426.689">doctor and nurse and your blood pressure and </textline>
+<textline bbox="267.142,400.706,450.286,416.690">pulse will be measured several times. Regular </textline>
+<textline bbox="267.142,390.707,444.890,406.691">blood tests will also be performed to monitor </textline>
+<textline bbox="267.142,380.708,351.915,396.692">your blood cell count.</textline>
+</textbox>
+<textbox id="1" bbox="267.142,59.205,454.300,358.138">
+<textline bbox="267.142,337.553,397.408,358.138">4. Possible side eﬀ ects</textline>
+<textline bbox="267.142,318.198,440.525,334.182">Like all  medicines, this medicine can cause </textline>
+<textline bbox="267.142,308.199,432.175,324.183">side eﬀ ects, although not everybody gets </textline>
+<textline bbox="267.142,298.200,452.873,314.184">them. Cases of fatal bleeding have been rarely </textline>
+<textline bbox="267.142,288.201,303.268,304.185">reported.</textline>
+<textline bbox="267.142,271.200,449.232,287.310">Please t ell your doctor immediately if you </textline>
+<textline bbox="267.142,261.201,439.100,277.311">notice any of the following side eﬀ ects, </textline>
+<textline bbox="267.142,251.202,453.777,267.312">as your doctor will need to take immediate </textline>
+<textline bbox="267.142,241.203,434.961,257.313">action and discontinue your treatment:</textline>
+<textline bbox="267.142,227.199,445.844,243.183">Common (aﬀ ecting less than 1 person in 10):</textline>
+<textline bbox="267.142,217.200,424.672,233.184">• Bleeding in the stomach or intestines. </textline>
+<textline bbox="274.225,207.201,431.739,223.185">Symptoms may include vomiting blood, </textline>
+<textline bbox="274.225,197.202,399.649,213.186">blood in faeces or black faeces.</textline>
+<textline bbox="267.142,183.198,452.531,199.182">Uncommon (aﬀ ecting less than 1 person in 100):</textline>
+<textline bbox="267.142,173.199,452.909,189.183">• Bleeding in the skull. Symptoms may include </textline>
+<textline bbox="274.225,163.200,443.990,179.184">pain in the head; speech, visual or hearing </textline>
+<textline bbox="274.225,153.201,431.336,169.185">diﬃ  culties; numbness or lack of feeling; </textline>
+<textline bbox="274.225,143.202,420.210,159.186">problems with movement or balance.</textline>
+<textline bbox="267.142,129.198,419.839,145.182">• Rare (aﬀ ecting less than 1 person in </textline>
+<textline bbox="274.234,119.199,413.642,135.183">1,000):Allergic reactions (including </textline>
+<textline bbox="274.234,109.200,450.843,125.184">hypersensitivity and anaphylactic reactions). </textline>
+<textline bbox="274.234,99.201,447.154,115.185">Symptoms may include skin rash; itchy and </textline>
+<textline bbox="274.234,89.202,452.533,105.186">swollen skin; diﬃ  culty in breathing, dizziness.</textline>
+<textline bbox="267.151,79.203,454.300,95.187">• Build up of blood around the heart. Symptoms </textline>
+<textline bbox="274.234,69.204,435.244,85.188">may include rapid heartbeat, chest pain, </textline>
+<textline bbox="274.234,59.205,432.778,75.189">shortness of breath, sweating or fatigue.</textline>
+</textbox>
+<textbox id="2" bbox="466.276,279.200,653.416,735.682">
+<textline bbox="466.276,719.698,632.812,735.682">• Serious restriction in breathing capacity. </textline>
+<textline bbox="473.359,709.699,649.624,725.683">Symptoms may include shortness of breath, </textline>
+<textline bbox="473.359,699.700,585.203,715.684">rapid and shallow breathing.</textline>
+<textline bbox="466.276,689.701,628.918,705.685">• Bleedings in the lungs. Symptoms may </textline>
+<textline bbox="473.359,679.702,635.472,695.686">include coughing blood, wheezing, rapid </textline>
+<textline bbox="473.359,669.703,590.033,685.687">breathing, airway obstruction.</textline>
+<textline bbox="466.276,649.705,643.281,665.815">Please also tell your doctor if you notice </textline>
+<textline bbox="466.276,639.706,606.572,655.816">any of the following side eﬀ ects:</textline>
+<textline bbox="466.276,625.702,644.978,641.686">Common (aﬀ ecting less than 1 person in 10):</textline>
+<textline bbox="466.276,615.703,638.143,631.687">• Low blood platelet count. Symptoms may </textline>
+<textline bbox="473.359,605.704,649.867,621.688">include easy or excessive bruising, bleeding </textline>
+<textline bbox="473.359,595.705,647.849,611.689">under the skin, bleeding from nose or gums.</textline>
+<textline bbox="466.276,585.706,514.498,601.690">• Headache</textline>
+<textline bbox="466.276,575.707,533.264,591.691">• Slow heart rate</textline>
+<textline bbox="466.276,565.708,645.856,581.692">• Bleeding (may include bruising, purple skin </textline>
+<textline bbox="473.359,555.709,647.899,571.693">rash, nose bleed, vaginal bleeding, blood in </textline>
+<textline bbox="473.359,545.710,535.295,561.694">urine or faeces)</textline>
+<textline bbox="466.276,535.711,575.059,551.695">• Swelling of arms and legs</textline>
+<textline bbox="466.276,525.712,550.301,541.696">• Nausea or vomiting</textline>
+<textline bbox="466.276,515.713,512.852,531.697">• Back pain</textline>
+<textline bbox="466.276,505.714,516.200,521.698">• Chest pain</textline>
+<textline bbox="466.276,495.715,495.454,511.699">• Fever</textline>
+<textline bbox="466.276,485.716,567.220,501.700">• Pain at the injection site</textline>
+<textline bbox="466.276,475.717,554.967,491.701">• Pain in the abdomen</textline>
+<textline bbox="466.276,461.713,640.118,477.697">Rare (aﬀ ecting less than 1 person in 1,000):</textline>
+<textline bbox="466.276,451.714,648.565,467.698">• Very low blood pressure. Symptoms include </textline>
+<textline bbox="473.359,441.715,570.911,457.699">dizziness or feeling faint.</textline>
+<textline bbox="466.276,419.811,590.884,438.606">Reporting of side eﬀ ects</textline>
+<textline bbox="466.276,407.198,647.401,423.182">If you get any side eﬀ ects, talk to your doctor, </textline>
+<textline bbox="466.276,397.199,653.416,413.183">pharmacist or nurse. This includes any possible </textline>
+<textline bbox="466.276,387.200,604.800,403.184">side eﬀ ects not listed in this leaﬂ et.</textline>
+<textline bbox="466.285,373.196,637.441,389.306">In the UK, you can also report side eﬀ ects </textline>
+<textline bbox="466.285,363.197,621.340,379.181">directly via the Yellow Card Scheme at: </textline>
+<textline bbox="466.285,353.198,580.657,369.182">www.mhra.gov.uk/yellowcard</textline>
+<textline bbox="466.285,339.194,638.206,355.304">In Ireland, you can also report side eﬀ ects </textline>
+<textline bbox="466.285,329.195,653.391,345.179">directly via: HPRA Pharmacovigilance, Earlsfort </textline>
+<textline bbox="466.285,319.196,642.773,335.180">Terrace, IRL - Dublin 2, Tel: +353 1 6764971, </textline>
+<textline bbox="466.285,309.197,644.854,325.181">Fax: +353 1 6762517, Website: www.hpra.ie, </textline>
+<textline bbox="466.285,299.198,572.371,315.182">E-mail: medsafety@hpra.ie</textline>
+<textline bbox="466.285,289.199,649.597,305.183">By reporting side eﬀ ects you can help provide </textline>
+<textline bbox="466.285,279.200,651.775,295.184">more information on the safety of this medicine.</textline>
+</textbox>
+<textbox id="3" bbox="466.276,72.707,650.896,256.638">
+<textline bbox="466.276,236.053,596.360,256.638">5. How to store ReoPro</textline>
+<textline bbox="466.276,216.698,646.132,232.682">Your doctor or other healthcare professionals </textline>
+<textline bbox="466.276,206.699,645.392,222.683">will take care of handling and storing ReoPro </textline>
+<textline bbox="466.276,196.700,617.661,212.684">according to the following instructions:</textline>
+<textline bbox="466.276,182.696,633.146,198.680">• Keep this medicine out of the reach and </textline>
+<textline bbox="473.359,172.697,538.661,188.681">sight of children.</textline>
+<textline bbox="466.276,162.698,606.179,178.682">• Store in a refrigerator (2°C - 8°C).</textline>
+<textline bbox="466.276,152.699,529.133,168.683">• Do not freeze.</textline>
+<textline bbox="466.276,142.700,528.242,158.684">• Do not shake.</textline>
+<textline bbox="466.276,132.701,635.144,148.685">• Do not use this medicine after the expiry </textline>
+<textline bbox="473.359,122.702,642.470,138.686">date which is stated on the carton and vial </textline>
+<textline bbox="473.359,112.703,640.469,128.687">label after the letters EXP. The expiry date </textline>
+<textline bbox="473.359,102.704,610.796,118.688">refers to the last day of that month.</textline>
+<textline bbox="466.276,92.705,623.723,108.689">• Do not use this medicine if you notice </textline>
+<textline bbox="473.359,82.706,650.896,98.690">discolouring of the liquid or opaque particles </textline>
+<textline bbox="473.359,72.707,521.174,88.691">in the liquid.</textline>
+</textbox>
+<textbox id="4" bbox="250.806,52.867,257.966,74.467">
+<textline bbox="250.806,52.867,257.966,74.467">£</textline>
+</textbox>
+<textbox id="5" bbox="665.409,318.997,852.228,729.925">
+<textline bbox="665.409,709.340,823.438,729.925">6. Contents of the pack and </textline>
+<textline bbox="681.004,696.840,776.797,717.425">other information</textline>
+<textline bbox="665.409,675.598,778.051,694.393">What ReoPro contains</textline>
+<textline bbox="665.409,662.985,852.228,678.969">• ReoPro 2 mg/mL is supplied as a solution for </textline>
+<textline bbox="672.492,652.986,849.747,668.970">injection or infusion containing 10 milligrams </textline>
+<textline bbox="672.492,642.987,848.019,658.971">of abciximab (active ingredient) dissolved in </textline>
+<textline bbox="672.492,632.988,798.708,648.972">5 millilitres of water for injection.</textline>
+<textline bbox="665.409,622.989,812.973,638.973">• The other ingredients are disodium </textline>
+<textline bbox="672.492,612.990,836.078,628.974">phosphate dihydrate, sodium dihydrogen </textline>
+<textline bbox="672.492,602.991,838.958,618.975">phosphate monohydrate, sodium chloride </textline>
+<textline bbox="672.492,592.992,751.268,608.976">and polysorbate 80.</textline>
+<textline bbox="665.409,571.098,807.491,589.893">What ReoPro looks like and </textline>
+<textline bbox="665.409,559.601,768.863,578.396">contents of the pack</textline>
+<textline bbox="665.409,546.985,840.314,562.969">• ReoPro 2 mg/mL pack contains a labelled </textline>
+<textline bbox="672.492,536.986,833.040,552.970">glass vial ﬁ lled with colourless and clear </textline>
+<textline bbox="672.501,526.987,728.502,542.971">ReoPro liquid.</textline>
+<textline bbox="665.418,506.989,822.286,523.099">Marketing Authorisation Holder and </textline>
+<textline bbox="665.418,496.990,722.820,513.100">Manufacturer</textline>
+<textline bbox="665.418,486.991,755.417,502.975">Janssen Biologics B.V.</textline>
+<textline bbox="665.418,476.992,730.789,492.976">Einsteinweg 101</textline>
+<textline bbox="665.418,466.993,729.722,482.977">2333 CB Leiden</textline>
+<textline bbox="665.418,456.994,734.083,472.978">The Netherlands.</textline>
+<textline bbox="665.418,442.990,826.077,458.974">For any additional information about this </textline>
+<textline bbox="665.418,432.991,802.395,448.975">medicine, please contact the local </textline>
+<textline bbox="665.418,422.992,845.055,438.976">representative of the Marketing Authorisation </textline>
+<textline bbox="665.418,412.993,694.101,428.977">Holder.</textline>
+<textline bbox="665.418,398.989,739.726,414.973">Janssen-Cilag Ltd.</textline>
+<textline bbox="665.418,388.990,771.404,404.974">50-100 Holmers Farm Way</textline>
+<textline bbox="665.418,378.991,725.893,394.975">High Wycombe</textline>
+<textline bbox="665.418,368.992,734.151,384.976">Buckinghamshire</textline>
+<textline bbox="665.418,358.993,707.929,374.977">HP12 4EG</textline>
+<textline bbox="665.418,348.994,677.910,364.978">UK</textline>
+<textline bbox="665.418,328.996,798.371,345.106">This leaﬂ et was last revised in </textline>
+<textline bbox="665.418,318.997,738.615,335.107">September 2016.</textline>
+</textbox>
+<textbox id="6" bbox="821.812,55.250,850.367,65.018">
+<textline bbox="821.812,55.250,850.367,65.018">© J-C 2016</textline>
+</textbox>
+<line linewidth="2" bbox="267.142,355.694,452.103,355.694" />
+<line linewidth="0" bbox="267.142,228.620,303.621,228.620" />
+<line linewidth="0" bbox="267.142,184.620,311.767,184.620" />
+<line linewidth="0" bbox="274.229,130.620,293.341,130.620" />
+<line linewidth="0" bbox="466.276,627.120,502.755,627.120" />
+<line linewidth="0" bbox="466.276,463.120,485.388,463.120" />
+<line linewidth="0" bbox="466.276,354.620,580.648,354.620" />
+<line linewidth="0" bbox="591.494,310.620,640.177,310.620" />
+<line linewidth="0" bbox="495.970,300.620,572.378,300.620" />
+<line linewidth="2" bbox="466.276,254.194,651.237,254.194" />
+<line linewidth="2" bbox="665.409,727.480,850.370,727.480" />
+<line linewidth="0" bbox="254.366,20.669,254.366,878.717" />
+<rect linewidth="0" bbox="252.024,61.715,257.051,63.019" />
+<line linewidth="1" bbox="0.000,878.717,15.000,878.717" />
+<line linewidth="1" bbox="892.039,878.717,907.039,878.717" />
+<line linewidth="1" bbox="0.000,28.323,15.000,28.323" />
+<line linewidth="1" bbox="892.039,28.323,907.039,28.323" />
+<line linewidth="1" bbox="28.323,892.039,28.323,907.039" />
+<line linewidth="1" bbox="28.323,0.000,28.323,15.000" />
+<line linewidth="1" bbox="878.717,892.039,878.717,907.039" />
+<line linewidth="1" bbox="878.717,0.000,878.717,15.000" />
+<line linewidth="0" bbox="0.000,878.717,15.000,878.717" />
+<line linewidth="0" bbox="892.039,878.717,907.039,878.717" />
+<line linewidth="0" bbox="0.000,28.323,15.000,28.323" />
+<line linewidth="0" bbox="892.039,28.323,907.039,28.323" />
+<line linewidth="0" bbox="28.323,892.039,28.323,907.039" />
+<line linewidth="0" bbox="28.323,0.000,28.323,15.000" />
+<line linewidth="0" bbox="878.717,892.039,878.717,907.039" />
+<line linewidth="0" bbox="878.717,0.000,878.717,15.000" />
+<curve linewidth="1" bbox="448.520,894.539,458.520,904.539" pts="458.520,899.539,458.520,896.778,456.281,894.539,453.520,894.539,450.759,894.539,448.520,896.778,448.520,899.539,448.520,902.300,450.759,904.539,453.520,904.539,456.281,904.539,458.520,902.300,458.520,899.539"/>
+<line linewidth="1" bbox="447.520,899.539,459.520,899.539" />
+<line linewidth="1" bbox="453.520,893.539,453.520,905.539" />
+<curve linewidth="1" bbox="450.520,896.539,456.520,902.539" pts="456.520,899.539,456.520,897.882,455.177,896.539,453.520,896.539,451.863,896.539,450.520,897.882,450.520,899.539,450.520,901.196,451.863,902.539,453.520,902.539,455.177,902.539,456.520,901.196,456.520,899.539"/>
+<curve linewidth="0" bbox="448.520,894.539,458.520,904.539" pts="458.520,899.539,458.520,896.778,456.281,894.539,453.520,894.539,450.759,894.539,448.520,896.778,448.520,899.539,448.520,902.300,450.759,904.539,453.520,904.539,456.281,904.539,458.520,902.300,458.520,899.539"/>
+<line linewidth="0" bbox="447.520,899.539,459.520,899.539" />
+<line linewidth="0" bbox="453.520,893.539,453.520,905.539" />
+<curve linewidth="0" bbox="450.520,896.539,456.520,902.539" pts="456.520,899.539,456.520,897.882,455.177,896.539,453.520,896.539,451.863,896.539,450.520,897.882,450.520,899.539,450.520,901.196,451.863,902.539,453.520,902.539,455.177,902.539,456.520,901.196,456.520,899.539"/>
+<line linewidth="0" bbox="450.520,899.539,456.520,899.539" />
+<line linewidth="0" bbox="453.520,896.539,453.520,902.539" />
+<curve linewidth="1" bbox="448.520,2.500,458.520,12.500" pts="458.520,7.500,458.520,4.739,456.281,2.500,453.520,2.500,450.759,2.500,448.520,4.739,448.520,7.500,448.520,10.261,450.759,12.500,453.520,12.500,456.281,12.500,458.520,10.261,458.520,7.500"/>
+<line linewidth="1" bbox="447.520,7.500,459.520,7.500" />
+<line linewidth="1" bbox="453.520,1.500,453.520,13.500" />
+<curve linewidth="1" bbox="450.520,4.500,456.520,10.500" pts="456.520,7.500,456.520,5.843,455.177,4.500,453.520,4.500,451.863,4.500,450.520,5.843,450.520,7.500,450.520,9.157,451.863,10.500,453.520,10.500,455.177,10.500,456.520,9.157,456.520,7.500"/>
+<curve linewidth="0" bbox="448.520,2.500,458.520,12.500" pts="458.520,7.500,458.520,4.739,456.281,2.500,453.520,2.500,450.759,2.500,448.520,4.739,448.520,7.500,448.520,10.261,450.759,12.500,453.520,12.500,456.281,12.500,458.520,10.261,458.520,7.500"/>
+<line linewidth="0" bbox="447.520,7.500,459.520,7.500" />
+<line linewidth="0" bbox="453.520,1.500,453.520,13.500" />
+<curve linewidth="0" bbox="450.520,4.500,456.520,10.500" pts="456.520,7.500,456.520,5.843,455.177,4.500,453.520,4.500,451.863,4.500,450.520,5.843,450.520,7.500,450.520,9.157,451.863,10.500,453.520,10.500,455.177,10.500,456.520,9.157,456.520,7.500"/>
+<line linewidth="0" bbox="450.520,7.500,456.520,7.500" />
+<line linewidth="0" bbox="453.520,4.500,453.520,10.500" />
+<curve linewidth="1" bbox="2.500,448.520,12.500,458.520" pts="12.500,453.520,12.500,450.759,10.261,448.520,7.500,448.520,4.739,448.520,2.500,450.759,2.500,453.520,2.500,456.281,4.739,458.520,7.500,458.520,10.261,458.520,12.500,456.281,12.500,453.520"/>
+<line linewidth="1" bbox="1.500,453.520,13.500,453.520" />
+<line linewidth="1" bbox="7.500,447.520,7.500,459.520" />
+<curve linewidth="1" bbox="4.500,450.520,10.500,456.520" pts="10.500,453.520,10.500,451.863,9.157,450.520,7.500,450.520,5.843,450.520,4.500,451.863,4.500,453.520,4.500,455.177,5.843,456.520,7.500,456.520,9.157,456.520,10.500,455.177,10.500,453.520"/>
+<curve linewidth="0" bbox="2.500,448.520,12.500,458.520" pts="12.500,453.520,12.500,450.759,10.261,448.520,7.500,448.520,4.739,448.520,2.500,450.759,2.500,453.520,2.500,456.281,4.739,458.520,7.500,458.520,10.261,458.520,12.500,456.281,12.500,453.520"/>
+<line linewidth="0" bbox="1.500,453.520,13.500,453.520" />
+<line linewidth="0" bbox="7.500,447.520,7.500,459.520" />
+<curve linewidth="0" bbox="4.500,450.520,10.500,456.520" pts="10.500,453.520,10.500,451.863,9.157,450.520,7.500,450.520,5.843,450.520,4.500,451.863,4.500,453.520,4.500,455.177,5.843,456.520,7.500,456.520,9.157,456.520,10.500,455.177,10.500,453.520"/>
+<line linewidth="0" bbox="4.500,453.520,10.500,453.520" />
+<line linewidth="0" bbox="7.500,450.520,7.500,456.520" />
+<curve linewidth="1" bbox="894.539,448.520,904.539,458.520" pts="904.539,453.520,904.539,450.759,902.300,448.520,899.539,448.520,896.778,448.520,894.539,450.759,894.539,453.520,894.539,456.281,896.778,458.520,899.539,458.520,902.300,458.520,904.539,456.281,904.539,453.520"/>
+<line linewidth="1" bbox="893.539,453.520,905.539,453.520" />
+<line linewidth="1" bbox="899.539,447.520,899.539,459.520" />
+<curve linewidth="1" bbox="896.539,450.520,902.539,456.520" pts="902.539,453.520,902.539,451.863,901.196,450.520,899.539,450.520,897.882,450.520,896.539,451.863,896.539,453.520,896.539,455.177,897.882,456.520,899.539,456.520,901.196,456.520,902.539,455.177,902.539,453.520"/>
+<curve linewidth="0" bbox="894.539,448.520,904.539,458.520" pts="904.539,453.520,904.539,450.759,902.300,448.520,899.539,448.520,896.778,448.520,894.539,450.759,894.539,453.520,894.539,456.281,896.778,458.520,899.539,458.520,902.300,458.520,904.539,456.281,904.539,453.520"/>
+<line linewidth="0" bbox="893.539,453.520,905.539,453.520" />
+<line linewidth="0" bbox="899.539,447.520,899.539,459.520" />
+<curve linewidth="0" bbox="896.539,450.520,902.539,456.520" pts="902.539,453.520,902.539,451.863,901.196,450.520,899.539,450.520,897.882,450.520,896.539,451.863,896.539,453.520,896.539,455.177,897.882,456.520,899.539,456.520,901.196,456.520,902.539,455.177,902.539,453.520"/>
+<line linewidth="0" bbox="896.539,453.520,902.539,453.520" />
+<line linewidth="0" bbox="899.539,450.520,899.539,456.520" />
+<figure name="Fm0" bbox="40.815,10.717,225.002,34.091">
+<curve linewidth="0" bbox="41.315,11.217,182.687,21.873" pts="41.315,11.217,182.687,11.217,182.687,21.873,41.315,21.873,41.315,11.217"/>
+</figure>
+<layout>
+<textgroup bbox="250.806,52.867,852.228,735.682">
+<textgroup bbox="250.806,52.867,653.416,735.682">
+<textgroup bbox="267.142,59.205,653.416,735.682">
+<textgroup bbox="267.142,59.205,454.300,735.682">
+<textbox id="0" bbox="267.142,380.708,453.705,735.682" />
+<textbox id="1" bbox="267.142,59.205,454.300,358.138" />
+</textgroup>
+<textgroup bbox="466.276,72.707,653.416,735.682">
+<textbox id="2" bbox="466.276,279.200,653.416,735.682" />
+<textbox id="3" bbox="466.276,72.707,650.896,256.638" />
+</textgroup>
+</textgroup>
+<textbox id="4" bbox="250.806,52.867,257.966,74.467" />
+</textgroup>
+<textgroup bbox="665.409,55.250,852.228,729.925">
+<textbox id="5" bbox="665.409,318.997,852.228,729.925" />
+<textbox id="6" bbox="821.812,55.250,850.367,65.018" />
+</textgroup>
+</textgroup>
+</layout>
+</page>
