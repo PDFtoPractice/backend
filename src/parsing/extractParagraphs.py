@@ -4,6 +4,7 @@ import xml.etree.ElementTree as ET
 
 url = "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1516338822280.pdf"
 url2 = "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1510895758237.pdf"
+url3 = "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1503641114135.pdf"
 
 def extract_paragraphs(xml_string):
     root = ET.fromstring(xml_string + "</pages>")
@@ -89,7 +90,7 @@ def extract_paragraphs(xml_string):
     return paragraphs
 
 
-str = GParser.convert_pdf(url2, format='xml')
+str = GParser.convert_pdf(url3, format='xml')
 file = open('sample_outputs/orginalXML.xml', 'w', encoding="utf8")
 file.write(str)
 extract_paragraphs(str)
