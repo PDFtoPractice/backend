@@ -4,23 +4,16 @@ import json
 
 dynamodb = boto3.resource('dynamodb', region_name='eu-west-1')
 
-table = dynamodb.Table('product_links')
+table = dynamodb.Table('leaflet_links')
 
 print('Loaded table')
-data = json.load(open('1000.json'))
+data = json.load(open('all_links.json'))
 for drug in data:
-    for element in data[drug]:
-        link = element['link']
-        pdf_name = element['pdf_name']
-        product = element['product']
 
-        print("Inserting: {Drug: " + drug,
-              "link: " + link + "}")
-        table.put_item(
-            Item={
-                'drug': drug,
-                'link': link,
-                'pdf_name': pdf_name,
-                'product': product,
-             }
-         )
+    print("Inserting: {Drug: " + drug+"}")
+    table.put_item(
+        Item={
+            'drug': drug,
+            'data': data[drug],
+         }
+     )
