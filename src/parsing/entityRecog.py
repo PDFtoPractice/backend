@@ -1,9 +1,8 @@
-import GParser
-import ClearXML
+import GParser as GParser
+import ClearXML as ClearXML
 import extractParagraphs as ExtractParas
 import re
 import spacy
-nlp = spacy.load('en')
 urls = ['http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1492496435313.pdf', 'http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1510292397494.pdf', 'http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1512713289515.pdf', 'http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1517548373003.pdf', 'http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1515735504413.pdf']
 docs = [GParser.convert_pdf(url, format='xml') for url in urls]
 docs = [ExtractParas.extract_paragraphs(parsed) for parsed in docs]
@@ -21,19 +20,21 @@ def get_active_subst(paras): # pass in paras for a drug's leaflet
             act_srch = re.search(phrases[i], para)
             if act_srch != None:
                 sentence = para[act_srch.start():act_srch.end()]
-                spcy_sentence = nlp(u'' + sentence)
-                for token in spcy_sentence:
-                    print(token.text, token.lemma_, token.pos_, token.tag_, token.dep_, token.shape_, token.is_alpha, token.is_stop)
+                # spcy_sentence = nlp(u'' + sentence)
+                # for token in spcy_sentence:
+                #     print(token.text, token.lemma_, token.pos_, token.tag_, token.dep_, token.shape_, token.is_alpha, token.is_stop)
                 begin_index = re.search(match[i][0], sentence).end()
                 end_index = re.search(match[i][1], sentence).start()
+                print(sentence)
                 if(match[i][1] == ''):
                     active_subst = sentence[begin_index+1:]
                 else:
-                    active_subst = sentence[begin_index+1:end_index]
+                    active_subst = smentence[begin_index+1:end_index]
                 if active_subst[-1] == " ":
                     active_subst = active_subst[:-1]
                 phrase = active_subst
                 active_subst = ""
+                nlp = spacy.load('en') # load vocab
                 for word in phrase.split(" "):
                     if word[-1] in [',', ":", '.']:
                         word = word[:-1]
@@ -43,7 +44,7 @@ def get_active_subst(paras): # pass in paras for a drug's leaflet
                 return active_subst.strip()
 
 
-# TODO: The other ingredients are: in 4th
+# TODO: The other ingredients are: in 4th url - determine if other ingredients are also active or not (I think not)
 active_substances = [get_active_subst(doc) for doc in docs]
 print(active_substances) # ['pancuronium bromide', None, None, 'gadoteridol', None]
 

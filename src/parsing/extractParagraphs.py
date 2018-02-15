@@ -1,5 +1,5 @@
 import re
-import GParser, ClearXML
+import GParser as GParser, ClearXML as ClearXML
 import xml.etree.ElementTree as ET
 
 url = "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1516338822280.pdf"

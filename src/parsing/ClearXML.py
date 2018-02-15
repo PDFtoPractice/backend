@@ -1,5 +1,5 @@
 import re
-import GParser
+import GParser as GParser
 
 url = "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1516338822280.pdf"
 url2 = "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1510895758237.pdf"
