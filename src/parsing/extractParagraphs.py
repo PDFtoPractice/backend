@@ -2,17 +2,9 @@ import re
 import GParser, ClearXML
 import xml.etree.ElementTree as ET
 
-url1 = "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1516338822280.pdf"
-url2 = "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1510895758237.pdf"
-url3 = "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1503641114135.pdf"
-url4 = "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1512713289515.pdf" #SAFLUTAN - problematic
-url5 = "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1487918987625.pdf"
-url6 = "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1510292397494.pdf"
-url7 = "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1515735504413.pdf" #Danazol
 
 def extract_paragraphs(xml_string):
     root = ET.fromstring(xml_string + "</pages>")
-    print(root.tag)
 
     paragraphs = []
 
@@ -90,20 +82,6 @@ def extract_paragraphs(xml_string):
 
         line_font_size = line_text_size_sum/line_length if line_length > 0 else 0
 
-        if not previous_line_bold and line_bold:
-            print(current_paragraph, "\n-----\n", line_text, "\n\n\n")
-
-        # Make a pragraph division
-        if ((line_font_size > (previous_line_font_size + 2)  # Increase in font size
-            or re.match(r'^\s*$', previous_line_text)        # Previous line contained only whitespaces
-            or (not previous_line_bold and line_bold))            # Previous line wasn't bold and current is
-                and len(current_paragraph) > 60):            # Each paragraph should have at least 60 chars
-            current_paragraph = re.sub(r'</b>\s*<b>', '', current_paragraph)
-            current_paragraph = re.sub(r'^(<br>)*', '', current_paragraph)
-            paragraphs.append(current_paragraph)
-            print("--------------\n" + current_paragraph)
-            current_paragraph = ""
-
         # Delete whitespace at the beginning and end of the line
         line_text = re.sub(r'^\s*', '', line_text)
         line_text = re.sub(r'\s*$', '', line_text)
@@ -121,6 +99,19 @@ def extract_paragraphs(xml_string):
         line_text = re.sub(r'ﬁ\s?', r"fi", line_text)
         line_text = re.sub(r'ﬀ\s?', r"ff", line_text)
         line_text = re.sub(r'’', r"'", line_text)
+
+        # Make a paragraph division
+        if ((line_font_size > (previous_line_font_size + 2)   # Increase in font size
+                or re.match(r'^\s*$', previous_line_text)     # Previous line contained only whitespaces
+                or (not previous_line_bold and line_bold))    # Previous line wasn't bold and current is
+                and len(current_paragraph) > 60               # Each paragraph should have at least 60 chars
+                and not re.match(r'^-', line_text)
+                and not re.match(r':\s*(<.*>)*$', current_paragraph)):
+            current_paragraph = re.sub(r'</b>\s*<b>', '', current_paragraph)
+            current_paragraph = re.sub(r'^(<br>)*', '', current_paragraph)
+            paragraphs.append(current_paragraph)
+            # print("--------------\n" + current_paragraph)
+            current_paragraph = ""
 
         # Insert line break before the line
         if ((line_font_size < (previous_line_font_size - 2)     # Decrease in font size
@@ -146,24 +137,43 @@ def extract_paragraphs(xml_string):
 
     # Add the last paragraph
     if not re.match(r'^\s*$', current_paragraph):
-        print("--------------\n" + current_paragraph)
+        #print("--------------\n" + current_paragraph)
         current_paragraph = re.sub(r'^(<br>)*', '', current_paragraph)
         current_paragraph = re.sub(r'</b>\s*<b>', '', current_paragraph)
         paragraphs.append(current_paragraph)
-    print(paragraphs)
 
     return paragraphs
 
 
-str = GParser.convert_pdf(url7, format='xml')
-file = open('sample_outputs/orginalXML.xml', 'w', encoding="utf8")
-file.write(str)
-paragraphs = extract_paragraphs(str)
-html = ""
-for text in paragraphs:
-    html += text
-    html += "<br>---------<br>\n"
+url1 = "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1516338822280.pdf" #ReoPro - ok
+url2 = "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1510895758237.pdf" #Potters herbals - ok
+url3 = "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1503641114135.pdf" #Pravastatin Sodium - ok
+url4 = "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1512713289515.pdf" #SAFLUTAN - problematic
+url5 = "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1487918987625.pdf" #LOCOID - ok
+url6 = "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1510292397494.pdf" #HIDRASEC - ok
+url7 = "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1515735504413.pdf" #Danazol - problematic
+url8 = "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1492497354844.pdf" #spc for doctor - problematic
 
-#str = ClearXML.clear_XML_from_text_tags(str)
-file = open('sample_outputs/paragraphs.html', 'w', encoding="utf8")
-file.write(html)
+
+def test_url(url, sentence):
+    str = GParser.convert_pdf(url, format='xml')
+    file = open('sample_outputs/orginalXML.xml', 'w', encoding="utf8")
+    file.write(str)
+    paragraphs = extract_paragraphs(str)
+    html = ""
+    contains_sentence = False
+    for text in paragraphs:
+        html += text
+        html += "<br>---------<br>\n"
+        if sentence in text:
+            contains_sentence = True
+    file = open('sample_outputs/paragraphs.html', 'w', encoding="utf8")
+    file.write(html)
+    assert contains_sentence
+
+
+def test_answer():
+    test_url(url1, "Other medicines and")
+    test_url(url2, "Pregnancy and breastfeeding")
+    test_url(url3, "Pregnancy and breast-feeding")
+    test_url(url5, "Pregnancy and breast-feeding")
