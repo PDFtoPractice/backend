@@ -4,6 +4,7 @@ import xml.etree.ElementTree as ET
 
 url = "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1516338822280.pdf"
 url2 = "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1510895758237.pdf"
+url3 = "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1510292397494.pdf"
 
 def extract_paragraphs(xml_string):
     root = ET.fromstring(xml_string + "</pages>")
@@ -80,7 +81,6 @@ def extract_paragraphs(xml_string):
         previous_line_font_size = line_font_size
         line_num += 1
 
-    # print(paragraphs)
     return paragraphs
 
 
