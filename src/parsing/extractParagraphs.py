@@ -2,9 +2,13 @@ import re
 import GParser, ClearXML
 import xml.etree.ElementTree as ET
 
-url = "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1516338822280.pdf"
+url1 = "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1516338822280.pdf"
 url2 = "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1510895758237.pdf"
 url3 = "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1503641114135.pdf"
+url4 = "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1512713289515.pdf" #SAFLUTAN - problematic
+url5 = "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1487918987625.pdf"
+url6 = "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1510292397494.pdf"
+url7 = "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1515735504413.pdf" #Danazol
 
 def extract_paragraphs(xml_string):
     root = ET.fromstring(xml_string + "</pages>")
@@ -38,6 +42,10 @@ def extract_paragraphs(xml_string):
     line_num = 0
     previous_line_font_size = 0
     previous_line_text = ''
+    bold = False
+    previous_bold = False
+    line_bold = False
+    previous_line_bold = False
 
     for line in root.iter("textline"):
         line_text_size_sum = 0
@@ -48,52 +56,114 @@ def extract_paragraphs(xml_string):
         params = bbox.split(',')
         line_width = float(params[2]) - float(params[0])
 
+        previous_line_bold = line_bold
+        line_bold = True
+        bold = False
         for text in line.iter("text"):
+            # Get the character font size
             size = text.get("size")
             if size:
                 line_text_size_sum += float(size)
                 line_length += 1
-                line_text += text.text
+
+            # Get the character font name
+            font = text.get("font")
+            if font and text.text.isalpha():
+                previous_bold = bold
+                if "Bold" in font \
+                        or "bold" in font\
+                        or "Bd" in font:
+                    bold = True
+                else:
+                    bold = False
+                    if text.text.isalpha():
+                        line_bold = False
+                if not previous_bold and bold:
+                    line_text += "<b>"
+                if previous_bold and not bold:
+                    line_text += "</b>"
+
+            line_text += text.text      # Append text to the line
+
+        if bold:
+            line_text += "</b>"     # If the last character was bold add closing tag
 
         line_font_size = line_text_size_sum/line_length if line_length > 0 else 0
 
+        if not previous_line_bold and line_bold:
+            print(current_paragraph, "\n-----\n", line_text, "\n\n\n")
+
         # Make a pragraph division
-        if line_font_size > (previous_line_font_size + 2) or re.match(r'^\s*$', previous_line_text):
-            if not re.match(r'^\s*$', current_paragraph):
-                print("--------------\n" + current_paragraph)
-                paragraphs.append(current_paragraph)
+        if ((line_font_size > (previous_line_font_size + 2)  # Increase in font size
+            or re.match(r'^\s*$', previous_line_text)        # Previous line contained only whitespaces
+            or (not previous_line_bold and line_bold))            # Previous line wasn't bold and current is
+                and len(current_paragraph) > 60):            # Each paragraph should have at least 60 chars
+            current_paragraph = re.sub(r'</b>\s*<b>', '', current_paragraph)
+            current_paragraph = re.sub(r'^(<br>)*', '', current_paragraph)
+            paragraphs.append(current_paragraph)
+            print("--------------\n" + current_paragraph)
             current_paragraph = ""
 
-        # Delete whitespace at the beginning of the line
+        # Delete whitespace at the beginning and end of the line
         line_text = re.sub(r'^\s*', '', line_text)
+        line_text = re.sub(r'\s*$', '', line_text)
 
-        if (line_font_size < (previous_line_font_size - 2)
-                or re.match(r'^\s*•', line_text)
-                or re.match(r'^\s*\d\.', line_text))\
-                and not current_paragraph.endswith('\n'):
-            line_text = "\n" + line_text
+        # Unify all the bullet point characters
+        line_text = re.sub(r'^\(cid:127\)', '-', line_text)
+        line_text = re.sub(r'^•', '-', line_text)
+        line_text = re.sub(r'^–', '-', line_text)
+        line_text = re.sub(r'^', '-', line_text)
+        line_text = re.sub(r'^', '-', line_text)
+        line_text = re.sub(r'^', '-', line_text)
 
-        if line_width < (average_line_width - 20) or re.match(r'^.*:\s*$', line_text):
-            line_text += "\n"
+        # Fix weird character coding
+        line_text = re.sub(r'ﬂ\s?', r"fl", line_text)
+        line_text = re.sub(r'ﬁ\s?', r"fi", line_text)
+        line_text = re.sub(r'ﬀ\s?', r"ff", line_text)
+        line_text = re.sub(r'’', r"'", line_text)
 
-        if not current_paragraph.endswith(' ') and not current_paragraph.endswith('\n') and not current_paragraph == '':
+        # Insert line break before the line
+        if ((line_font_size < (previous_line_font_size - 2)     # Decrease in font size
+                or re.match(r'^-', line_text)                   # Line starts with bullet / dash
+                or re.match(r'^\d\.', line_text)                # Line starts with digit e.g. 2.
+                or previous_line_bold and not line_bold)        # Previous line was bold
+                and not current_paragraph.endswith('<br>')):    # There is no line break already
+            line_text = "<br>" + line_text
+
+        # Insert line break after the line
+        if (line_width < (average_line_width - 20)          # Line explicitly made shorter
+                or re.match(r'^.*:\s*$', line_text)):       # Line ends with colon
+            line_text += "<br>"
+
+
+        # Add line to the current paragraph
+        if not current_paragraph.endswith(' ') and not current_paragraph.endswith('<br>') and not current_paragraph == '':
             current_paragraph += " "
         current_paragraph += line_text
         previous_line_text = line_text
         previous_line_font_size = line_font_size
         line_num += 1
 
+    # Add the last paragraph
     if not re.match(r'^\s*$', current_paragraph):
         print("--------------\n" + current_paragraph)
+        current_paragraph = re.sub(r'^(<br>)*', '', current_paragraph)
+        current_paragraph = re.sub(r'</b>\s*<b>', '', current_paragraph)
         paragraphs.append(current_paragraph)
     print(paragraphs)
+
     return paragraphs
 
 
-str = GParser.convert_pdf(url3, format='xml')
+str = GParser.convert_pdf(url7, format='xml')
 file = open('sample_outputs/orginalXML.xml', 'w', encoding="utf8")
 file.write(str)
-extract_paragraphs(str)
-str = ClearXML.clear_XML_from_text_tags(str)
-file = open('sample_outputs/clearedXML.xml', 'w', encoding="utf8")
-file.write(str)
+paragraphs = extract_paragraphs(str)
+html = ""
+for text in paragraphs:
+    html += text
+    html += "<br>---------<br>\n"
+
+#str = ClearXML.clear_XML_from_text_tags(str)
+file = open('sample_outputs/paragraphs.html', 'w', encoding="utf8")
+file.write(html)
