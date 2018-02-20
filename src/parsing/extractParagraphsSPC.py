@@ -8,15 +8,13 @@ def extract_paragraphs(xml_string):
 
     paragraphs = []
 
-    # Compute average text size
-    size_num = 0
-    text_num = 0
-    for text in root.iter("text"):
-        size = text.get("size")
-        if (size):
-            size_num += float(text.get("size"))
-            text_num += 1
-    average_text_size = size_num/text_num
+    # Delete numbering which gets out of order
+    for text_box in root.iter("textbox"):
+        for line in text_box.findall("textline"):
+            bbox = line.get('bbox')
+            params = bbox.split(',')
+            if float(params[2]) < 110:
+                text_box.remove(line)
 
     # Compute average line width based on bboxes
     width_sum = 0
@@ -27,6 +25,11 @@ def extract_paragraphs(xml_string):
         width = float(params[2]) - float(params[0])
         line_num += 1
         width_sum += width
+
+    # Case of empty file (no embedded text in leaflet)
+    if line_num == 0:
+        return []
+
     average_line_width = width_sum / line_num
 
     current_paragraph = ""
@@ -145,14 +148,7 @@ def extract_paragraphs(xml_string):
     return paragraphs
 
 
-url1 = "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1516338822280.pdf" #ReoPro - ok
-url2 = "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1510895758237.pdf" #Potters herbals - ok
-url3 = "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1503641114135.pdf" #Pravastatin Sodium - ok
-url4 = "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1512713289515.pdf" #SAFLUTAN - problematic
-url5 = "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1487918987625.pdf" #LOCOID - ok
-url6 = "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1510292397494.pdf" #HIDRASEC - ok
-url7 = "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1515735504413.pdf" #Danazol - problematic
-url8 = "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1492497354844.pdf" #spc for doctor - problematic
+url1 = "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1492497354844.pdf" #spc for doctor - problematic
 
 
 def test_url(url, sentence):
@@ -173,11 +169,7 @@ def test_url(url, sentence):
 
 
 def test_answer():
-    test_url(url1, "Other medicines and")
-    test_url(url2, "Pregnancy and breastfeeding")
-    test_url(url3, "Pregnancy and breast-feeding")
-    test_url(url5, "Pregnancy and breast-feeding")
-    test_url(url5, "Pregnancy and breast-feeding")
-    test_url(url8, "")
+    test_url(url1, "Interaction with other medicinal products and other forms of interaction")
+
 
 test_answer()
