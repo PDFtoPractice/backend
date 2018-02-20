@@ -177,3 +177,7 @@ def test_answer():
     test_url(url2, "Pregnancy and breastfeeding")
     test_url(url3, "Pregnancy and breast-feeding")
     test_url(url5, "Pregnancy and breast-feeding")
+    test_url(url5, "Pregnancy and breast-feeding")
+    test_url(url8, "")
+
+test_answer()
