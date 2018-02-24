@@ -1,6 +1,7 @@
-import GParser as GParser
+# import GParser as GParser
 import ClearXML as ClearXML
 import extractParagraphs as ExtractParas
+import GParser
 import re
 import spacy
 urls = ['http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1492496435313.pdf', 'http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1510292397494.pdf', 'http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1512713289515.pdf', 'http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1517548373003.pdf', 'http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1515735504413.pdf']
@@ -19,10 +20,11 @@ def get_active_subst(text): # pass in text from drug's leaflet
         act_srch = re.search(phrases[i], text)
         actv_substances = []
         if act_srch != None:
+            last_one = False
             sentence = text[act_srch.start():act_srch.end()]
             begin_index = re.search(match[i][0], sentence).end()
             end_index = re.search(match[i][1], sentence).start()
-            if(match[i][1] == ''):
+            if match[i][1] == '':
                 phrase_match = sentence[begin_index+1:]
             else:
                 phrase_match = sentence[begin_index+1:end_index]
@@ -32,9 +34,11 @@ def get_active_subst(text): # pass in text from drug's leaflet
             nlp = spacy.load('en') # load vocab
             words = phrase_match.split(" ")
             curr_actv_subst = ""
-            for i in range(len(words)):
+            for j in range(len(words)):
                 is_end = False
-                word = words[i]
+                word = words[j]
+                if word == 'and':
+                    last_one = True
                 if word[-1] in [',', ":", '.']:
                     word = word[:-1]
                     is_end = True
@@ -47,18 +51,35 @@ def get_active_subst(text): # pass in text from drug's leaflet
                     curr_actv_subst = curr_actv_subst.strip()
                     actv_substances.append(curr_actv_subst)
                     curr_actv_subst = ""
+                    if match[i][2] == only_one:
+                        # print("match: " , match[i])
+                        return actv_substances
+                if (last_one and is_end) or (last_one and word not in nlp.vocab):
+                    return actv_substances
+
             return actv_substances
     return "no match"
 
 testtxt = "The active substances are rsodametal, georsf, and turoportin."
-testtxt2 = "The active substance is rsodametal and it is known for." # what if it has 'and it is known for having side effects of <some stuff not in dictionary>. Say if count >= n of vocab words then assume end?
+testtxt2 = "The active substance is rsodametal and it is known for causing sdfsdf." # what if it has 'and it is known for having side effects of <some stuff not in dictionary>. Say if count >= n of vocab words then assume end?
+testtxt3 = "The active substances are rsodametal, georsf, and turoportin, and they are known for causing sdfss."
+testtxt4 = "The active substances are rsodametal gaterol, georsf, and turoportin."
+testtxt5 = "The active substance is rsodametal gaterol."
+testtxt6 = "The active substances is rsodametal gaterol and it can cause extreme inflammation."
+testtxt6 = "The active substance is rsodametal gaterol and it can cause extreme sdfsdfs."
 
+print(testtxt)
 print(get_active_subst(testtxt))
+print(testtxt2)
 print(get_active_subst(testtxt2))
-
-
-
-
+print(testtxt3)
+print(get_active_subst(testtxt3))
+print(testtxt4)
+print(get_active_subst(testtxt4))
+print(testtxt5)
+print(get_active_subst(testtxt5))
+print(testtxt6)
+print(get_active_subst(testtxt6))
 
 
 def get_aliases():
