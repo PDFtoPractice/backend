@@ -5,43 +5,64 @@ import re
 import spacy
 urls = ['http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1492496435313.pdf', 'http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1510292397494.pdf', 'http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1512713289515.pdf', 'http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1517548373003.pdf', 'http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1515735504413.pdf']
 docs = [GParser.convert_pdf(url, format='text') for url in urls]
-paras = [ExtractParas.extract_paragraphs(parsed) for parsed in docs]
+# xmldocs = [GParser.convert_pdf(url, format='xml') for url in urls]
+# paras = [ExtractParas.extract_paragraphs(parsed) for parsed in xmldocs]
 
 # extract headings paras
 headings = ['1. What (\s)+ is and what is is used for', '2. What you need to know before you are given ProHance', '3. How you are given (\s)+', '4. Possible side effects', '5. How to store [\s]+', '6. Further Information']
 
-# rest need to fill
-def get_active_subst(text): # pass in paras for a drug's leaflet
-        phrases = ['active substance is[\w\s]+.', 'active substances are[\w\s]+.', 'contains[\w\s]+ as the active ingredient', 'contains[\w]+ as the active ingredients', 'active ingredient is[\w\s]+.']
-        match = [('active substance is', ''), ('active substances are', ''), ('contains', 'as the active ingredient'), ('contains', 'as the active ingredients'), ('active ingredient is', '')]
-        for i in range(len(phrases)):
-            act_srch = re.search(phrases[i], text)
-            # print(act_srch)
-            if act_srch != None:
-                print(act_srch)
-                sentence = text[act_srch.start():act_srch.end()]
-                begin_index = re.search(match[i][0], sentence).end()
-                end_index = re.search(match[i][1], sentence).start()
-                if(match[i][1] == ''):
-                    active_subst = sentence[begin_index+1:]
-                else:
-                    active_subst = sentence[begin_index+1:end_index]
-                active_subst = active_subst.replace("\n", "") # get rid of any new line symbols
-                if active_subst[-1] == " ":
-                    active_subst = active_subst[:-1]
-                phrase = active_subst
-                active_subst = ""
-                nlp = spacy.load('en') # load vocab
-                for word in phrase.split(" "):
-                    if word[-1] in [',', ":", '.']:
-                        word = word[:-1]
-                    nlp_word = nlp.vocab.strings[word]
-                    if word not in nlp.vocab: # ugly hack - probably a better rule we can use
-                        active_subst += word + " "
-                return active_subst.strip()
-        return "no match"
+def get_active_subst(text): # pass in text from drug's leaflet
+    only_one = True    # whether there are more than one active substance to extract
+    phrases = ['active substance is[\w\s]+.', 'active substances are([\w\s][,]*)+.', 'contains[\w\s]+ as the active ingredient', 'contains[\w]+ as the active ingredients', 'active ingredient is[\w\s]+.']
+    match = [('active substance is', '', only_one), ('active substances are', '', not only_one), ('contains', 'as the active ingredient', only_one), ('contains', 'as the active ingredients', not only_one), ('active ingredient is', '', only_one)]
+    for i in range(len(phrases)):
+        act_srch = re.search(phrases[i], text)
+        actv_substances = []
+        if act_srch != None:
+            sentence = text[act_srch.start():act_srch.end()]
+            begin_index = re.search(match[i][0], sentence).end()
+            end_index = re.search(match[i][1], sentence).start()
+            if(match[i][1] == ''):
+                phrase_match = sentence[begin_index+1:]
+            else:
+                phrase_match = sentence[begin_index+1:end_index]
+            phrase_match = phrase_match.replace("\n", "") # get rid of any new line symbols
+            if phrase_match[-1] == " ":
+                phrase_match = phrase_match[:-1]
+            nlp = spacy.load('en') # load vocab
+            words = phrase_match.split(" ")
+            curr_actv_subst = ""
+            for i in range(len(words)):
+                is_end = False
+                word = words[i]
+                if word[-1] in [',', ":", '.']:
+                    word = word[:-1]
+                    is_end = True
+                if word not in nlp.vocab:
+                    curr_actv_subst += word + " "
+                else: # e.g. "active substance is rsodametal and this ...." consider end of referral to active subst
+                    if curr_actv_subst != "":
+                        is_end = True
+                if is_end and curr_actv_subst != "":
+                    curr_actv_subst = curr_actv_subst.strip()
+                    actv_substances.append(curr_actv_subst)
+                    curr_actv_subst = ""
+            return actv_substances
+    return "no match"
+
+testtxt = "The active substances are rsodametal, georsf, and turoportin."
+testtxt2 = "The active substance is rsodametal and it is known for." # what if it has 'and it is known for having side effects of <some stuff not in dictionary>. Say if count >= n of vocab words then assume end?
+
+print(get_active_subst(testtxt))
+print(get_active_subst(testtxt2))
 
 
+
+
+
+
+def get_aliases():
+    return "no match"
 # active_substances = [get_active_subst(doc) for doc in docs]
 # print(active_substances) # ['pancuronium bromide', None, None, 'gadoteridol', None]
 
