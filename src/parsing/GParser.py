@@ -65,5 +65,5 @@ def write_to_file(str):
     file = open('sample_outputs/testfile.txt', 'w', encoding="utf8")
     file.write(str)
 
-str = convert_pdf_to_txt(url)
-write_to_file(str)
+# str = convert_pdf_to_txt(url)
+# write_to_file(str)

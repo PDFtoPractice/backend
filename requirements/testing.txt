@@ -9,3 +9,4 @@ pytest==3.0.5              #  Python testing library
 pytest-sugar==0.8.0        # For better pytest output
 tox==2.3.2                 # Standardises testing in Python
 pytest-pythonpath==0.7.1   # explicitly setting the project on the python path
+nose
