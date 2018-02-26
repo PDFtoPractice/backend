@@ -1,0 +1,2626 @@
+{
+   "SYMBA SKIN TONER 2//": [
+      {
+         "product": "HYDROQUINONE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1497592331112.pdf",
+         "pdf_name": "spc-doc_PL 04791-0001"
+      }
+   ],
+   "HYRDOCORTISONE CREAM 1//": [
+      {
+         "product": "HYDROCORTISONE MICRONISED",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1507267046346.pdf",
+         "pdf_name": "leaflet BOOTS_PL 04917-0019"
+      },
+      {
+         "product": "HYDROCORTISONE MICRONISED",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1507267046078.pdf",
+         "pdf_name": "leaflet MAH BRAND_PL 04917-0019"
+      },
+      {
+         "product": "HYDROCORTISONE MICRONISED",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1507267045765.pdf",
+         "pdf_name": "leaflet MAH GENERIC 2_PL 04917-0019"
+      },
+      {
+         "product": "HYDROCORTISONE MICRONISED",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1507267048771.pdf",
+         "pdf_name": "leaflet MAH GENERIC_PL 04917-0019"
+      },
+      {
+         "product": "HYDROCORTISONE MICRONISED",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1507267049131.pdf",
+         "pdf_name": "spc-doc_PL 04917-0019"
+      }
+   ],
+   "NYSTATIN ORAL SUSPENSION BP 100 000 UNITS/ML": [
+      {
+         "product": "NYSTATIN",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1514526019291.pdf",
+         "pdf_name": "leaflet MAH GENERIC_PL 00289-1869"
+      },
+      {
+         "product": "NYSTATIN",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1514526018988.pdf",
+         "pdf_name": "spc-doc_PL 00289-1869"
+      }
+   ],
+   "SKINCALM BITE AND STING RELIEF 1// CREAM HYDROCORTISONE": [
+      {
+         "product": "HYDROCORTISONE MICRONISED",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1513919840105.pdf",
+         "pdf_name": "leaflet MAH BRAND_PL 13606-0181"
+      },
+      {
+         "product": "HYDROCORTISONE MICRONISED",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1513919840344.pdf",
+         "pdf_name": "leaflet MAH GENERIC_PL 13606-0181"
+      },
+      {
+         "product": "HYDROCORTISONE MICRONISED",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1513919839921.pdf",
+         "pdf_name": "spc-doc_PL 13606-0181"
+      }
+   ],
+   "ALPHANINE 1000 I.U. POWDER AND SOLVENT FOR SOLUTION FOR INJECTION": [
+      {
+         "product": "HUMAN COAGULATION FACTOR IX",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1500011172141.pdf",
+         "pdf_name": "leaflet MAH BRAND_PL 12930-0013"
+      },
+      {
+         "product": "HUMAN COAGULATION FACTOR IX",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1500011171753.pdf",
+         "pdf_name": "spc-doc_PL 12930-0013"
+      }
+   ],
+   "OXIS TURBOHALER 6": [
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1507872867401.pdf",
+         "pdf_name": "leaflet MAH BRAND_PL 17901-0154"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1502435092663.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 13826-1670"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1495777112671.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 15184-1694"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1475816259996.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 15361-0232"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1516943017073.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 15814-1329"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1506660817361.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 16369-1109"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1502434868912.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 16378-0646"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1513315010395.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 17805-0132"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1475212014262.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 19065-0328"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1486100903757.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 19488-0047"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1486100877980.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 19488-1028"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1512105852603.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 19488-1355"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1489731820157.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 20636-0921"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1489731790197.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 20636-1540"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1490330230962.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 20636-1806"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1502435146417.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 20774-0992"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1515735503853.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 33532-0096"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1484893114659.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 33902-0404"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1483686242009.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 39352-0091"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1502434869137.pdf",
+         "pdf_name": "leaflet MAH GENERIC_PLPI 16378-0646"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1507872867233.pdf",
+         "pdf_name": "spc-doc_PL 17901-0154"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1513315010544.pdf",
+         "pdf_name": "spc-doc_PLPI 17805-0132"
+      }
+   ],
+   "HYDROCORTISONE 1.0// W/W OINTMENT (15G PACK)": [
+      {
+         "product": "HYDROCORTISONE MICRONISED",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1496988887969.pdf",
+         "pdf_name": "leaflet MAH GENERIC_PL 16431-0027"
+      },
+      {
+         "product": "HYDROCORTISONE MICRONISED",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1496988887780.pdf",
+         "pdf_name": "spc-doc_PL 16431-0027"
+      }
+   ],
+   "NYSTABS TABLETS 500 000 UNITS": [
+      {
+         "product": "NYSTATIN",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1474003743367.pdf",
+         "pdf_name": "leaflet MAH BRAND_PL 33414-0072"
+      },
+      {
+         "product": "NYSTATIN",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1474003743182.pdf",
+         "pdf_name": "leaflet MAH GENERIC_PL 33414-0072"
+      },
+      {
+         "product": "NYSTATIN",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1474003743484.pdf",
+         "pdf_name": "spc-doc_PL 33414-0072"
+      }
+   ],
+   "TIMODINE CREAM": [
+      {
+         "product": "NYSTATIN",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1502429353860.pdf",
+         "pdf_name": "leaflet MAH BRAND_PL 16853-0103"
+      },
+      {
+         "product": "NYSTATIN",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1502429354190.pdf",
+         "pdf_name": "spc-doc_PL 16853-0103"
+      }
+   ],
+   "HAEMONINE 1000 POWDER AND SOLVENT FOR SOLUTION FOR INJECTION": [
+      {
+         "product": "HUMAN COAGULATION FACTOR IX",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1516338761508.pdf",
+         "pdf_name": "leaflet MAH BRAND_PL 04500-0008"
+      },
+      {
+         "product": "HUMAN COAGULATION FACTOR IX",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1516338761769.pdf",
+         "pdf_name": "spc-doc_PL 04500-0008"
+      }
+   ],
+   "WELEDA DIGESTION CALMING DROPS": [
+      {
+         "product": "NUTMEG DISTILLATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1478239080315.pdf",
+         "pdf_name": "leaflet MAH BRAND_THR 00298-0289"
+      },
+      {
+         "product": "NUTMEG DISTILLATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1478239080589.pdf",
+         "pdf_name": "spc-doc_THR 00298-0289"
+      }
+   ],
+   "HAEMOCTIN 1000 POWDER AND SOLVENT FOR SOLUTION FOR INJECTION": [
+      {
+         "product": "HUMAN COAGULATION FACTOR VIII",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1516943829934.pdf",
+         "pdf_name": "leaflet MAH BRAND_PL 04500-0010"
+      },
+      {
+         "product": "HUMAN COAGULATION FACTOR VIII",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1516943829522.pdf",
+         "pdf_name": "spc-doc_PL 04500-0010"
+      }
+   ],
+   "NYSTATIN 100 000 UNITS/ML ORAL SUSPENSION": [
+      {
+         "product": "NYSTATIN",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1516338442677.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 10383-2004"
+      },
+      {
+         "product": "NYSTATIN",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1515735495961.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 21828-0415"
+      },
+      {
+         "product": "NYSTATIN",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1515735501435.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 21828-0451"
+      }
+   ],
+   "HYDROGEN PEROXIDE SOLUTION 6// (20 VOL) B.P.": [
+      {
+         "product": "HYDROGEN PEROXIDE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1501826019298.pdf",
+         "pdf_name": "leaflet MAH GENERIC_PL 20416-0571"
+      },
+      {
+         "product": "HYDROGEN PEROXIDE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1500011988804.pdf",
+         "pdf_name": "leaflet MAH GENERIC_PL 41318-0037"
+      },
+      {
+         "product": "HYDROGEN PEROXIDE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1501826019537.pdf",
+         "pdf_name": "spc-doc_PL 20416-0571"
+      },
+      {
+         "product": "HYDROGEN PEROXIDE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1500011988479.pdf",
+         "pdf_name": "spc-doc_PL 41318-0037"
+      }
+   ],
+   "SKINCALM BITE AND STING RELIEF 1// OINTMENT HYDROCORTISONE": [
+      {
+         "product": "HYDROCORTISONE MICRONISED",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1516943950874.pdf",
+         "pdf_name": "leaflet MAH BRAND_PL 13606-0185"
+      },
+      {
+         "product": "HYDROCORTISONE MICRONISED",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1516943951194.pdf",
+         "pdf_name": "leaflet MAH GENERIC_PL 13606-0185"
+      },
+      {
+         "product": "HYDROCORTISONE MICRONISED",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1516943950646.pdf",
+         "pdf_name": "spc-doc_PL 13606-0185"
+      }
+   ],
+   "HYDROCORTISONE 1// W/W CREAM": [
+      {
+         "product": "HYDROCORTISONE MICRONISED",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1507267046346.pdf",
+         "pdf_name": "leaflet BOOTS_PL 04917-0019"
+      },
+      {
+         "product": "HYDROCORTISONE MICRONISED",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1459314319883.pdf",
+         "pdf_name": "leaflet MAH BRAND 2_PL 04917-0062"
+      },
+      {
+         "product": "HYDROCORTISONE MICRONISED",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1507267046078.pdf",
+         "pdf_name": "leaflet MAH BRAND_PL 04917-0019"
+      },
+      {
+         "product": "HYDROCORTISONE MICRONISED",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1459314320003.pdf",
+         "pdf_name": "leaflet MAH BRAND_PL 04917-0062"
+      },
+      {
+         "product": "HYDROCORTISONE MICRONISED",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1507267045765.pdf",
+         "pdf_name": "leaflet MAH GENERIC 2_PL 04917-0019"
+      },
+      {
+         "product": "HYDROCORTISONE MICRONISED",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1507267048771.pdf",
+         "pdf_name": "leaflet MAH GENERIC_PL 04917-0019"
+      },
+      {
+         "product": "HYDROCORTISONE MICRONISED",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1459314319597.pdf",
+         "pdf_name": "leaflet MORRISON_PL 04917-0062"
+      },
+      {
+         "product": "HYDROCORTISONE MICRONISED",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1459314319401.pdf",
+         "pdf_name": "leaflet NUMARK_PL 04917-0062"
+      },
+      {
+         "product": "HYDROCORTISONE MICRONISED",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1459314319737.pdf",
+         "pdf_name": "leaflet SAINSBURYS_PL 04917-0062"
+      },
+      {
+         "product": "HYDROCORTISONE MICRONISED",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1507267049131.pdf",
+         "pdf_name": "spc-doc_PL 04917-0019"
+      },
+      {
+         "product": "HYDROCORTISONE MICRONISED",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1459314319222.pdf",
+         "pdf_name": "spc-doc_PL 04917-0062"
+      }
+   ],
+   "NYSTATIN 100 000 UNITS/ML ORAL SUSPENSION (READY-MIXED)": [
+      {
+         "product": "NYSTATIN",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1516338442677.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 10383-2004"
+      }
+   ],
+   "D-GAM HUMAN ANTI-D IMMUNOGLOBULIN 250 IU SOLUTION FOR INJECTION": [
+      {
+         "product": "HUMAN ANTI-D IMMUNOGLOBULIN",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1497592210587.pdf",
+         "pdf_name": "leaflet MAH BRAND_PL 08801-0047"
+      },
+      {
+         "product": "HUMAN ANTI-D IMMUNOGLOBULIN",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1497592210765.pdf",
+         "pdf_name": "spc-doc_PL 08801-0047"
+      }
+   ],
+   "OCTANATE LV 200 IU/ML POWDER AND SOLVENT FOR SOLUTION FOR INJECTION": [
+      {
+         "product": "HUMAN COAGULATION FACTOR VIII",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1509685073472.pdf",
+         "pdf_name": "leaflet MAH BRAND_PL 10673-0040"
+      },
+      {
+         "product": "HUMAN COAGULATION FACTOR VIII",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1509685073725.pdf",
+         "pdf_name": "spc-doc_PL 10673-0040"
+      }
+   ],
+   "OCTAPLEX 1000 IU POWDER AND SOLVENT FOR SOLUTION FOR INJECTION": [
+      {
+         "product": "HUMAN COAGULATION FACTOR II",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1516339307438.pdf",
+         "pdf_name": "leaflet MAH BRAND_PL 10673-0041"
+      },
+      {
+         "product": "HUMAN COAGULATION FACTOR II",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1516339307666.pdf",
+         "pdf_name": "spc-doc_PL 10673-0041"
+      },
+      {
+         "product": "HUMAN COAGULATION FACTOR VII",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1516339307438.pdf",
+         "pdf_name": "leaflet MAH BRAND_PL 10673-0041"
+      },
+      {
+         "product": "HUMAN COAGULATION FACTOR VII",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1516339307666.pdf",
+         "pdf_name": "spc-doc_PL 10673-0041"
+      },
+      {
+         "product": "HUMAN COAGULATION FACTOR IX",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1516339307438.pdf",
+         "pdf_name": "leaflet MAH BRAND_PL 10673-0041"
+      },
+      {
+         "product": "HUMAN COAGULATION FACTOR IX",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1516339307666.pdf",
+         "pdf_name": "spc-doc_PL 10673-0041"
+      }
+   ],
+   "HYDROCORTISONE 20 MG TABLETS": [
+      {
+         "product": "HYDROCORTISONE MICRONISED",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1511500141640.pdf",
+         "pdf_name": "leaflet FLYNN PHARMA_PL 42765-0004"
+      },
+      {
+         "product": "HYDROCORTISONE MICRONISED",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1499406107633.pdf",
+         "pdf_name": "leaflet MAH GENERIC_PL 00289-2036"
+      },
+      {
+         "product": "HYDROCORTISONE MICRONISED",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1503034221062.pdf",
+         "pdf_name": "leaflet MAH GENERIC_PL 06464-0701"
+      },
+      {
+         "product": "HYDROCORTISONE MICRONISED",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1513920112419.pdf",
+         "pdf_name": "leaflet MAH GENERIC_PL 10321-0205"
+      },
+      {
+         "product": "HYDROCORTISONE MICRONISED",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1516944633704.pdf",
+         "pdf_name": "leaflet MAH GENERIC_PL 28444-0156"
+      },
+      {
+         "product": "HYDROCORTISONE MICRONISED",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1511500142096.pdf",
+         "pdf_name": "leaflet MAH GENERIC_PL 42765-0004"
+      },
+      {
+         "product": "HYDROCORTISONE MICRONISED",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1499406107832.pdf",
+         "pdf_name": "spc-doc_PL 00289-2036"
+      },
+      {
+         "product": "HYDROCORTISONE MICRONISED",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1503034220823.pdf",
+         "pdf_name": "spc-doc_PL 06464-0701"
+      },
+      {
+         "product": "HYDROCORTISONE MICRONISED",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1513920112266.pdf",
+         "pdf_name": "spc-doc_PL 10321-0205"
+      },
+      {
+         "product": "HYDROCORTISONE MICRONISED",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1516944633881.pdf",
+         "pdf_name": "spc-doc_PL 28444-0156"
+      },
+      {
+         "product": "HYDROCORTISONE MICRONISED",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1511500142266.pdf",
+         "pdf_name": "spc-doc_PL 42765-0004"
+      }
+   ],
+   "WILKO EAR WAX REMOVAL DROPS": [
+      {
+         "product": "NUTMEG OIL",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1495172805155.pdf",
+         "pdf_name": "leaflet MAH BRAND 2_PL 03105-0074"
+      },
+      {
+         "product": "NUTMEG OIL",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1495172802746.pdf",
+         "pdf_name": "leaflet MAH BRAND_PL 03105-0074"
+      },
+      {
+         "product": "NUTMEG OIL",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1495172804856.pdf",
+         "pdf_name": "leaflet SUPERDRUG_PL 03105-0074"
+      },
+      {
+         "product": "NUTMEG OIL",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1495172804645.pdf",
+         "pdf_name": "leaflet WILKINSON_PL 03105-0074"
+      },
+      {
+         "product": "NUTMEG OIL",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1495172805366.pdf",
+         "pdf_name": "spc-doc_PL 03105-0074"
+      }
+   ],
+   "EFAVIRENZ/EMTRICITABINE/TENOFOVIR DISOPROXIL TEVA 600 MG/ 200 MG/ 245 MG FILM-COATED TABLETS": [
+      {
+         "product": "EFAVIRENZ",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1514526196213.pdf",
+         "pdf_name": "leaflet MAH GENERIC_PL 00289-2068"
+      },
+      {
+         "product": "EFAVIRENZ",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1514526196536.pdf",
+         "pdf_name": "spc-doc_PL 00289-2068"
+      }
+   ],
+   "TIMODINE INTERTRIGO RELIEF": [
+      {
+         "product": "NYSTATIN",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1503033748125.pdf",
+         "pdf_name": "leaflet MAH BRAND_PL 16853-0104"
+      },
+      {
+         "product": "NYSTATIN",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1503033748316.pdf",
+         "pdf_name": "spc-doc_PL 16853-0104"
+      }
+   ],
+   "HYDROCORTISONE CREAM BP 0.5//": [
+      {
+         "product": "HYDROCORTISONE MICRONISED",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1504847957515.pdf",
+         "pdf_name": "leaflet MAH GENERIC_PL 00142-0128"
+      },
+      {
+         "product": "HYDROCORTISONE MICRONISED",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1504847957141.pdf",
+         "pdf_name": "spc-doc_PL 00142-0128"
+      }
+   ],
+   "SYMBICORT 200/6 TURBOHALER": [
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1508478906012.pdf",
+         "pdf_name": "label-leaflet MAH BRAND_PLPI 20636-2430"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1513314712306.pdf",
+         "pdf_name": "leaflet MAH BRAND_PL 17901-0092"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1489731762099.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 04423-0400"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1506055792537.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 10380-1445"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1511499942313.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 10380-1576"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1506056210068.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 10380-1593"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1506056282602.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 10380-1608"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1506056273633.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 10380-1610"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1494569720844.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 10383-1548"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1499405316310.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 10383-1555"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1499405309743.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 10383-1586"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1488521345873.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 13826-0771"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1494569860541.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 13826-1018"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1494569861131.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 13826-1196"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1501825198218.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 15361-0592"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1501825235428.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 15361-0593"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1501220686953.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 15814-0508"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1486709246742.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 15814-0668"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1486709192404.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 15814-0669"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1513314987362.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 15814-0757"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1513315214939.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 15814-1233"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1495777365585.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 18799-2531"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1517548669000.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 18799-2532"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1511499949661.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 18799-2557"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1500618594034.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 18799-2636"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1495777374455.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 18799-2639"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1495777384885.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 18799-2795"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1495777412047.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 18799-2885"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1507873152474.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 19065-0302"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1507873153907.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 19065-0307"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1490330644651.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 19065-0495"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1510292324847.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 19065-0553"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1513919900905.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 19488-0453"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1513920118449.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 19488-0454"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1513919901505.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 19488-0455"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1499404675422.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 19488-0681"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1499405554390.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 19488-0812"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1499404555482.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 19488-0986"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1504759932321.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 19488-1297"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1507876904741.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 20636-0826"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1508479633519.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 20636-1418"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1508479634699.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 20636-1419"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1508479634143.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 20636-1805"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1508478654914.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 20636-2388"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1508478906539.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 20636-2430"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1501221158953.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 20636-2772"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1501221187512.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 20636-2799"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1501221187056.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 20636-2885"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1486100904709.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 21828-0058"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1486709279792.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 21828-0234"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1486100884052.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 21828-0426"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1486101372818.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 21828-0697"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1508479635230.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 30900-2130"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1510292443940.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 33532-0222"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1487919140403.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 33652-0050"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1489125262624.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 44184-0001"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1489125255765.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 44184-0003"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1513314712096.pdf",
+         "pdf_name": "spc-doc_PL 17901-0092"
+      }
+   ],
+   "OCTANATE LV 100 IU/ML POWDER AND SOLVENT FOR SOLUTION FOR INJECTION": [
+      {
+         "product": "HUMAN COAGULATION FACTOR VIII",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1509685067946.pdf",
+         "pdf_name": "leaflet MAH BRAND_PL 10673-0039"
+      },
+      {
+         "product": "HUMAN COAGULATION FACTOR VIII",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1509685067477.pdf",
+         "pdf_name": "spc-doc_PL 10673-0039"
+      }
+   ],
+   "D-GAM HUMAN ANTI-D IMMUNOGLOBULIN 1 500 IU AND 2 500 IU SOLUTION FOR INJECTION": [
+      {
+         "product": "HUMAN ANTI-D IMMUNOGLOBULIN",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1518153221334.pdf",
+         "pdf_name": "leaflet MAH BRAND_PL 08801-0049"
+      },
+      {
+         "product": "HUMAN ANTI-D IMMUNOGLOBULIN",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1518153221157.pdf",
+         "pdf_name": "spc-doc_PL 08801-0049"
+      }
+   ],
+   "NYSTAFORM CREAM": [
+      {
+         "product": "NYSTATIN",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1513920101333.pdf",
+         "pdf_name": "leaflet MAH BRAND_PL 00551-0018"
+      },
+      {
+         "product": "NYSTATIN",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1513920101614.pdf",
+         "pdf_name": "leaflet MAH GENERIC_PL 00551-0018"
+      },
+      {
+         "product": "NYSTATIN",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1513920101119.pdf",
+         "pdf_name": "spc-doc_PL 00551-0018"
+      }
+   ],
+   "HYDROCORTISONE 1.0// W/W OINTMENT": [
+      {
+         "product": "HYDROCORTISONE MICRONISED",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1496988887969.pdf",
+         "pdf_name": "leaflet MAH GENERIC_PL 16431-0027"
+      },
+      {
+         "product": "HYDROCORTISONE MICRONISED",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1496988888308.pdf",
+         "pdf_name": "leaflet MAH GENERIC_PL 16431-0029"
+      },
+      {
+         "product": "HYDROCORTISONE MICRONISED",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1496988887780.pdf",
+         "pdf_name": "spc-doc_PL 16431-0027"
+      },
+      {
+         "product": "HYDROCORTISONE MICRONISED",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1496988888123.pdf",
+         "pdf_name": "spc-doc_PL 16431-0029"
+      }
+   ],
+   "NYSTATIN/CHLORHEXIDINE HYDROCHLORIDE/HYDROCORTISONE 100 000 IU/G/1// /0.5// CREAM": [
+      {
+         "product": "NYSTATIN",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1500011566517.pdf",
+         "pdf_name": "leaflet MAH BRAND_PL 00551-0019"
+      },
+      {
+         "product": "NYSTATIN",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1500011565842.pdf",
+         "pdf_name": "leaflet MAH GENERIC_PL 00551-0019"
+      },
+      {
+         "product": "NYSTATIN",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1500011566082.pdf",
+         "pdf_name": "spc-doc_PL 00551-0019"
+      }
+   ],
+   "ALPHANINE 500 I.U. POWDER AND SOLVENT FOR SOLUTION FOR INJECTION": [
+      {
+         "product": "HUMAN COAGULATION FACTOR IX",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1509082205649.pdf",
+         "pdf_name": "leaflet MAH BRAND_PL 12930-0012"
+      },
+      {
+         "product": "HUMAN COAGULATION FACTOR IX",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1509082205308.pdf",
+         "pdf_name": "spc-doc_PL 12930-0012"
+      }
+   ],
+   "GOLDEN EAR DROPS": [
+      {
+         "product": "NUTMEG OIL",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1495172805155.pdf",
+         "pdf_name": "leaflet MAH BRAND 2_PL 03105-0074"
+      },
+      {
+         "product": "NUTMEG OIL",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1495172802746.pdf",
+         "pdf_name": "leaflet MAH BRAND_PL 03105-0074"
+      },
+      {
+         "product": "NUTMEG OIL",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1495172804856.pdf",
+         "pdf_name": "leaflet SUPERDRUG_PL 03105-0074"
+      },
+      {
+         "product": "NUTMEG OIL",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1495172804645.pdf",
+         "pdf_name": "leaflet WILKINSON_PL 03105-0074"
+      },
+      {
+         "product": "NUTMEG OIL",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1495172805366.pdf",
+         "pdf_name": "spc-doc_PL 03105-0074"
+      }
+   ],
+   "NYSPES PESSARIES 100 000 UNITS": [
+      {
+         "product": "NYSTATIN",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1474003737330.pdf",
+         "pdf_name": "leaflet MAH BRAND_PL 33414-0071"
+      },
+      {
+         "product": "NYSTATIN",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1474003737121.pdf",
+         "pdf_name": "leaflet MAH GENERIC_PL 33414-0071"
+      },
+      {
+         "product": "NYSTATIN",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1474003737434.pdf",
+         "pdf_name": "spc-doc_PL 33414-0071"
+      }
+   ],
+   "ALPHANINE 1500 I.U. POWDER AND SOLVENT FOR SOLUTION FOR INJECTION": [
+      {
+         "product": "HUMAN COAGULATION FACTOR IX",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1500011165642.pdf",
+         "pdf_name": "leaflet MAH BRAND_PL 12930-0014"
+      },
+      {
+         "product": "HUMAN COAGULATION FACTOR IX",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1500011165295.pdf",
+         "pdf_name": "spc-doc_PL 12930-0014"
+      }
+   ],
+   "SYMBICORT 400/12 TURBOHALER": [
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1502435305065.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 10380-1594"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1502435298065.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 10380-1597"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1507873485827.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 10380-1604"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1502435311817.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 10380-1609"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1502435318421.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 10380-1611"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1516943003863.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 10380-1627"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1495173213091.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 10383-1630"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1509684138138.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 10383-1753"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1488521337956.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 13826-1052"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1513315214281.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 15814-1236"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1513314989238.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 17805-0016"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1513314989629.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 17805-0070"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1513314992021.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 17805-0326"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1495777366175.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 18799-2533"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1497592954562.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 18799-2559"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1490330657511.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 18799-2886"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1490330672869.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 18799-2935"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1507873152924.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 19065-0303"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1507873159461.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 19065-0327"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1507873486280.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 19065-0496"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1510292325501.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 19065-0554"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1517547803911.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 19065-0576"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1509685029853.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 19488-0682"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1509683886373.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 19488-0987"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1511499872406.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 19488-1203"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1495777253804.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 20636-1666"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1495777260191.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 20636-1729"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1508478740343.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 20636-2389"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1508479007639.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 20636-2431"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1495777411346.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 20636-2771"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1495777404137.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 20636-2773"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1510292596820.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 20636-2800"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1495777404841.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 20636-2801"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1495777417744.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 20636-2886"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1475211073360.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 21828-0409"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1490330607602.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 21828-0668"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1495777207786.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 30900-2050"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1495777259488.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 30900-2131"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1510292452109.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 33532-0223"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1484293932061.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 33652-0051"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1491542976478.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 44184-0002"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1491542976265.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 44184-0004"
+      }
+   ],
+   "HYDROCORTISONE 1.0// W/W CREAM": [
+      {
+         "product": "HYDROCORTISONE MICRONISED",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1512106159247.pdf",
+         "pdf_name": "leaflet MAH GENERIC_PL 16431-0028"
+      },
+      {
+         "product": "HYDROCORTISONE MICRONISED",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1511499525777.pdf",
+         "pdf_name": "leaflet MAH GENERIC_PL 16431-0030"
+      },
+      {
+         "product": "HYDROCORTISONE MICRONISED",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1512105691878.pdf",
+         "pdf_name": "leaflet MAH GENERIC_PL 48259-0004"
+      },
+      {
+         "product": "HYDROCORTISONE MICRONISED",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1511498941136.pdf",
+         "pdf_name": "leaflet MAH GENERIC_PL 48259-0005"
+      },
+      {
+         "product": "HYDROCORTISONE MICRONISED",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1512106159037.pdf",
+         "pdf_name": "spc-doc_PL 16431-0028"
+      },
+      {
+         "product": "HYDROCORTISONE MICRONISED",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1511499525931.pdf",
+         "pdf_name": "spc-doc_PL 16431-0030"
+      },
+      {
+         "product": "HYDROCORTISONE MICRONISED",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1512105692046.pdf",
+         "pdf_name": "spc-doc_PL 48259-0004"
+      },
+      {
+         "product": "HYDROCORTISONE MICRONISED",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1511498941300.pdf",
+         "pdf_name": "spc-doc_PL 48259-0005"
+      }
+   ],
+   "EFAVIRENZ SANDOZ 600 MG FILM-COATED TABLETS": [
+      {
+         "product": "EFAVIRENZ",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1492753240921.pdf",
+         "pdf_name": "leaflet MAH GENERIC_PL 04416-1342"
+      },
+      {
+         "product": "EFAVIRENZ",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1492753241146.pdf",
+         "pdf_name": "spc-doc_PL 04416-1342"
+      }
+   ],
+   "DERMOVATE-NN CREAM": [
+      {
+         "product": "NYSTATIN",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1491542094628.pdf",
+         "pdf_name": "leaflet MAH BRAND_PL 17736-0100"
+      },
+      {
+         "product": "NYSTATIN",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1491542094411.pdf",
+         "pdf_name": "leaflet MAH GENERIC_PL 17736-0100"
+      },
+      {
+         "product": "NYSTATIN",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1491542094206.pdf",
+         "pdf_name": "spc-doc_PL 17736-0100"
+      }
+   ],
+   "OCTAPLEX 500 IU POWDER AND SOLVENT FOR SUSPENSION FOR INJECTION": [
+      {
+         "product": "HUMAN BLOOD COAGULATION FACTOR II",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1516338867074.pdf",
+         "pdf_name": "leaflet MAH BRAND_PL 10673-0027"
+      },
+      {
+         "product": "HUMAN BLOOD COAGULATION FACTOR II",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1516338867266.pdf",
+         "pdf_name": "spc-doc_PL 10673-0027"
+      },
+      {
+         "product": "HUMAN BLOOD COAGULATION FACTOR X",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1516338867074.pdf",
+         "pdf_name": "leaflet MAH BRAND_PL 10673-0027"
+      },
+      {
+         "product": "HUMAN BLOOD COAGULATION FACTOR X",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1516338867266.pdf",
+         "pdf_name": "spc-doc_PL 10673-0027"
+      },
+      {
+         "product": "HUMAN COAGULATION FACTOR IX",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1516338867074.pdf",
+         "pdf_name": "leaflet MAH BRAND_PL 10673-0027"
+      },
+      {
+         "product": "HUMAN COAGULATION FACTOR IX",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1516338867266.pdf",
+         "pdf_name": "spc-doc_PL 10673-0027"
+      }
+   ],
+   "OXIS TURBUHALER 6 MICROGRAMS": [
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1513314980601.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 15814-0374"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1513314980742.pdf",
+         "pdf_name": "spc-doc_PLPI 15814-0374"
+      }
+   ],
+   "CORTOPIN HYDROCORTISONE OINTMENT": [
+      {
+         "product": "HYDROCORTISONE MICRONISED",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1488521194842.pdf",
+         "pdf_name": "leaflet MAH BRAND_PL 04917-0020"
+      },
+      {
+         "product": "HYDROCORTISONE MICRONISED",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1488521194989.pdf",
+         "pdf_name": "leaflet MAH GENERIC_PL 04917-0020"
+      },
+      {
+         "product": "HYDROCORTISONE MICRONISED",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1488521195111.pdf",
+         "pdf_name": "spc-doc_PL 04917-0020"
+      }
+   ],
+   "NOWAX EAR DROPS": [
+      {
+         "product": "NUTMEG OIL",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1495172805155.pdf",
+         "pdf_name": "leaflet MAH BRAND 2_PL 03105-0074"
+      },
+      {
+         "product": "NUTMEG OIL",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1495172802746.pdf",
+         "pdf_name": "leaflet MAH BRAND_PL 03105-0074"
+      },
+      {
+         "product": "NUTMEG OIL",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1495172804856.pdf",
+         "pdf_name": "leaflet SUPERDRUG_PL 03105-0074"
+      },
+      {
+         "product": "NUTMEG OIL",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1495172804645.pdf",
+         "pdf_name": "leaflet WILKINSON_PL 03105-0074"
+      },
+      {
+         "product": "NUTMEG OIL",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1495172805366.pdf",
+         "pdf_name": "spc-doc_PL 03105-0074"
+      }
+   ],
+   "EFAVIRENZ/EMTRICITABINE/TENOFOVIR DISOPROXIL DR. REDDYS 600 MG/200 MG//245 MG FILM-COATED TABLETS": [
+      {
+         "product": "EFAVIRENZ",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1504846897711.pdf",
+         "pdf_name": "leaflet MAH GENERIC_PL 08553-0602"
+      },
+      {
+         "product": "EFAVIRENZ",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1504846897470.pdf",
+         "pdf_name": "spc-doc_PL 08553-0602"
+      }
+   ],
+   "NYSTAFORM HC OINTMENT": [
+      {
+         "product": "NYSTATIN",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1510894808212.pdf",
+         "pdf_name": "leaflet MAH BRAND_PL 00551-0020"
+      },
+      {
+         "product": "NYSTATIN",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1510894808394.pdf",
+         "pdf_name": "leaflet MAH GENERIC_PL 00551-0020"
+      },
+      {
+         "product": "NYSTATIN",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1510894807956.pdf",
+         "pdf_name": "spc-doc_PL 00551-0020"
+      }
+   ],
+   "HAEMOCTIN 500 POWDER AND SOLVENT FOR SOLUTION FOR INJECTION": [
+      {
+         "product": "HUMAN COAGULATION FACTOR VIII",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1516943880055.pdf",
+         "pdf_name": "leaflet MAH BRAND_PL 04500-0009"
+      },
+      {
+         "product": "HUMAN COAGULATION FACTOR VIII",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1516943879567.pdf",
+         "pdf_name": "spc-doc_PL 04500-0009"
+      }
+   ],
+   "DERMOVATE-NN OINTMENT": [
+      {
+         "product": "NYSTATIN",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1491542095167.pdf",
+         "pdf_name": "leaflet MAH BRAND_PL 17736-0101"
+      },
+      {
+         "product": "NYSTATIN",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1491542094913.pdf",
+         "pdf_name": "leaflet MAH GENERIC_PL 17736-0101"
+      },
+      {
+         "product": "NYSTATIN",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1491542095339.pdf",
+         "pdf_name": "spc-doc_PL 17736-0101"
+      }
+   ],
+   "CLOBETASOL PROPIONATE/NEOMYCIN SULPHATE/NYSTATIN 0.5MG/5MG/100 000 IU/G OINTMENT": [
+      {
+         "product": "NYSTATIN",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1491542095167.pdf",
+         "pdf_name": "leaflet MAH BRAND_PL 17736-0101"
+      },
+      {
+         "product": "NYSTATIN",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1491542094913.pdf",
+         "pdf_name": "leaflet MAH GENERIC_PL 17736-0101"
+      },
+      {
+         "product": "NYSTATIN",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1491542095339.pdf",
+         "pdf_name": "spc-doc_PL 17736-0101"
+      }
+   ],
+   "OMEGAVEN": [
+      {
+         "product": "EGG PHOSPHATIDES PURIFIED",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1501824563996.pdf",
+         "pdf_name": "leaflet MAH BRAND_PL 03457-0011"
+      },
+      {
+         "product": "EGG PHOSPHATIDES PURIFIED",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1501824564225.pdf",
+         "pdf_name": "spc-doc_PL 03457-0011"
+      }
+   ],
+   "TECHNESCAN LYOMAA": [
+      {
+         "product": "HUMAN ALBUMIN MACROAGGREGATES",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1447998211716.pdf",
+         "pdf_name": "leaflet MAH BRAND_PL 12288-0013"
+      },
+      {
+         "product": "HUMAN ALBUMIN MACROAGGREGATES",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1447998211915.pdf",
+         "pdf_name": "spc-doc_PL 12288-0013"
+      }
+   ],
+   "EFAVIRENZ/EMTRICITABINE/TENOFOVIR DISOPROXIL 600 MG/200 MG/245 MG FILM-COATED TABLETS": [
+      {
+         "product": "EFAVIRENZ",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1516944655930.pdf",
+         "pdf_name": "leaflet MAH GENERIC_PL 04416-1493"
+      },
+      {
+         "product": "EFAVIRENZ",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1516944656241.pdf",
+         "pdf_name": "spc-doc_PL 04416-1493"
+      }
+   ],
+   "SUPERDRUG EAR WAX REMOVER DROPS": [
+      {
+         "product": "NUTMEG OIL",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1495172805155.pdf",
+         "pdf_name": "leaflet MAH BRAND 2_PL 03105-0074"
+      },
+      {
+         "product": "NUTMEG OIL",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1495172802746.pdf",
+         "pdf_name": "leaflet MAH BRAND_PL 03105-0074"
+      },
+      {
+         "product": "NUTMEG OIL",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1495172804856.pdf",
+         "pdf_name": "leaflet SUPERDRUG_PL 03105-0074"
+      },
+      {
+         "product": "NUTMEG OIL",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1495172804645.pdf",
+         "pdf_name": "leaflet WILKINSON_PL 03105-0074"
+      },
+      {
+         "product": "NUTMEG OIL",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1495172805366.pdf",
+         "pdf_name": "spc-doc_PL 03105-0074"
+      }
+   ],
+   "PULMOCIS KIT FOR PREPARATION OF TECHNETIUM HUMAN ALBUMIN MACROAGGREGATES INJECTION": [
+      {
+         "product": "HUMAN ALBUMIN MACROAGGREGATES",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1516338988754.pdf",
+         "pdf_name": "leaflet MAH BRAND_PL 11876-0009"
+      },
+      {
+         "product": "HUMAN ALBUMIN MACROAGGREGATES",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1516338988579.pdf",
+         "pdf_name": "spc-doc_PL 11876-0009"
+      }
+   ],
+   "OXIS TURBOHALER 12 MICROGRAMS": [
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1474004041538.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 08929-0550"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1487918948344.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 15814-0808"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1506055774452.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 16369-0448"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1513314990066.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 17805-0122"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1515128864510.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 20774-1182"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1510895926858.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 20774-1502"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1482470735168.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 39352-0172"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1513314990255.pdf",
+         "pdf_name": "spc-doc_PLPI 17805-0122"
+      }
+   ],
+   "EGG  WHOLE 10 000 DU/ML ODC": [
+      {
+         "product": "EGG WHOLE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1497592253015.pdf",
+         "pdf_name": "leaflet MAH BRAND_PL 17087-0020"
+      },
+      {
+         "product": "EGG WHOLE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1497592253450.pdf",
+         "pdf_name": "spc-doc_PL 17087-0020"
+      }
+   ],
+   "NYSTATIN TABLETS 500 000 UNITS": [
+      {
+         "product": "NYSTATIN",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1474003743367.pdf",
+         "pdf_name": "leaflet MAH BRAND_PL 33414-0072"
+      },
+      {
+         "product": "NYSTATIN",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1474003743182.pdf",
+         "pdf_name": "leaflet MAH GENERIC_PL 33414-0072"
+      },
+      {
+         "product": "NYSTATIN",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1474003743484.pdf",
+         "pdf_name": "spc-doc_PL 33414-0072"
+      }
+   ],
+   "JANILA 10MG TABLETS": [
+      {
+         "product": "HYDROCORTISONE MICRONISED",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1503034938634.pdf",
+         "pdf_name": "leaflet MAH BRAND_PL 12762-0490"
+      },
+      {
+         "product": "HYDROCORTISONE MICRONISED",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1503033269258.pdf",
+         "pdf_name": "leaflet MAH BRAND_PL 31999-0022"
+      },
+      {
+         "product": "HYDROCORTISONE MICRONISED",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1503034938387.pdf",
+         "pdf_name": "spc-doc_PL 12762-0490"
+      },
+      {
+         "product": "HYDROCORTISONE MICRONISED",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1503033268846.pdf",
+         "pdf_name": "spc-doc_PL 31999-0022"
+      }
+   ],
+   "HYDROCORTISONE OINTMENT BP 1.0//": [
+      {
+         "product": "HYDROCORTISONE MICRONISED",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1504847943706.pdf",
+         "pdf_name": "leaflet MAH GENERIC_PL 00142-0130"
+      },
+      {
+         "product": "HYDROCORTISONE MICRONISED",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1504847943183.pdf",
+         "pdf_name": "spc-doc_PL 00142-0130"
+      }
+   ],
+   "REPLENINE-VF 50 IU/ML HUMAN FACTOR IX A POWDER FOR SOLUTION": [
+      {
+         "product": "HUMAN FACTOR II",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1518153265255.pdf",
+         "pdf_name": "leaflet MAH BRAND_PL 08801-0028"
+      },
+      {
+         "product": "HUMAN FACTOR II",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1518153265784.pdf",
+         "pdf_name": "leaflet MAH BRAND_PL 08801-0054"
+      },
+      {
+         "product": "HUMAN FACTOR II",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1518153264934.pdf",
+         "pdf_name": "spc-doc_PL 08801-0028"
+      },
+      {
+         "product": "HUMAN FACTOR II",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1518153265476.pdf",
+         "pdf_name": "spc-doc_PL 08801-0054"
+      }
+   ],
+   "SKIN CALM CREAM": [
+      {
+         "product": "HYDROCORTISONE MICRONISED",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1504848304211.pdf",
+         "pdf_name": "leaflet MAH BRAND_PL 13606-0022"
+      },
+      {
+         "product": "HYDROCORTISONE MICRONISED",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1504848303951.pdf",
+         "pdf_name": "leaflet MAH GENERIC_PL 13606-0022"
+      },
+      {
+         "product": "HYDROCORTISONE MICRONISED",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1504848304433.pdf",
+         "pdf_name": "spc-doc_PL 13606-0022"
+      }
+   ],
+   "ALPHANATE POWDER FOR INJECTION": [
+      {
+         "product": "HUMAN COAGULATION FACTOR VIII",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1500011172629.pdf",
+         "pdf_name": "leaflet MAH BRAND_PL 12930-0015"
+      },
+      {
+         "product": "HUMAN COAGULATION FACTOR VIII",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1490936620208.pdf",
+         "pdf_name": "leaflet MAH BRAND_PL 12930-0017"
+      },
+      {
+         "product": "HUMAN COAGULATION FACTOR VIII",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1500011172842.pdf",
+         "pdf_name": "spc-doc_PL 12930-0015"
+      },
+      {
+         "product": "HUMAN COAGULATION FACTOR VIII",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1490936619929.pdf",
+         "pdf_name": "spc-doc_PL 12930-0017"
+      }
+   ],
+   "NYSTATIN PESSARIES 100 000 UNITS": [
+      {
+         "product": "NYSTATIN",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1474003737330.pdf",
+         "pdf_name": "leaflet MAH BRAND_PL 33414-0071"
+      },
+      {
+         "product": "NYSTATIN",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1474003737121.pdf",
+         "pdf_name": "leaflet MAH GENERIC_PL 33414-0071"
+      },
+      {
+         "product": "NYSTATIN",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1474003737434.pdf",
+         "pdf_name": "spc-doc_PL 33414-0071"
+      }
+   ],
+   "CLOBETASOL PROPIONATE/NEOMYCIN SULPHATE/NYSTATIN 0.5 MG/5 MG/100 000 IU/G CREAM": [
+      {
+         "product": "NYSTATIN",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1494569476541.pdf",
+         "pdf_name": "leaflet MAH GENERIC_PL 17736-0128"
+      },
+      {
+         "product": "NYSTATIN",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1494569476217.pdf",
+         "pdf_name": "spc-doc_PL 17736-0128"
+      }
+   ],
+   "NYSTATIN/CHLORHEXIDINE HYDROCHLORIDE 100 000 UNITS/G/1// CREAM": [
+      {
+         "product": "NYSTATIN",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1513920101333.pdf",
+         "pdf_name": "leaflet MAH BRAND_PL 00551-0018"
+      },
+      {
+         "product": "NYSTATIN",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1513920101614.pdf",
+         "pdf_name": "leaflet MAH GENERIC_PL 00551-0018"
+      },
+      {
+         "product": "NYSTATIN",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1513920101119.pdf",
+         "pdf_name": "spc-doc_PL 00551-0018"
+      }
+   ],
+   "NYSTATIN ORAL SUSPENSION BP": [
+      {
+         "product": "NYSTATIN",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1514526019291.pdf",
+         "pdf_name": "leaflet MAH GENERIC_PL 00289-1869"
+      },
+      {
+         "product": "NYSTATIN",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1500010946455.pdf",
+         "pdf_name": "leaflet MAH GENERIC_PL 04416-0161"
+      },
+      {
+         "product": "NYSTATIN",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1514526018988.pdf",
+         "pdf_name": "spc-doc_PL 00289-1869"
+      },
+      {
+         "product": "NYSTATIN",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1500010946036.pdf",
+         "pdf_name": "spc-doc_PL 04416-0161"
+      }
+   ],
+   "HYDROCORTISONE CREAM 1//": [
+      {
+         "product": "HYDROCORTISONE MICRONISED",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1504848304211.pdf",
+         "pdf_name": "leaflet MAH BRAND_PL 13606-0022"
+      },
+      {
+         "product": "HYDROCORTISONE MICRONISED",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1501825017844.pdf",
+         "pdf_name": "leaflet MAH GENERIC_PL 06464-0698"
+      },
+      {
+         "product": "HYDROCORTISONE MICRONISED",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1504848303951.pdf",
+         "pdf_name": "leaflet MAH GENERIC_PL 13606-0022"
+      },
+      {
+         "product": "HYDROCORTISONE MICRONISED",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1507267026489.pdf",
+         "pdf_name": "leaflet MAH GENERIC_PL 13606-0182"
+      },
+      {
+         "product": "HYDROCORTISONE MICRONISED",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1500616333414.pdf",
+         "pdf_name": "leaflet MAH GENERIC_PL 13606-0191"
+      },
+      {
+         "product": "HYDROCORTISONE MICRONISED",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1501825018112.pdf",
+         "pdf_name": "spc-doc_PL 06464-0698"
+      },
+      {
+         "product": "HYDROCORTISONE MICRONISED",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1504848304433.pdf",
+         "pdf_name": "spc-doc_PL 13606-0022"
+      },
+      {
+         "product": "HYDROCORTISONE MICRONISED",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1507267026277.pdf",
+         "pdf_name": "spc-doc_PL 13606-0182"
+      },
+      {
+         "product": "HYDROCORTISONE MICRONISED",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1500616333667.pdf",
+         "pdf_name": "spc-doc_PL 13606-0191"
+      }
+   ],
+   "SYMBICORT 100/6 TURBOHALER": [
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1513314586621.pdf",
+         "pdf_name": "leaflet MAH BRAND_PL 17901-0091"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1492495717742.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 10380-1623"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1503639916269.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 10383-1547"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1509683775352.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 10383-1549"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1500618371662.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 10383-1585"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1494569062284.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 13826-1102"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1513315213646.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 15814-1234"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1509084575622.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 17805-0017"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1513314420158.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 17805-0087"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1513314422895.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 17805-0325"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1513315012630.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 18799-0823"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1501825242364.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 18799-1656"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1501825299874.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 18799-2030"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1501825629036.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 18799-2637"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1501825629489.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 18799-2642"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1501825655666.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 18799-2806"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1501825817900.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 18799-2884"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1507873153409.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 19065-0306"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1507873174730.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 19488-0187"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1509084649897.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 19488-0680"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1509084655367.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 19488-0811"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1504852518171.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 19488-0956"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1509084575143.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 19488-0985"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1509084663426.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 19488-1156"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1502435100544.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 20636-0859"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1495777295195.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 20636-1376"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1495777295919.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 20636-1412"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1495777296621.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 20636-1416"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1495777302365.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 20636-1417"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1495777303092.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 20636-1804"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1495777164374.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 20636-2429"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1506056289155.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 20636-2798"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1369377663715.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 21828-0241"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1484893236260.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 21828-0430"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1506056245444.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 21828-0669"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1510292444943.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 33532-0260"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1509944763196.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 33532-0695"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1501828650629.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 33652-0049"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1513314586893.pdf",
+         "pdf_name": "spc-doc_PL 17901-0091"
+      }
+   ],
+   "HAEMOCTIN 250 POWDER AND SOLVENT FOR SOLUTION FOR INJECTION": [
+      {
+         "product": "HUMAN COAGULATION FACTOR VIII",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1516943880055.pdf",
+         "pdf_name": "leaflet MAH BRAND_PL 04500-0009"
+      },
+      {
+         "product": "HUMAN COAGULATION FACTOR VIII",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1516943879567.pdf",
+         "pdf_name": "spc-doc_PL 04500-0009"
+      }
+   ],
+   "NYSTAN 100 000 UNITS/ML ORAL SUSPENSION": [
+      {
+         "product": "NYSTATIN",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1516338442677.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 10383-2004"
+      },
+      {
+         "product": "NYSTATIN",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1515735495961.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 21828-0415"
+      }
+   ],
+   "TRIMOVATE CREAM": [
+      {
+         "product": "NYSTATIN",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1511499497913.pdf",
+         "pdf_name": "leaflet MAH BRAND_PL 10949-0040"
+      },
+      {
+         "product": "NYSTATIN",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1511498934358.pdf",
+         "pdf_name": "leaflet MAH BRAND_PL 40739-0161"
+      },
+      {
+         "product": "NYSTATIN",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1511499498142.pdf",
+         "pdf_name": "spc-doc_PL 10949-0040"
+      },
+      {
+         "product": "NYSTATIN",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1511498934125.pdf",
+         "pdf_name": "spc-doc_PL 40739-0161"
+      }
+   ],
+   "PEROXYL MOUTHWASH": [
+      {
+         "product": "HYDROGEN PEROXIDE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1500011217294.pdf",
+         "pdf_name": "label-leaflet MAH BRAND_PL 00049-0038"
+      },
+      {
+         "product": "HYDROGEN PEROXIDE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1500011216944.pdf",
+         "pdf_name": "spc-doc_PL 00049-0038"
+      }
+   ],
+   "NANOCOLL 500 MICROGRAMS KIT FOR RADIOPHARMACEUTICAL PREPARATION": [
+      {
+         "product": "HUMAN ALBUMIN COLLOIDAL PARTICLES",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1504848128409.pdf",
+         "pdf_name": "leaflet MAH BRAND_PL 16991-0001"
+      },
+      {
+         "product": "HUMAN ALBUMIN COLLOIDAL PARTICLES",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1504848128182.pdf",
+         "pdf_name": "spc-doc_PL 16991-0001"
+      }
+   ],
+   "HYDROCORTISONE 1.0// W/W CREAM (15GM PACK)": [
+      {
+         "product": "HYDROCORTISONE MICRONISED",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1512106159247.pdf",
+         "pdf_name": "leaflet MAH GENERIC_PL 16431-0028"
+      },
+      {
+         "product": "HYDROCORTISONE MICRONISED",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1512105691878.pdf",
+         "pdf_name": "leaflet MAH GENERIC_PL 48259-0004"
+      },
+      {
+         "product": "HYDROCORTISONE MICRONISED",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1512106159037.pdf",
+         "pdf_name": "spc-doc_PL 16431-0028"
+      },
+      {
+         "product": "HYDROCORTISONE MICRONISED",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1512105692046.pdf",
+         "pdf_name": "spc-doc_PL 48259-0004"
+      }
+   ],
+   "OXIS 12 TURBOHALER": [
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1487918836193.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 15184-0862"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1498801337652.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 15184-1263"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1486709272848.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 18799-1979"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1475212180198.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 18799-2519"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1475212181211.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 18799-2602"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1477630262945.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 18799-2603"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1479450714109.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 19488-0049"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1487918988203.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 19488-1019"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1509684022484.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 20636-2432"
+      }
+   ],
+   "HYDROCORTISONE CREAM BP 1.0//": [
+      {
+         "product": "HYDROCORTISONE MICRONISED",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1504847963154.pdf",
+         "pdf_name": "leaflet MAH GENERIC_PL 00142-0129"
+      },
+      {
+         "product": "HYDROCORTISONE MICRONISED",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1504847963540.pdf",
+         "pdf_name": "spc-doc_PL 00142-0129"
+      }
+   ],
+   "OXIS TURBOHALER 12": [
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1507872861403.pdf",
+         "pdf_name": "leaflet MAH BRAND_PL 17901-0153"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1486709185764.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 04423-0440"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1474004041538.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 08929-0550"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1502435126711.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 13826-1678"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1475816309429.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 15361-0233"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1487918948344.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 15814-0808"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1510894227342.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 15814-1330"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1506055774452.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 16369-0448"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1501825454903.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 16369-1581"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1502434869445.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 16378-0647"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1513314990066.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 17805-0122"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1475212014656.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 19065-0329"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1479450742529.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 19488-1340"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1479450714850.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 19488-1469"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1490330263507.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 20636-1541"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1515128864510.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 20774-1182"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1510895926858.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 20774-1502"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1511500072944.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 20774-1510"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1515735501975.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 33532-0097"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1495173500964.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 33902-0565"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1482470735168.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 39352-0172"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1507872861579.pdf",
+         "pdf_name": "spc-doc_PL 17901-0153"
+      },
+      {
+         "product": "EFORMOTEROL FUMARATE DIHYDRATE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1513314990255.pdf",
+         "pdf_name": "spc-doc_PLPI 17805-0122"
+      }
+   ],
+   "NYSTAN 100 000 UNITS/ML ORAL SUSPENSION (READY-MIXED)": [
+      {
+         "product": "NYSTATIN",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1516338442677.pdf",
+         "pdf_name": "leaflet MAH BRAND_PLPI 10383-2004"
+      }
+   ],
+   "HYALUNRONIDASE 1500 I.U. POWDER FOR SOLUTION FOR INJECTION/INFUSION": [
+      {
+         "product": "HYALURONIDASE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1452145859022.pdf",
+         "pdf_name": "leaflet MAH BRAND_PL 29831-0113"
+      },
+      {
+         "product": "HYALURONIDASE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1452145858773.pdf",
+         "pdf_name": "leaflet MAH GENERIC_PL 29831-0113"
+      },
+      {
+         "product": "HYALURONIDASE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1452145859189.pdf",
+         "pdf_name": "spc-doc_PL 29831-0113"
+      }
+   ],
+   "DERMA CARE HYDROCORTISONE 1// CREAM": [
+      {
+         "product": "HYDROCORTISONE MICRONISED",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1507267046346.pdf",
+         "pdf_name": "leaflet BOOTS_PL 04917-0019"
+      },
+      {
+         "product": "HYDROCORTISONE MICRONISED",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1507267046078.pdf",
+         "pdf_name": "leaflet MAH BRAND_PL 04917-0019"
+      },
+      {
+         "product": "HYDROCORTISONE MICRONISED",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1507267045765.pdf",
+         "pdf_name": "leaflet MAH GENERIC 2_PL 04917-0019"
+      },
+      {
+         "product": "HYDROCORTISONE MICRONISED",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1507267048771.pdf",
+         "pdf_name": "leaflet MAH GENERIC_PL 04917-0019"
+      },
+      {
+         "product": "HYDROCORTISONE MICRONISED",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1507267049131.pdf",
+         "pdf_name": "spc-doc_PL 04917-0019"
+      }
+   ],
+   "CLOBETASOL PROPIONATE/NEOMYCIN SULPHATE/NYSTATIN 0.5MG/5MG/100 000 IU/G CREAM": [
+      {
+         "product": "NYSTATIN",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1491542094628.pdf",
+         "pdf_name": "leaflet MAH BRAND_PL 17736-0100"
+      },
+      {
+         "product": "NYSTATIN",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1491542094411.pdf",
+         "pdf_name": "leaflet MAH GENERIC_PL 17736-0100"
+      },
+      {
+         "product": "NYSTATIN",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1491542094206.pdf",
+         "pdf_name": "spc-doc_PL 17736-0100"
+      }
+   ],
+   "CLOBETASOL PROPIONATE / NEOMYCIN SULPHATE / NYSTATIN 0.5 MG/5 MG/100 000 IU/G OINTMENT": [
+      {
+         "product": "NYSTATIN",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1494569476989.pdf",
+         "pdf_name": "leaflet MAH GENERIC_PL 17736-0129"
+      },
+      {
+         "product": "NYSTATIN",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1494569476715.pdf",
+         "pdf_name": "spc-doc_PL 17736-0129"
+      }
+   ],
+   "HYDROCORTISONE 1.0// CREAM BP": [
+      {
+         "product": "HYDROCORTISONE MICRONISED",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1504847949741.pdf",
+         "pdf_name": "leaflet MAH GENERIC_PL 00142-0609"
+      },
+      {
+         "product": "HYDROCORTISONE MICRONISED",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1504847950074.pdf",
+         "pdf_name": "spc-doc_PL 00142-0609"
+      }
+   ],
+   "WILATE 500/WILATE 1000  POWDER AND SOLVENT FOR SOLUTION FOR INJECTION": [
+      {
+         "product": "HUMAN COAGULATION FACTOR VIII",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1513314687281.pdf",
+         "pdf_name": "leaflet MAH BRAND_PL 10673-0038"
+      },
+      {
+         "product": "HUMAN COAGULATION FACTOR VIII",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1513314686713.pdf",
+         "pdf_name": "spc-doc_PL 10673-0038"
+      }
+   ],
+   "NYSTATIN/CHLORHEXIDINE ACETATE/HYDROCORTISONE 100 000 IU/G/1// /1// OINTMENT": [
+      {
+         "product": "NYSTATIN",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1510894808212.pdf",
+         "pdf_name": "leaflet MAH BRAND_PL 00551-0020"
+      },
+      {
+         "product": "NYSTATIN",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1510894808394.pdf",
+         "pdf_name": "leaflet MAH GENERIC_PL 00551-0020"
+      },
+      {
+         "product": "NYSTATIN",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1510894807956.pdf",
+         "pdf_name": "spc-doc_PL 00551-0020"
+      }
+   ],
+   "NYSTAFORM HC CREAM": [
+      {
+         "product": "NYSTATIN",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1500011566517.pdf",
+         "pdf_name": "leaflet MAH BRAND_PL 00551-0019"
+      },
+      {
+         "product": "NYSTATIN",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1500011565842.pdf",
+         "pdf_name": "leaflet MAH GENERIC_PL 00551-0019"
+      },
+      {
+         "product": "NYSTATIN",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1500011566082.pdf",
+         "pdf_name": "spc-doc_PL 00551-0019"
+      }
+   ],
+   "D-GAM HUMAN ANTI-D IMMUNOGLOBULIN 500 IU SOLUTION FOR INJECTION": [
+      {
+         "product": "HUMAN ANTI-D IMMUNOGLOBULIN",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1518153220734.pdf",
+         "pdf_name": "leaflet MAH BRAND_PL 08801-0048"
+      },
+      {
+         "product": "HUMAN ANTI-D IMMUNOGLOBULIN",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1518153220964.pdf",
+         "pdf_name": "spc-doc_PL 08801-0048"
+      }
+   ],
+   "HAEMONINE 500 POWDER AND SOLVENT FOR SOLUTION FOR INJECTION": [
+      {
+         "product": "HUMAN COAGULATION FACTOR IX",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1516338761508.pdf",
+         "pdf_name": "leaflet MAH BRAND_PL 04500-0008"
+      },
+      {
+         "product": "HUMAN COAGULATION FACTOR IX",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1516338761769.pdf",
+         "pdf_name": "spc-doc_PL 04500-0008"
+      }
+   ],
+   "EFAVIRENZ 600 MG FILM-COATED TABLETS": [
+      {
+         "product": "EFAVIRENZ",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1499404932995.pdf",
+         "pdf_name": "leaflet MAH GENERIC_PL 04569-1303"
+      },
+      {
+         "product": "EFAVIRENZ",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1515735786484.pdf",
+         "pdf_name": "leaflet MAH GENERIC_PL 08553-0579"
+      },
+      {
+         "product": "EFAVIRENZ",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1499406027640.pdf",
+         "pdf_name": "leaflet MAH GENERIC_PL 20075-0517"
+      },
+      {
+         "product": "EFAVIRENZ",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1499406101972.pdf",
+         "pdf_name": "leaflet MAH GENERIC_PL 31862-0009"
+      },
+      {
+         "product": "EFAVIRENZ",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1499404933245.pdf",
+         "pdf_name": "spc-doc_PL 04569-1303"
+      },
+      {
+         "product": "EFAVIRENZ",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1515735786748.pdf",
+         "pdf_name": "spc-doc_PL 08553-0579"
+      },
+      {
+         "product": "EFAVIRENZ",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1499406027958.pdf",
+         "pdf_name": "spc-doc_PL 20075-0517"
+      },
+      {
+         "product": "EFAVIRENZ",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1499406101759.pdf",
+         "pdf_name": "spc-doc_PL 31862-0009"
+      }
+   ],
+   "HYDROCORTISONE OINTMENT 1//": [
+      {
+         "product": "HYDROCORTISONE MICRONISED",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1488521194842.pdf",
+         "pdf_name": "leaflet MAH BRAND_PL 04917-0020"
+      },
+      {
+         "product": "HYDROCORTISONE MICRONISED",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1488521194989.pdf",
+         "pdf_name": "leaflet MAH GENERIC_PL 04917-0020"
+      },
+      {
+         "product": "HYDROCORTISONE MICRONISED",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1500011248103.pdf",
+         "pdf_name": "leaflet MAH GENERIC_PL 06464-0699"
+      },
+      {
+         "product": "HYDROCORTISONE MICRONISED",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1516943956611.pdf",
+         "pdf_name": "leaflet MAH GENERIC_PL 13606-0186"
+      },
+      {
+         "product": "HYDROCORTISONE MICRONISED",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1516943957092.pdf",
+         "pdf_name": "leaflet MAH GENERIC_PL 13606-0187"
+      },
+      {
+         "product": "HYDROCORTISONE MICRONISED",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1516943957592.pdf",
+         "pdf_name": "leaflet MAH GENERIC_PL 13606-0189"
+      },
+      {
+         "product": "HYDROCORTISONE MICRONISED",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1488521195111.pdf",
+         "pdf_name": "spc-doc_PL 04917-0020"
+      },
+      {
+         "product": "HYDROCORTISONE MICRONISED",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1500011247883.pdf",
+         "pdf_name": "spc-doc_PL 06464-0699"
+      },
+      {
+         "product": "HYDROCORTISONE MICRONISED",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1516943956882.pdf",
+         "pdf_name": "spc-doc_PL 13606-0186"
+      },
+      {
+         "product": "HYDROCORTISONE MICRONISED",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1516943957357.pdf",
+         "pdf_name": "spc-doc_PL 13606-0187"
+      },
+      {
+         "product": "HYDROCORTISONE MICRONISED",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1516943957876.pdf",
+         "pdf_name": "spc-doc_PL 13606-0189"
+      }
+   ],
+   "HYDROCORTISONE OINTMENT BP 0.5//": [
+      {
+         "product": "HYDROCORTISONE MICRONISED",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1504847963875.pdf",
+         "pdf_name": "leaflet MAH GENERIC_PL 00142-0131"
+      },
+      {
+         "product": "HYDROCORTISONE MICRONISED",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1504847963715.pdf",
+         "pdf_name": "spc-doc_PL 00142-0131"
+      }
+   ],
+   "EFAVIRENZ MILPHARM 600 MG FILM-COATED TABLETS": [
+      {
+         "product": "EFAVIRENZ",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1515735553860.pdf",
+         "pdf_name": "leaflet MAH GENERIC_PL 16363-0397"
+      },
+      {
+         "product": "EFAVIRENZ",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1515735554136.pdf",
+         "pdf_name": "spc-doc_PL 16363-0397"
+      }
+   ],
+   "NYSTAN ORAL SUSPENSION (READY MIXED)": [
+      {
+         "product": "NYSTATIN",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1512106216077.pdf",
+         "pdf_name": "leaflet MAH BRAND_PL 00034-0130R"
+      },
+      {
+         "product": "NYSTATIN",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1512713442181.pdf",
+         "pdf_name": "leaflet MAH BRAND_PL 11184-0141"
+      },
+      {
+         "product": "NYSTATIN",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1512106216261.pdf",
+         "pdf_name": "spc-doc_PL 00034-0130R"
+      },
+      {
+         "product": "NYSTATIN",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1512713441927.pdf",
+         "pdf_name": "spc-doc_PL 11184-0141"
+      }
+   ],
+   "HYALASE 1500 I.U. POWDER FOR SOLUTION FOR INJECTION/INFUSION": [
+      {
+         "product": "HYALURONIDASE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1452145859022.pdf",
+         "pdf_name": "leaflet MAH BRAND_PL 29831-0113"
+      },
+      {
+         "product": "HYALURONIDASE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1452145858773.pdf",
+         "pdf_name": "leaflet MAH GENERIC_PL 29831-0113"
+      },
+      {
+         "product": "HYALURONIDASE",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1452145859189.pdf",
+         "pdf_name": "spc-doc_PL 29831-0113"
+      }
+   ],
+   "PROTHROMPLEX TOTAL 600 IU POWDER AND SOLVENT FOR SOLUTION FOR INJECTION": [
+      {
+         "product": "HUMAN COAGULATION FACTOR II",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1511499951128.pdf",
+         "pdf_name": "leaflet MAH BRAND_PL 34078-0009"
+      },
+      {
+         "product": "HUMAN COAGULATION FACTOR II",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1511499950361.pdf",
+         "pdf_name": "spc-doc_PL 34078-0009"
+      },
+      {
+         "product": "HUMAN COAGULATION FACTOR VII",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1511499951128.pdf",
+         "pdf_name": "leaflet MAH BRAND_PL 34078-0009"
+      },
+      {
+         "product": "HUMAN COAGULATION FACTOR VII",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1511499950361.pdf",
+         "pdf_name": "spc-doc_PL 34078-0009"
+      },
+      {
+         "product": "HUMAN COAGULATION FACTOR IX",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1511499951128.pdf",
+         "pdf_name": "leaflet MAH BRAND_PL 34078-0009"
+      },
+      {
+         "product": "HUMAN COAGULATION FACTOR IX",
+         "link": "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1511499950361.pdf",
+         "pdf_name": "spc-doc_PL 34078-0009"
+      }
+   ]
+}
+
