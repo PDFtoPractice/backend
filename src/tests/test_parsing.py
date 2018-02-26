@@ -10,7 +10,10 @@ def test_get_active_substance():
     docs = [GParser.convert_pdf(url, format='text') for url in urls]
 
     active_substances = [EntityRecog.get_active_subst(doc) for doc in docs]
+    assert active_substances == ['pancuronium bromide', None, None, 'gadoteridol', None]
+
     assert EntityRecog.get_active_subst("The active substance is tafluprost. 1 ml") == ["tafluprost"]
+
     testtxt = "The active substances are rsodametal, georsf, and turoportin."
     testtxt2 = "The active substance is rsodametal and it is known for causing sdfsdf."  # what if it has 'and it is known for having side effects of <some stuff not in dictionary>. Say if count >= n of vocab words then assume end?
     testtxt3 = "The active substances are rsodametal, georsf, and turoportin, and they are known for causing sdfss."

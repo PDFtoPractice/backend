@@ -1,7 +1,7 @@
-# import GParser as GParser
+import GParser as GParser
 # import ClearXML as ClearXML
-# import extractParagraphs as ExtractParas
-from parsing import GParser
+import extractParagraphs as ExtractParas
+# from parsing import GParser # testing import needed
 import re
 import spacy
 urls = ['http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1492496435313.pdf', 'http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1510292397494.pdf', 'http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1512713289515.pdf', 'http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1517548373003.pdf', 'http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1515735504413.pdf']
@@ -12,7 +12,8 @@ docs = [GParser.convert_pdf(url, format='text') for url in urls]
 # extract headings paras
 headings = ['1. What (\s)+ is and what is is used for', '2. What you need to know before you are given ProHance', '3. How you are given (\s)+', '4. Possible side effects', '5. How to store [\s]+', '6. Further Information']
 
-def get_active_subst(text): # pass in text from drug's leaflet
+# receives text of drug leaflet, returns list of active substances if any can be found otherwise returns empty list
+def get_active_subst(text):
     only_one = True    # whether there are more than one active substance to extract
     phrases = ['active substance is[\w\s]+.', 'active substances are([\w\s][,]*)+.', 'contains[\w\s]+ as the active ingredient', 'contains[\w]+ as the active ingredients', 'active ingredient is[\w\s]+.']
     match = [('active substance is', '', only_one), ('active substances are', '', not only_one), ('contains', 'as the active ingredient', only_one), ('contains', 'as the active ingredients', not only_one), ('active ingredient is', '', only_one)]
@@ -58,24 +59,23 @@ def get_active_subst(text): # pass in text from drug's leaflet
                     return actv_substances
 
             return actv_substances
-    return "no match"
+    return []
 
+# receives url of drug leaflet, returns lists of purposes for the drug if any can be found, otherwise returns empty list
+def get_purpose(url):
+    xmldoc = GParser.convert_pdf(url, format='xml')
+    paras = ExtractParas.extract_paragraphs(xmldoc)
+    print(paras)
 
+# receives url of drug leaflet, returns lists of types of surgery it is used for (if any can be found) otherwise returns empty list
+def get_op(url):
+    xmldoc = GParser.convert_pdf(url, format='xml')
+    paras = ExtractParas.extract_paragraphs(xmldoc)
 
-#
-#
-#
-#
-#
-# active_substances = [get_active_subst(doc) for doc in docs]
-# print(active_substances) # ['pancuronium bromide', None, None, 'gadoteridol', None]
-
-# https://spacy.io/usage/linguistic-features#section-rule-based-matching
-# spcy_sentence = nlp(u'' + sentence)
-#  for token in spcy_sentence:
-#     print(token.text, token.lemma_, token.pos_, token.tag_, token.dep_, token.shape_, token.is_alpha, token.is_stop)
 
 
 # IMPORTANT - EXTRACTING TEXT FROM THESE KIND OF LEAFLETS DOES NOT WORK WELL - HENCE NO MATCH FOR http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1512713289515.pdf.
 # Uncomment line below to see what I mean
 # print(docs[2]) # text extracted from pdf above
+
+get_purpose('http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1492496435313.pdf')
