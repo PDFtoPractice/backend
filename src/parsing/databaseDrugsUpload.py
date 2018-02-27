@@ -1,11 +1,12 @@
 import parsing.GParser as Parser
-import parsing.ClearXML as ClearXML
-import parsing.extractParagraphs as extractParagraphs
+import parsing.extractParagraphsLeaflet as extractParagraphsLeaflet
+import parsing.extractParagraphsSPC as extractParagraphsSPC
 import boto3
+import xml.etree.ElementTree as ET
 
 # Get database resource
 dynamodb = boto3.resource('dynamodb')
-
+'''
 # Create table for drugs data
 table = dynamodb.create_table(
     TableName='drugs',
@@ -34,7 +35,7 @@ table = dynamodb.create_table(
         'WriteCapacityUnits': 5
     }
 )
-
+'''
 csvTable = dynamodb.Table('csv_advice')
 linksTable = dynamodb.Table('leaflet_links')
 drugsTable = dynamodb.Table('drugs')
@@ -43,7 +44,12 @@ linksResponse = linksTable.scan()
 csvResponse = csvTable.scan()
 
 csvs = csvResponse['Items']
+n = 1
 for drug in linksResponse['Items']:
+    if n > 0:
+        n = n - 1
+        continue
+
     active_substance = drug['drug']
     data = drug['data']
     seen = []
@@ -64,12 +70,19 @@ for drug in linksResponse['Items']:
         if (product_name, type) in seen:
             continue
 
+        print(product_name)
+        print(link)
+        print(pdf_name)
+        print()
+
         if type == 'leaflet':
             xml = Parser.convert_pdf(link, format='xml')
-            clear_xml = ClearXML.clear_XML_from_text_tags(xml)
-            paras = []
 
-            paras = extractParagraphs.extract_paragraphs(clear_xml)
+            try:
+                paras = extractParagraphsLeaflet.extract_paragraphs(xml)
+            except ET.ParseError as e:
+                continue
+
             if paras == []:
                 continue
 
@@ -121,6 +134,17 @@ for drug in linksResponse['Items']:
                     )
 
         else:
+            xml = Parser.convert_pdf(link, format='xml')
+            paras = extractParagraphsSPC.extract_paragraphs(xml)
+
+            try:
+                paras = extractParagraphsLeaflet.extract_paragraphs(xml)
+            except ET.ParseError as e:
+                continue
+
+            if paras == []:
+                continue
+
             if product_name in [t[0] for t in seen]:
                 drugsTable.update_item(
                     Key={
@@ -130,7 +154,9 @@ for drug in linksResponse['Items']:
                     UpdateExpression='SET spc = :val1',
                     ExpressionAttributeValues={
                         ':val1': {
-
+                            'link': link,
+                            'pdf_name': pdf_name,
+                            'paragraphs': paras
                         }
                     }
                 )
@@ -146,7 +172,9 @@ for drug in linksResponse['Items']:
                                 'advice': csv['advice']
                             },
                             'spc': {
-
+                                'link': link,
+                                'pdf_name': pdf_name,
+                                'paragraphs': paras
                             }
                         }
                     )
@@ -157,7 +185,9 @@ for drug in linksResponse['Items']:
                             'active_substance': active_substance,
                             'product': product_name,
                             'spc': {
-
+                                'link': link,
+                                'pdf_name': pdf_name,
+                                'paragraphs': paras
                             }
                         }
                     )
