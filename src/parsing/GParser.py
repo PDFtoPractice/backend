@@ -13,7 +13,7 @@ def convert_pdf(url, format='text', codec='utf-8', password=''):
     laparams = LAParams(line_overlap=0.5,
                  char_margin=2.0,
                  line_margin=0.9,
-                 word_margin=0.1,
+                 word_margin=0.5,
                  boxes_flow=0.5,
                  detect_vertical=False,
                  all_texts=False)
