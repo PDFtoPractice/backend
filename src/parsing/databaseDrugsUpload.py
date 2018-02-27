@@ -72,6 +72,7 @@ for drug in linksResponse['Items']:
         print(pdf_name)
         print()
 
+        # Link to PDF expired
         try:
             xml = Parser.convert_pdf(link, format='xml')
         except urllib.error.HTTPError as e:
