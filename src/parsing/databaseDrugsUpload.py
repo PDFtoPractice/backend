@@ -7,7 +7,7 @@ import urllib
 
 # Get database resource
 dynamodb = boto3.resource('dynamodb')
-'''
+
 # Create table for drugs data
 table = dynamodb.create_table(
     TableName='drugs',
@@ -36,7 +36,7 @@ table = dynamodb.create_table(
         'WriteCapacityUnits': 5
     }
 )
-'''
+
 csvTable = dynamodb.Table('csv_advice')
 linksTable = dynamodb.Table('leaflet_links')
 drugsTable = dynamodb.Table('drugs')

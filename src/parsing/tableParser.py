@@ -25,7 +25,6 @@ table = dynamodb.create_table(
     }
 )
 '''
-
 table = dynamodb.Table('perioperative_table')
 
 table.meta.client.get_waiter('table_exists').wait(TableName='perioperative_table')
