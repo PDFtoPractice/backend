@@ -85,6 +85,9 @@ def extract_paragraphs(xml_string):
 
             line_text += text.text      # Append text to the line
 
+        if len(line_text) < 5:
+            line_bold = False
+            
         if bold:
             line_text += "</b>"     # If the last character was bold add closing tag
 
