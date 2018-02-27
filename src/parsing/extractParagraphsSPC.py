@@ -150,6 +150,9 @@ def extract_paragraphs(xml_string):
         current_paragraph = re.sub(r'</b>\s*<b>', '', current_paragraph)
         paragraphs.append(current_paragraph)
 
+    if "" in paragraphs:
+        paragraphs.remove("")
+
     return paragraphs
 
 
