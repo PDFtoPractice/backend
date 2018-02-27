@@ -3,6 +3,7 @@ import parsing.extractParagraphsLeaflet as extractParagraphsLeaflet
 import parsing.extractParagraphsSPC as extractParagraphsSPC
 import boto3
 import xml.etree.ElementTree as ET
+import urllib
 
 # Get database resource
 dynamodb = boto3.resource('dynamodb')
@@ -44,12 +45,8 @@ linksResponse = linksTable.scan()
 csvResponse = csvTable.scan()
 
 csvs = csvResponse['Items']
-n = 1
-for drug in linksResponse['Items']:
-    if n > 0:
-        n = n - 1
-        continue
 
+for drug in linksResponse['Items']:
     active_substance = drug['drug']
     data = drug['data']
     seen = []
@@ -75,14 +72,19 @@ for drug in linksResponse['Items']:
         print(pdf_name)
         print()
 
-        if type == 'leaflet':
+        try:
             xml = Parser.convert_pdf(link, format='xml')
+        except urllib.error.HTTPError as e:
+            continue
 
+        if type == 'leaflet':
+            # Characters in PDF with no representation in the encoding used by the XML parser, ignore
             try:
                 paras = extractParagraphsLeaflet.extract_paragraphs(xml)
             except ET.ParseError as e:
                 continue
 
+            # PDF contains no embedded text
             if paras == []:
                 continue
 
@@ -134,11 +136,8 @@ for drug in linksResponse['Items']:
                     )
 
         else:
-            xml = Parser.convert_pdf(link, format='xml')
-            paras = extractParagraphsSPC.extract_paragraphs(xml)
-
             try:
-                paras = extractParagraphsLeaflet.extract_paragraphs(xml)
+                paras = extractParagraphsSPC.extract_paragraphs(xml)
             except ET.ParseError as e:
                 continue
 
