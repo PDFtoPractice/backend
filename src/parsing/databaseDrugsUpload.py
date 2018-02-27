@@ -69,10 +69,9 @@ for drug in linksResponse['Items']:
             clear_xml = ClearXML.clear_XML_from_text_tags(xml)
             paras = []
 
-            try :
-                paras = extractParagraphs.extract_paragraphs(clear_xml)
-            except ZeroDivisionError as e:
-                print(link)
+            paras = extractParagraphs.extract_paragraphs(clear_xml)
+            if paras == []:
+                continue
 
             if product_name in [t[0] for t in seen]:
                 drugsTable.update_item(
