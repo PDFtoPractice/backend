@@ -1,5 +1,4 @@
 import GParser as GParser
-# import extractParagraphs as ExtractParas
 import extractParagraphsLeaflet as ExtractParasLflt
 
 # from parsing import GParser # testing import needed
@@ -21,8 +20,6 @@ def get_active_subst(text, nlp):
         act_srch = re.search(phrases[i], text)
         actv_substances = []
         if act_srch != None:
-            print("Reached here")
-            print(phrases[i])
             last_one = False
             sentence = text[act_srch.start():act_srch.end()]
             begin_index = re.search(match[i][0], sentence).end()
@@ -31,7 +28,6 @@ def get_active_subst(text, nlp):
                 phrase_match = sentence[begin_index+1:]
             else:
                 phrase_match = sentence[begin_index+1:end_index]
-            print(phrase_match)
             phrase_match = phrase_match.replace("\n", "") # get rid of any new line symbols
             phrase_match = phrase_match.strip()
             words = phrase_match.split(" ")
@@ -66,42 +62,66 @@ def get_active_subst(text, nlp):
             return actv_substances
     return []
 
+
+def get_med_for(para, nlp): # extract purpose e.g. 'stop blood clot' -> 'medicine to stop blood clot' 'medicine to help to stop blood clots'
+    purpose = []
+    phrases = ['help to[\w\s]+.', 'helps to[\w\s]+.', 'used to[\w\s]+.', 'used for[\w\s]+.']
+    for phrase in phrases:
+        srch = re.search(phrase, para)
+        if srch != None:
+            # analyse using spacy
+            match = srch.group(0)
+            print(match)
+    return purpose
+
+
 # receives url of spcpil drug leaflet, returns lists of purposes for the drug if any can be found, otherwise returns empty list
 # Like http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1440737849470.pdf
 def get_purpose(paras, nlp):
     heading_matches = ['What[\w\s]+are and what they are used for.', 'What[\w\s]+is and what it is used for']
-    phrases = [('What[\w\s]+are and what they are used for.', 'This belongs to a group of medicines called[\w\s].'), ('What[\w\s]+is and what it is used for', 'This belongs to a group of medicines called[\w\s]')]
-    aliases = []
+    groups_matches = [('[\w\s] belongs to a group of medicines called [\'|\‘|\"|\‘][\w\s|-]+[\'|\‘|\"|\'],*[\w\s]+', '[\w\s] belongs to a group of medicines called'), ('[\w\s] belongs to a group of medicines called[\w\s].', '[\w\s] belongs to a group of medicines called'), ('[\w\s]+ belongs to a group of medicines known as [\w\s]+.', '[\w\s]+ belongs to a group of medicines known as')]
+    group = []
+    purpose = ''
     for para in paras:
-        for heading in phrases:
-            srch = re.search(heading[0], para)
+        para = para.replace("\n", "")  # get rid of any new line symbols that mess up the search
+        for heading in heading_matches: # get relevant paragraph
+            srch = re.search(heading, para)
             if srch != None:
-                print("Reached here")
-                txt = srch.group(0)
-                print(txt)
-                if re.search(heading[1], txt) != None:
-                    print("OVER HERE")
-                    print(para)
-                    str = re.sub(heading[1], '', srch.group(0)).strip()
-                    print(str)
-                    group = ''
-                    doc = nlp(u'' + str)
-                # for token in doc:
-                #     if str(token)[-1] in [',', ":", '.']:
-                #         token = token[:-1]
-                #         group += ' ' + token
-                #         group = group.strip()
-                #         break
-                #     elif token.dep_ == 'oprd':
-                #         group += ' ' + token
-                #         group = group.strip()
-                #         break
-                #     else:
-                #         group += ' ' + token
-                    print("Group ", group)
+                for phrase_pair in groups_matches:
+                    sentence = re.search(phrase_pair[0], para)
+                    if sentence != None:
+                        sentence =sentence.group(0)
+                        sentence = re.sub(phrase_pair[1], '', sentence)
 
-                    purpose = ''
-                    return group, purpose
+                        doc_sentence = nlp(u'' + sentence)
+                        curr_group = ''
+                        for tok in doc_sentence:
+                            if tok.text in ['\'', '"', '‘']:
+                                continue
+                            elif tok.is_stop or (tok.is_punct and tok.text != '-'):
+                                curr_group = curr_group.strip()
+                                break
+                            else:
+                                curr_group += tok.text + ' '
+                        curr_group = re.sub(' - ', '-', curr_group)
+                        if curr_group != '':
+                            group.append(curr_group)
+                            if curr_group[-1] == 's':
+                                group.append(curr_group[:-1])
+                            search_hyphen = re.search('-', curr_group)
+                            if search_hyphen != None: # if contains hyphen between words, add aliases
+                                group.append(re.sub('-', ' ', curr_group))
+                                group.append(re.sub('-', '', curr_group))
+                        sentence = re.sub(curr_group, '', sentence).strip()
+
+                        purpose_srch = sentence
+                        purpose = get_med_for(para, nlp)
+                        return group, purpose
+
+                # extract purpose e.g. 'medicine to help stop blood clots'
+                stop_synonyms = ['stop', 'prevent', 'inhibit']
+
+
 
     return '', ''
 
@@ -117,15 +137,14 @@ def get_aliases(url, product):
     xmldoc = GParser.convert_pdf(url, format='xml')
     paras = ExtractParasLflt.extract_paragraphs(xmldoc)
     aliases = []
-
-    # common_title = re.search('Before you take[\w\s]+\n', text)
-    # if common_title != None:
-    #     common_title = common_title.group(0)
-    #     common_title = re.sub('Before you take ', '', common_title)
-    #     if(common_title.endswith('Tablets')):
-    #         print(common_title)
-    #         aliases.append(common_title.replace('Tablets', '').strip()) # check this works
-    #     aliases.append(common_title)
+    common_title = re.search('Before you take[\w\s]+\n', text)
+    if common_title != None:
+        common_title = common_title.group(0)
+        common_title = re.sub('Before you take ', '', common_title)
+        if(common_title.endswith('Tablets')):
+            print(common_title)
+            aliases.append(common_title.replace('Tablets', '').strip()) # check this works
+        aliases.append(common_title)
 
     for para in paras:
         if para != '':
@@ -157,29 +176,57 @@ def get_aliases(url, product):
 
     # get purpose and get group of medicines it belongs to
     group_of_meds, purpose = get_purpose(paras, nlp)
-    if group_of_meds != '':
-        aliases.append(group_of_meds)
+    if group_of_meds != []:
+        aliases += group_of_meds
     if purpose != '':
         aliases.append(purpose)
-    print("aliases" , aliases)
     return aliases
 
+def conflicting_conditions(paras, nlp):
+    # loop through paras and get bit with if... if ... if ... bullet points
+    # do clean up
+    conditions = []
+    bullet_pts = []
+    for bullet_pt in bullet_pts:
+        # analyse structure of phrases and extract relevant bit, append to
+        cond = ''
+        if cond != '':
+            conditions.append(cond)
 
-# print(docs[2]) # text extracted from pdf above
+    return conditions
+
+
+
+def test_aliases():
+    # text = GParser.convert_pdf(url, format='text')
+    urls = ['http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1516338822280.pdf', 'http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1440737849470.pdf']
+    correct_group = [['antithrombotics', 'antithrombotic'], ['anti-thrombotic agents', 'anti-thrombotic agent', 'anti thrombotic agents', 'antithrombotic agents']]
+    correct_purpose = ['prevent blood clots', 'stop blood clots forming']
+    nlp = spacy.load('en')  # load vocab
+    for i in range(len(urls)):
+        xmldoc = GParser.convert_pdf(urls[i], format='xml')
+        paras = ExtractParasLflt.extract_paragraphs(xmldoc)
+        text = GParser.convert_pdf(urls[i], format='text')
+        group_of_meds, purpose = get_purpose(paras, nlp)
+        # print(group_of_meds)
+        # print(purpose)
+        # print (group_of_meds == correct_group[i])
+        # print (purpose == correct_purpose[i])
+        print(get_aliases(urls[i], ''))
+        # print(get_active_subst(text, nlp))
+
+# test_aliases()
+
+
+
+def test_extract_purpose():
+    txt = ['and binds to proteins in your blood to help to prevent blood clots.', 'and is used to prevent blood clots', 'and is used to decrease blood pressure', 'and is used to decrease blood pressure and alleviate chest pain']
+    nlp = spacy.load('en')  # load vocab
+    purpose = get_med_for(txt[0], nlp)
+    print(purpose)
+
+test_extract_purpose()
 # url = 'http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1440737849470.pdf'
 # url = 'http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1515129004813.pdf'
 # url = 'http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1450423174307.pdf'
-url = 'http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1516338822280.pdf'
-# get_aliases(url)
-
-nlp = spacy.load('en')  # load vocab
-
-xmldoc = GParser.convert_pdf(url, format='xml')
-paras = ExtractParasLflt.extract_paragraphs(xmldoc)
-# text = GParser.convert_pdf(url, format='text')
-
-# print(get_active_subst(text, nlp))
-
-group_of_meds, purpose = get_purpose(paras, nlp)
-print("Group of meds ", group_of_meds)
-print("Purpose ", purpose)
+# url = 'http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1516338822280.pdf'
