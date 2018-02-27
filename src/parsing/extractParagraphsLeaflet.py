@@ -133,7 +133,7 @@ def extract_paragraphs(xml_string):
         line_num += 1
 
     # Add the last paragraph
-    if not re.match(r'^\s*$', current_paragraph):
+    if not re.match(r'^\s*$', current_paragraph) and len(current_paragraph) > 0:
         #print("--------------\n" + current_paragraph)
         current_paragraph = re.sub(r'^(<br>)*', '', current_paragraph)
         current_paragraph = re.sub(r'</b>\s*<b>', '', current_paragraph)
@@ -180,4 +180,4 @@ def test_answer():
     test_url(url8, "")
 
 
-test_url(url10, "")
+test_url("http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1515129006991.pdf", "")
