@@ -79,7 +79,10 @@ def extract_paragraphs(xml_string):
         if bold:
             line_text += "</b>"     # If the last character was bold add closing tag
 
-        line_font_size = line_text_size_sum/line_length if line_length > 0 else 0
+        if len(line_text) < 5:
+            line_bold = False
+
+        line_font_size = line_text_size_sum/line_length if line_length > 0 else line_font_size
 
         # Delete whitespace at the beginning and end of the line
         line_text = re.sub(r'^\s*', '', line_text)
@@ -103,7 +106,7 @@ def extract_paragraphs(xml_string):
 
         # Make a paragraph division
         if ((line_font_size > (previous_line_font_size + 2)   # Increase in font size
-                or re.match(r'^\s*$', previous_line_text)     # Previous line contained only whitespaces
+                or re.match(r'^\s\s$', previous_line_text)     # Previous line contained only whitespaces
                 or (not previous_line_bold and line_bold))    # Previous line wasn't bold and current is
                 and len(current_paragraph) > 60               # Each paragraph should have at least 60 chars
                 and not re.match(r'^-', line_text)
@@ -187,4 +190,4 @@ def test_answer():
     test_url(url8, "")
 
 
-test_url("http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1500011509017.pdf", "")
+test_url("http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1512106479829.pdf", "")
