@@ -4,7 +4,11 @@ import xml.etree.ElementTree as ET
 
 
 def extract_paragraphs(xml_string):
-    root = ET.fromstring(xml_string + "</pages>")
+    xml_string = re.sub(r'^', ' ', xml_string)
+    try:
+        root = ET.fromstring(xml_string + "</pages>")
+    except ET.ParseError as e:
+        return []
 
     paragraphs = []
 
@@ -178,6 +182,3 @@ def test_answer():
     test_url(url5, "Pregnancy and breast-feeding")
     test_url(url5, "Pregnancy and breast-feeding")
     test_url(url8, "")
-
-
-test_url("http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1515129006991.pdf", "")

@@ -4,7 +4,12 @@ import xml.etree.ElementTree as ET
 
 
 def extract_paragraphs(xml_string):
+    xml_string = re.sub(r'^', ' ', xml_string)
     root = ET.fromstring(xml_string + "</pages>")
+    try:
+        root = ET.fromstring(xml_string + "</pages>")
+    except ET.ParseError as e:
+        return []
 
     paragraphs = []
 
