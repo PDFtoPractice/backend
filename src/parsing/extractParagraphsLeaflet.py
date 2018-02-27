@@ -4,7 +4,11 @@ import xml.etree.ElementTree as ET
 
 
 def extract_paragraphs(xml_string):
-    root = ET.fromstring(xml_string + "</pages>")
+    xml_string = re.sub(r'^', ' ', xml_string)
+    try:
+        root = ET.fromstring(xml_string + "</pages>")
+    except ET.ParseError as e:
+        return []
 
     paragraphs = []
 
@@ -133,11 +137,14 @@ def extract_paragraphs(xml_string):
         line_num += 1
 
     # Add the last paragraph
-    if not re.match(r'^\s*$', current_paragraph):
+    if not re.match(r'^\s*$', current_paragraph) and len(current_paragraph) > 5:
         #print("--------------\n" + current_paragraph)
         current_paragraph = re.sub(r'^(<br>)*', '', current_paragraph)
         current_paragraph = re.sub(r'</b>\s*<b>', '', current_paragraph)
         paragraphs.append(current_paragraph)
+
+    if "" in paragraphs:
+        paragraphs.remove("")
 
     return paragraphs
 
@@ -180,4 +187,4 @@ def test_answer():
     test_url(url8, "")
 
 
-test_url(url10, "")
+test_url("http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1500011509017.pdf", "")

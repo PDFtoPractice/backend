@@ -4,7 +4,12 @@ import xml.etree.ElementTree as ET
 
 
 def extract_paragraphs(xml_string):
+    xml_string = re.sub(r'^', ' ', xml_string)
     root = ET.fromstring(xml_string + "</pages>")
+    try:
+        root = ET.fromstring(xml_string + "</pages>")
+    except ET.ParseError as e:
+        return []
 
     paragraphs = []
 
@@ -139,11 +144,14 @@ def extract_paragraphs(xml_string):
         line_num += 1
 
     # Add the last paragraph
-    if not re.match(r'^\s*$', current_paragraph):
+    if not re.match(r'^\s*$', current_paragraph) and len(current_paragraph) > 0:
         #print("--------------\n" + current_paragraph)
         current_paragraph = re.sub(r'^(<br>)*', '', current_paragraph)
         current_paragraph = re.sub(r'</b>\s*<b>', '', current_paragraph)
         paragraphs.append(current_paragraph)
+
+    if "" in paragraphs:
+        paragraphs.remove("")
 
     return paragraphs
 
