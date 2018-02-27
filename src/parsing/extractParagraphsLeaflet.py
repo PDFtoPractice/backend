@@ -91,9 +91,11 @@ def extract_paragraphs(xml_string):
 
         # Fix weird character coding
         line_text = re.sub(r'ﬂ\s?', r"fl", line_text)
+        line_text = re.sub(r'\(cid:31\)\s?', r"fl", line_text)
         line_text = re.sub(r'ﬁ\s?', r"fi", line_text)
         line_text = re.sub(r'ﬀ\s?', r"ff", line_text)
         line_text = re.sub(r'’', r"'", line_text)
+        line_text = re.sub(r'â„˘', r"", line_text)
 
         # Make a paragraph division
         if ((line_font_size > (previous_line_font_size + 2)   # Increase in font size
@@ -148,6 +150,8 @@ url5 = "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1487918987
 url6 = "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1510292397494.pdf" #HIDRASEC - ok
 url7 = "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1515735504413.pdf" #Danazol - problematic
 url8 = "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1515129007314.pdf"
+url9 = "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1510288705437.pdf" #IBUPROFEN
+url10 = "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1513919093378.pdf" #Welfairin
 
 
 def test_url(url, sentence):
@@ -175,3 +179,5 @@ def test_answer():
     test_url(url5, "Pregnancy and breast-feeding")
     test_url(url8, "")
 
+
+test_url(url10, "")

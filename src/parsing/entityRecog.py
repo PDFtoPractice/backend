@@ -1,6 +1,6 @@
 import GParser as GParser
-import extractParagraphs as ExtractParas
-# import extractParagraphsLeaflet as ExtractParasLflt
+# import extractParagraphs as ExtractParas
+import extractParagraphsLeaflet as ExtractParasLflt
 
 # from parsing import GParser # testing import needed
 import re
@@ -15,12 +15,14 @@ headings = ['1. What (\s)+ is and what it is used for', '2. What you need to kno
 # receives text of drug leaflet, returns list of active substances if any can be found otherwise returns empty list
 def get_active_subst(text, nlp):
     only_one = True    # whether there are more than one active substance to extract
-    phrases = ['active substance is[\w\s]+.', 'active substances are([\w\s][,]*)+.', 'contains[\w\s]+ as the active ingredient', 'contains[\w]+ as the active ingredients', 'active ingredient is[\w\s]+.']
-    match = [('active substance is', '', only_one), ('active substances are', '', not only_one), ('contains', 'as the active ingredient', only_one), ('contains', 'as the active ingredients', not only_one), ('active ingredient is', '', only_one)]
+    phrases = ['active substance is[\w\s]+.', 'active substances are([\w\s][,]*)+.', 'contains[\w\s]+ as the active ingredient', 'contains[\w]+ as the active ingredients', 'active ingredient is[\w\s]+.', 'contains[\w\s|.]+ of the active substance', 'The active ingredient,[\w\s]+, is', '[\w\s]+ \(active ingredient\)']
+    match = [('active substance is', '', only_one), ('active substances are', '', not only_one), ('contains', 'as the active ingredient', only_one), ('contains', 'as the active ingredients', not only_one), ('active ingredient is', '', only_one), ('contains', 'of the active substance', only_one), ('The active ingredient,', ', is', only_one), ('', '\(active ingredient\)', only_one)]
     for i in range(len(phrases)):
         act_srch = re.search(phrases[i], text)
         actv_substances = []
         if act_srch != None:
+            print("Reached here")
+            print(phrases[i])
             last_one = False
             sentence = text[act_srch.start():act_srch.end()]
             begin_index = re.search(match[i][0], sentence).end()
@@ -29,9 +31,9 @@ def get_active_subst(text, nlp):
                 phrase_match = sentence[begin_index+1:]
             else:
                 phrase_match = sentence[begin_index+1:end_index]
+            print(phrase_match)
             phrase_match = phrase_match.replace("\n", "") # get rid of any new line symbols
-            if phrase_match[-1] == " ":
-                phrase_match = phrase_match[:-1]
+            phrase_match = phrase_match.strip()
             words = phrase_match.split(" ")
             curr_actv_subst = ""
             for j in range(len(words)):
@@ -44,6 +46,10 @@ def get_active_subst(text, nlp):
                     is_end = True
                 if word not in nlp.vocab:
                     curr_actv_subst += word + " "
+                    print(curr_actv_subst)
+                    if word == words[len(words)-1]: # if last word is active substance word, append to curr_actv_subst
+                        curr_actv_subst = curr_actv_subst.strip()
+                        actv_substances.append(curr_actv_subst)
                 else: # e.g. "active substance is rsodametal and this ...." consider end of referral to active subst
                     if curr_actv_subst != "":
                         is_end = True
@@ -64,14 +70,17 @@ def get_active_subst(text, nlp):
 # Like http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1440737849470.pdf
 def get_purpose(paras, nlp):
     heading_matches = ['What[\w\s]+are and what they are used for.', 'What[\w\s]+is and what it is used for']
-    phrases = [('What[\w\s]+are and what they are used for.', 'This belongs to a group of medicines called[\w\s].'), ('What[\w\s]+is and what it is used for', 'This belongs to a group of medicines called')]
+    phrases = [('What[\w\s]+are and what they are used for.', 'This belongs to a group of medicines called[\w\s].'), ('What[\w\s]+is and what it is used for', 'This belongs to a group of medicines called[\w\s]')]
     aliases = []
     for para in paras:
         for heading in phrases:
             srch = re.search(heading[0], para)
             if srch != None:
+                print("Reached here")
                 txt = srch.group(0)
+                print(txt)
                 if re.search(heading[1], txt) != None:
+                    print("OVER HERE")
                     print(para)
                     str = re.sub(heading[1], '', srch.group(0)).strip()
                     print(str)
@@ -101,13 +110,13 @@ def get_purpose(paras, nlp):
 # receives spcpil url of drug leaflet and returns aliases
 # what order do we want for most efficient search results?
 # https://spacy.io/usage/linguistic-features
-def get_aliases(url):
+# call function for all relevant leaflets under drug name
+def get_aliases(url, product):
     nlp = spacy.load('en')  # load vocab
     text = GParser.convert_pdf(url, format='text')
     xmldoc = GParser.convert_pdf(url, format='xml')
-    paras = ExtractParas.extract_paragraphs(xmldoc)
+    paras = ExtractParasLflt.extract_paragraphs(xmldoc)
     aliases = []
-    print("aliases" , aliases)
 
     # common_title = re.search('Before you take[\w\s]+\n', text)
     # if common_title != None:
@@ -121,19 +130,26 @@ def get_aliases(url):
     for para in paras:
         if para != '':
             title = para
+            title = re.sub('[ ]{2,}', ' ', title)  # replace multiple spaces by one space
+            title = re.sub('\n', '', title)
+            title = re.sub('®', '', title).strip()
+            title = re.sub('<br>|<b>', '', title)
+            title = re.sub('</br>|</b>', '', title)
+            title = re.sub('\([\w]+\)', '', title)
+            title = title.strip()
+            aliases.append(title)
+            if title.endswith('Tablets'):
+                title.replace('Tablets', '')
+                title.strip()
+                dosage_srch = re.search('\d', title)
+                if dosage_srch != None:
+                    title = re.sub('<br>|<b>', '', title)
+                    title = re.sub('</br>|</b>', '', title)
+                    title = title[:dosage_srch.start()].strip()
+
+                    aliases.append(title)
             break
 
-    title = re.sub('[ ]{2,}', ' ', title)  # replace multiple spaces by one space
-    title = re.sub('\n', '', title)
-    title = re.sub('®', '', title).strip()
-    aliases.append(title)
-    if title.endswith('Tablets'):
-        title.replace('Tablets', '')
-        title.strip()
-        dosage_srch = re.search('\d', title)
-        if dosage_srch != None:
-            title = title[:dosage_srch.start()].strip()
-            aliases.append(title)
     actv_subs = get_active_subst(text, nlp)
     if actv_subs != []:
         for active_sub in actv_subs:
@@ -145,21 +161,25 @@ def get_aliases(url):
         aliases.append(group_of_meds)
     if purpose != '':
         aliases.append(purpose)
+    print("aliases" , aliases)
     return aliases
 
-# IMPORTANT - EXTRACTING TEXT FROM THESE KIND OF LEAFLETS DOES NOT WORK WELL - HENCE NO MATCH FOR http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1512713289515.pdf.
-# Uncomment line below to see what I mean
+
 # print(docs[2]) # text extracted from pdf above
-url = 'http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1440737849470.pdf'
-get_aliases(url)
+# url = 'http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1440737849470.pdf'
+# url = 'http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1515129004813.pdf'
+# url = 'http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1450423174307.pdf'
+url = 'http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1516338822280.pdf'
+# get_aliases(url)
 
 nlp = spacy.load('en')  # load vocab
-#
-# doc = nlp(u'Naramig tablets contain naratriptan (hydrochloride), which belongs to a group of medicines called triptan exerme also known as 5-HT1 receptor agonists.')
-#
-# for token in doc:
-#     print(token.text, token.lemma_, token.pos_, token.tag_, token.dep_,
-#           token.shape_, token.is_alpha, token.is_stop)
+
 xmldoc = GParser.convert_pdf(url, format='xml')
-paras = ExtractParas.extract_paragraphs(xmldoc)
+paras = ExtractParasLflt.extract_paragraphs(xmldoc)
+# text = GParser.convert_pdf(url, format='text')
+
+# print(get_active_subst(text, nlp))
+
 group_of_meds, purpose = get_purpose(paras, nlp)
+print("Group of meds ", group_of_meds)
+print("Purpose ", purpose)
