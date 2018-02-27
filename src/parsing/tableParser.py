@@ -25,9 +25,10 @@ table = dynamodb.create_table(
     }
 )
 '''
-table.meta.client.get_waiter('table_exists').wait(TableName='perioperative_table')
 
 table = dynamodb.Table('perioperative_table')
+
+table.meta.client.get_waiter('table_exists').wait(TableName='perioperative_table')
 
 with table.batch_writer() as batch:
     for index, row in df.iterrows():
