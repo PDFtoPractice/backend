@@ -13,7 +13,7 @@ def extract_paragraphs(xml_string):
         for line in text_box.findall("textline"):
             bbox = line.get('bbox')
             params = bbox.split(',')
-            if float(params[2]) < 110:
+            if float(params[2]) < 120:
                 text_box.remove(line)
 
     # Compute average line width based on bboxes
@@ -148,7 +148,9 @@ def extract_paragraphs(xml_string):
     return paragraphs
 
 
-url1 = "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1492497354844.pdf" #spc for doctor - problematic
+url1 = "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1492497354844.pdf"  # spc for doctor
+url2 = "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1475211116165.pdf"
+url3 = "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1514526226656.pdf" # Welfairin
 
 
 def test_url(url, sentence):
@@ -170,6 +172,7 @@ def test_url(url, sentence):
 
 def test_answer():
     test_url(url1, "Interaction with other medicinal products and other forms of interaction")
+    test_url(url2, "Interaction with other medicinal products and other forms of interaction")
 
 
-test_answer()
+test_url(url3, "")
