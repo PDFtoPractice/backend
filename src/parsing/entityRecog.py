@@ -44,13 +44,13 @@ def get_active_subst(text, nlp):
                     curr_actv_subst += word + " "
                     if word == words[len(words)-1]: # if last word is active substance word, append to curr_actv_subst
                         curr_actv_subst = curr_actv_subst.strip()
-                        actv_substances.append(curr_actv_subst)
+                        actv_substances.append(curr_actv_subst.lower())
                 else: # e.g. "active substance is rsodametal and this ...." consider end of referral to active subst
                     if curr_actv_subst != "":
                         is_end = True
                 if is_end and curr_actv_subst != "":
                     curr_actv_subst = curr_actv_subst.strip()
-                    actv_substances.append(curr_actv_subst)
+                    actv_substances.append(curr_actv_subst.lower())
                     curr_actv_subst = ""
                     if match[i][2] == only_one:
                         # print("match: " , match[i])
@@ -96,25 +96,25 @@ def get_med_for(para, nlp): # extract purpose e.g. 'stop blood clot' -> 'medicin
                                 if not isinstance(purpose1, str):
                                     purpose1txt = purpose1.text
                                 purpose1 = purpose1txt.replace(lemma[0], lemma[1])
-                            purpose.append(purpose1)
+                            purpose.append(purpose1.lower())
                             if (len(span)-1) != i and span[i+1].pos_ == "ADP":
                                 index = i+1
                             break
                     elif token.pos_ == "VERB":
-                        lemma = (token.text, token.lemma_)
+                        lemma = (token.text.lower(), token.lemma_.lower())
                         lemmas.append(lemma)
                 if index != -1:
                     for j in range(index, len(span)):
                         token = span[j]
                         if token.pos_ == "NOUN" and span[j+1].pos_ != "NOUN":
                             purpose2 = span[:j+1]
-                            purpose.append(purpose2.text)
+                            purpose.append(purpose2.text.lower())
 
                 sz = len(purpose)
                 for i in range(sz):
                     item = purpose[i]
                     new_item = 'medicine to ' + item
-                    purpose.append(new_item)
+                    purpose.append(new_item.lower())
                 return purpose
     return purpose
 
@@ -131,17 +131,17 @@ def get_aliases(url):
     aliases = []
     common_title = re.search('Before you take[\w\s]+\n', text)
     if common_title != None:
-        common_title = common_title.group(0)
+        common_title = common_title.group(0).strip()
         common_title = re.sub('Before you take ', '', common_title)
+        common_title = re.sub('\n', '', common_title)
         if(common_title.endswith('Tablets')):
-            aliases.append(common_title.replace('Tablets', '').strip()) # check this works
-        aliases.append(common_title)
-
+            aliases.append(common_title.replace('Tablets', '').strip().lower()) # check this works
+        aliases.append(common_title.lower())
     actv_subs = get_active_subst(text, nlp)
 
     if actv_subs != []:
         for active_sub in actv_subs:
-            aliases.append(active_sub)
+            aliases.append(active_sub.lower())
 
     # get purpose and get group of medicines it belongs to
     heading_matches = [('What[\w\s]+are and what they are used for', 'What', 'are and what they are used for' ), ('What[\w\s]+is and what it is used for', 'What', 'is and what it is used for' )]
@@ -154,14 +154,17 @@ def get_aliases(url):
             srch = re.search(heading[0], para)
             if srch != None:
                 title = srch.group(0)
+                if title.count("\n") >= 3:
+                    continue
                 title = re.sub(heading[1], '', title)
                 title = re.sub(heading[2], '', title)
+                title = re.sub('\n', '', title)
                 title = title.strip()
                 if title != '':
-                    aliases.append(title)
-                if not title.endswith('Tablets'):
-                    title = title + ' ' + 'Tablets'
-                    aliases.append(title)
+                    aliases.append(title.lower())
+                if (not title.endswith('Tablets')) or (not title.endswith('tablets')):
+                    title = title + ' ' + 'tablets'
+                    aliases.append(title.lower())
                 for phrase_pair in groups_matches:
                     sentence = re.search(phrase_pair[0], para)
                     if sentence != None:
@@ -179,13 +182,13 @@ def get_aliases(url):
                                 curr_group += tok.text + ' '
                         curr_group = re.sub(' - ', '-', curr_group)
                         if curr_group != '':
-                            group.append(curr_group)
+                            group.append(curr_group.lower())
                             if curr_group[-1] == 's':
-                                group.append(curr_group[:-1])
+                                group.append(curr_group[:-1].lower())
                             search_hyphen = re.search('-', curr_group)
                             if search_hyphen != None: # if contains hyphen between words, add aliases
-                                group.append(re.sub('-', ' ', curr_group))
-                                group.append(re.sub('-', '', curr_group))
+                                group.append(re.sub('-', ' ', curr_group).lower())
+                                group.append(re.sub('-', '', curr_group).lower())
                         sentence = re.sub(curr_group, '', sentence).strip()
         if purposes == []:
             purpose = get_med_for(para, nlp)
@@ -205,7 +208,7 @@ def conflicting_conditions(paras, nlp):
         # analyse structure of phrases and extract relevant bit, append to
         cond = ''
         if cond != '':
-            conditions.append(cond)
+            conditions.append(cond.lower())
 
     return conditions
 
@@ -213,12 +216,12 @@ def conflicting_conditions(paras, nlp):
 
 def test_aliases():
     # text = GParser.convert_pdf(url, format='text')
-    urls = ['http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1516338822280.pdf', 'http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1440737849470.pdf', 'http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1487918987625.pdf']
+    urls = ['http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1516338822280.pdf', 'http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1440737849470.pdf', 'http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1487918987625.pdf', 'http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1471582099226.pdf']
     correct_group = [['antithrombotics', 'antithrombotic'], ['anti-thrombotic agents', 'anti-thrombotic agent', 'anti thrombotic agents', 'antithrombotic agents']]
     correct_purpose = ['prevent blood clots', 'stop blood clots forming']
     nlp = spacy.load('en')  # load vocab
     for i in range(len(urls)):
-        if i != 2:
+        if i != 3:
             continue
         xmldoc = GParser.convert_pdf(urls[i], format='xml')
         paras = ExtractParasLflt.extract_paragraphs(xmldoc)
@@ -231,7 +234,7 @@ def test_aliases():
         print(get_aliases(urls[i]))
         # print(get_active_subst(text, nlp))
 
-test_aliases()
+# test_aliases()
 
 
 
