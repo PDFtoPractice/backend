@@ -7,7 +7,7 @@ import urllib
 
 # Get database resource
 dynamodb = boto3.resource('dynamodb')
-
+'''
 # Create table for drugs data
 table = dynamodb.create_table(
     TableName='drugs',
@@ -36,7 +36,7 @@ table = dynamodb.create_table(
         'WriteCapacityUnits': 5
     }
 )
-
+'''
 csvTable = dynamodb.Table('csv_advice')
 linksTable = dynamodb.Table('leaflet_links')
 drugsTable = dynamodb.Table('drugs')
@@ -45,8 +45,12 @@ linksResponse = linksTable.scan()
 csvResponse = csvTable.scan()
 
 csvs = csvResponse['Items']
-
+n=98
 for drug in linksResponse['Items']:
+    if n > 0:
+        n = n - 1
+        continue
+
     active_substance = drug['drug']
     data = drug['data']
     seen = []
@@ -67,6 +71,7 @@ for drug in linksResponse['Items']:
         if (product_name, type) in seen:
             continue
 
+        print(active_substance)
         print(product_name)
         print(link)
         print(pdf_name)
@@ -76,6 +81,8 @@ for drug in linksResponse['Items']:
         try:
             xml = Parser.convert_pdf(link, format='xml')
         except urllib.error.HTTPError as e:
+            continue
+        except TypeError as e:
             continue
 
         if type == 'leaflet':
