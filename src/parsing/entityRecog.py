@@ -64,6 +64,7 @@ def get_active_subst(text, nlp):
 
 
 def get_med_for(para, nlp): # extract purpose e.g. 'stop blood clot' -> 'medicine to stop blood clot' 'medicine to help to stop blood clots'
+    from spacy.lemmatizer import Lemmatizer
     purpose = []
     phrases = ['help to[\w\s]+.', 'helps to[\w\s]+.', 'used to[\w\s]+.', 'used for[\w\s]+.']
     for phrase in phrases:
@@ -71,7 +72,50 @@ def get_med_for(para, nlp): # extract purpose e.g. 'stop blood clot' -> 'medicin
         if srch != None:
             # analyse using spacy
             match = srch.group(0)
-            print(match)
+            seenFirstVerb = False
+            doc = nlp(u'' + match)
+            for i in range(len(doc)):
+                token = doc[i]
+                if token.pos_ == "VERB":
+                    if seenFirstVerb:
+                        span = doc[i:len(doc)]
+                        break
+                    else:
+                        seenFirstVerb = True
+            # get first occurance of noun in this span. stop phrase there and add to purpose
+            # if following noun we have ADP (i.e. 'in', 'on'), take noun following ADP and append to built up phrase so far and append to purpose
+            index = -1 # index of ADP
+            purpose1 = ''
+            lemmas = []
+            for i in range(len(span)):
+                token = span[i]
+                if token.pos_ == "NOUN":
+                    if i!=(len(span)-1) and span[i+1].pos_ != "NOUN":
+                        purpose1 = span[:i+1]
+                        for lemma in lemmas:
+                            purpose1txt = purpose1.text
+                            purpose1 = purpose1txt.replace(lemma[0], lemma[1])
+                        purpose.append(purpose1)
+                        if (len(span)-1) != i and span[i+1].pos_ == "ADP":
+                            index = i+1
+                        break
+                elif token.pos_ == "VERB":
+                    lemma = (token.text, token.lemma_)
+                    lemmas.append(lemma)
+
+            if index != -1:
+                for j in range(index, len(span)):
+                    token = span[j]
+                    if token.pos_ == "NOUN" and span[j+1].pos_ != "NOUN":
+                        purpose2 = span[:j+1]
+                        purpose.append(purpose2.text)
+
+            sz = len(purpose)
+            for i in range(sz):
+                item = purpose[i]
+                new_item = 'medicine to ' + item
+                purpose.append(new_item)
+            return purpose
     return purpose
 
 
@@ -142,7 +186,6 @@ def get_aliases(url, product):
         common_title = common_title.group(0)
         common_title = re.sub('Before you take ', '', common_title)
         if(common_title.endswith('Tablets')):
-            print(common_title)
             aliases.append(common_title.replace('Tablets', '').strip()) # check this works
         aliases.append(common_title)
 
@@ -220,10 +263,12 @@ def test_aliases():
 
 
 def test_extract_purpose():
-    txt = ['and binds to proteins in your blood to help to prevent blood clots.', 'and is used to prevent blood clots', 'and is used to decrease blood pressure', 'and is used to decrease blood pressure and alleviate chest pain']
+    txt = ['and binds to proteins in your blood to help to prevent blood clots.', 'and binds to proteins in your blood to help to prevent blood clots in the brain.', 'and is used to prevent blood clots.', 'and is used to decrease blood pressure.', 'and is used to decrease blood pressure and alleviate chest pain.', 'used for preventing blood clots.']
     nlp = spacy.load('en')  # load vocab
-    purpose = get_med_for(txt[0], nlp)
-    print(purpose)
+    for t in txt:
+        print(t)
+        purpose = get_med_for(t, nlp)
+        print(purpose)
 
 test_extract_purpose()
 # url = 'http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1440737849470.pdf'
