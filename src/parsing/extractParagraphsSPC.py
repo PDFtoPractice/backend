@@ -87,7 +87,7 @@ def extract_paragraphs(xml_string):
 
         if len(line_text) < 5:
             line_bold = False
-            
+
         if bold:
             line_text += "</b>"     # If the last character was bold add closing tag
 
@@ -146,11 +146,11 @@ def extract_paragraphs(xml_string):
         previous_line_font_size = line_font_size
         line_num += 1
 
+    current_paragraph = re.sub(r'^(<br>)*', '', current_paragraph)
+    current_paragraph = re.sub(r'</b>\s*<b>', '', current_paragraph)
+
     # Add the last paragraph
-    if not re.match(r'^\s*$', current_paragraph) and len(current_paragraph) > 0:
-        #print("--------------\n" + current_paragraph)
-        current_paragraph = re.sub(r'^(<br>)*', '', current_paragraph)
-        current_paragraph = re.sub(r'</b>\s*<b>', '', current_paragraph)
+    if (not re.match(r'^(\s*\n*)*$', current_paragraph)) and len(current_paragraph) > 5:
         paragraphs.append(current_paragraph)
 
     if "" in paragraphs:
