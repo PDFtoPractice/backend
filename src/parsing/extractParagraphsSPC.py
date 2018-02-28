@@ -120,6 +120,8 @@ def extract_paragraphs(xml_string):
                 and not re.match(r':\s*(<.*>)*$', current_paragraph)):
             current_paragraph = re.sub(r'</b>\s*<b>', '', current_paragraph)
             current_paragraph = re.sub(r'^(<br>)*', '', current_paragraph)
+            if len(current_paragraph) == 0:
+                current_paragraph = "<br>"
             paragraphs.append(current_paragraph)
             # print("--------------\n" + current_paragraph)
             current_paragraph = ""
