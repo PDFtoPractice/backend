@@ -113,6 +113,8 @@ def extract_paragraphs(xml_string):
                 and not re.match(r':\s*(<.*>)*$', current_paragraph)):
             current_paragraph = re.sub(r'</b>\s*<b>', '', current_paragraph)
             current_paragraph = re.sub(r'^(<br>)*', '', current_paragraph)
+            if len(current_paragraph) == 0:
+                current_paragraph = "<br>"
             paragraphs.append(current_paragraph)
             # print("--------------\n" + current_paragraph)
             current_paragraph = ""
@@ -145,9 +147,6 @@ def extract_paragraphs(xml_string):
     # Add the last paragraph
     if (not re.match(r'^(\s*\n*)*$', current_paragraph)) and len(current_paragraph) > 5:
         paragraphs.append(current_paragraph)
-
-    if "" in paragraphs:
-        paragraphs.remove("")
 
     return paragraphs
 
@@ -190,4 +189,4 @@ def test_answer():
     test_url(url8, "")
 
 
-test_url("http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1516943316127.pdf", "")
+#test_url("http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1516943316127.pdf", "")
