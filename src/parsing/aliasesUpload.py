@@ -35,7 +35,7 @@ for drug in linksResponse['Items']:
                 print("Error")
                 continue
             if names != []:
-                names = [product_name] + names
+                names = [product_name.lower()] + names
                 aliases = group_of_meds
                 aliases += purpose
                 if aliases != []:
@@ -49,7 +49,7 @@ for drug in linksResponse['Items']:
                         print(log)
                         aliases_table.put_item(
                             Item={
-                                'drug_name': name,
+                                'drug_name': name.lower(),
                                 'aliases': list_aliases
                             }
                         )
@@ -75,6 +75,7 @@ for drug in linksResponse['Items']:
 #             pdf_name = product['pdf_name']
 #             product_name = product['product']
 #
+
 
 
 

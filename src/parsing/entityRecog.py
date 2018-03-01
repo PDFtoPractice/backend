@@ -4,6 +4,9 @@ import extractParagraphsLeaflet as ExtractParasLflt
 # from parsing import GParser # testing import needed
 import re
 import spacy
+from collections import OrderedDict
+
+
 urls = ['http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1492496435313.pdf', 'http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1510292397494.pdf', 'http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1512713289515.pdf', 'http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1517548373003.pdf', 'http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1515735504413.pdf']
 docs = [GParser.convert_pdf(url, format='text') for url in urls]
 
@@ -57,66 +60,75 @@ def get_active_subst(text, nlp):
                         return actv_substances
                 if (last_one and is_end) or (last_one and word not in nlp.vocab):
                     return actv_substances
-
+            actv_substances = list(dict((x, True) for x in actv_substances).keys())
             return actv_substances
     return []
 
 # deal with Topical corticosteroids are able to reduce the inflammation caused by a variety of skin condition
 def get_med_for(para, nlp): # extract purpose e.g. 'stop blood clot' -> 'medicine to stop blood clot' 'medicine to help to stop blood clots'
-    purpose = []
+    purposes = []
     phrases = ['help to[\w\s]+.', 'helps to[\w\s]+.', 'used to[\w\s]+.', 'used for[\w\s]+.', 'are able to[\w\s]+', 'is able to[\w\s]+']
     for phrase in phrases:
         srch = re.search(phrase, para)
         if srch != None:
             # analyse using spacy
             match = srch.group(0)
-            seenFirstVerb = False
-            doc = nlp(u'' + match)
-            span = None
-            for i in range(len(doc)):
-                token = doc[i]
-                if token.pos_ == "VERB":
-                    if seenFirstVerb:
-                        span = doc[i:len(doc)]
-                        break
-                    else:
-                        seenFirstVerb = True
-            # get first occurance of noun in this span. stop phrase there and add to purpose
-            # if following noun we have ADP (i.e. 'in', 'on'), take noun following ADP and append to built up phrase so far and append to purpose
-            index = -1 # index of ADP
-            purpose1 = ''
-            lemmas = []
-            if span != None:
-                for i in range(len(span)):
-                    token = span[i]
-                    if token.pos_ == "NOUN":
-                        if i!=(len(span)-1) and span[i+1].pos_ != "NOUN":
-                            purpose1 = span[:i+1]
-                            for lemma in lemmas:
-                                if not isinstance(purpose1, str):
-                                    purpose1txt = purpose1.text
-                                purpose1 = purpose1txt.replace(lemma[0], lemma[1])
-                            purpose.append(purpose1.lower())
-                            if (len(span)-1) != i and span[i+1].pos_ == "ADP":
-                                index = i+1
+            if re.search('not', match) == None: # deal with should not situation
+                seenFirstVerb = False
+                doc = nlp(u'' + match)
+                span = None
+                for i in range(len(doc)):
+                    token = doc[i]
+                    if token.pos_ == "VERB":
+                        if seenFirstVerb:
+                            span = doc[i:len(doc)]
                             break
-                    elif token.pos_ == "VERB":
-                        lemma = (token.text.lower(), token.lemma_.lower())
-                        lemmas.append(lemma)
-                if index != -1:
-                    for j in range(index, len(span)):
-                        token = span[j]
-                        if token.pos_ == "NOUN" and span[j+1].pos_ != "NOUN":
-                            purpose2 = span[:j+1]
-                            purpose.append(purpose2.text.lower())
-
-                sz = len(purpose)
-                for i in range(sz):
-                    item = purpose[i]
-                    new_item = 'medicine to ' + item
-                    purpose.append(new_item.lower())
-                return purpose
-    return purpose
+                        else:
+                            seenFirstVerb = True
+                # get first occurance of noun in this span. stop phrase there and add to purpose
+                # if following noun we have ADP (i.e. 'in', 'on'), take noun following ADP and append to built up phrase so far and append to purpose
+                index = -1 # index of ADP
+                purpose = ''
+                lemmas = []
+                if span != None:
+                    for i in range(len(span)):
+                        token = span[i]
+                        if token.pos_ == "NOUN":
+                            if i!=(len(span)-1) and span[i+1].pos_ != "NOUN":
+                                purpose = span[:i+1]
+                                for lemma in lemmas:
+                                    if not isinstance(purpose, str):
+                                        purpose = purpose.text
+                                    if purpose.lower() not in ['treat the following conditions']:
+                                        purposes.append(purpose)
+                                        if lemma[0] != lemma[1]:
+                                            non_lemmatized = 'medicines for ' + purpose
+                                            purposes.append(non_lemmatized)
+                                            purpose = purpose.replace(lemma[0], lemma[1])
+                                            purposes.append(purpose)
+                                            lemmatized = 'medicine to ' + purpose
+                                            purposes.append(lemmatized)
+                                        else:
+                                            purposes.append(purpose)
+                                            purpose = 'medicine to ' + purpose
+                                            purposes.append(purpose)
+                                if purpose.lower() not in ['treat the following conditions']:
+                                    purposes.append(purpose.lower())
+                                    if (len(span)-1) != i and span[i+1].pos_ == "ADP":
+                                        index = i+1
+                                    break
+                        elif token.pos_ == "VERB":
+                            lemma = (token.text.lower(), token.lemma_.lower())
+                            lemmas.append(lemma)
+                    if index != -1:
+                        for j in range(index, len(span)):
+                            token = span[j]
+                            if token.pos_ == "NOUN" and span[j+1].pos_ != "NOUN":
+                                purpose2 = span[:j+1]
+                                purposes.append(purpose2.text.lower())
+                                purposes.append('medicine to ' + purpose2.text.lower())
+                    return purposes
+    return purposes
 
 
 # receives spcpil url of drug leaflet and returns aliases
@@ -131,9 +143,11 @@ def get_aliases(url):
     aliases = []
     common_title = re.search('Before you take[\w\s]+\n', text)
     if common_title != None:
-        common_title = common_title.group(0).strip()
+        common_title = common_title.group(0)
         common_title = re.sub('Before you take ', '', common_title)
         common_title = re.sub('\n', '', common_title)
+        common_title = re.sub('•', '', common_title)
+        common_title = common_title.strip()
         if(common_title.endswith('Tablets')):
             aliases.append(common_title.replace('Tablets', '').strip().lower()) # check this works
         aliases.append(common_title.lower())
@@ -145,7 +159,7 @@ def get_aliases(url):
 
     # get purpose and get group of medicines it belongs to
     heading_matches = [('What[\w\s]+are and what they are used for', 'What', 'are and what they are used for' ), ('What[\w\s]+is and what it is used for', 'What', 'is and what it is used for' )]
-    groups_matches = [('[\w\s] belongs to a group of medicines called [\'|\‘|\"|\‘][\w\s|-]+[\'|\‘|\"|\'],*[\w\s]+', '[\w\s] belongs to a group of medicines called'), ('[\w\s] belongs to a group of medicines called[\w\s].', '[\w\s] belongs to a group of medicines called'), ('[\w\s]+ belongs to a group of medicines known as [\w\s]+.', '[\w\s]+ belongs to a group of medicines known as')]
+    groups_matches = [('[\w\s]+ group of medicines called [\w\s]+-*[\w\s]+', '[\w\s]+ group of medicines called'), ('[\w\s]+ group of medicine called [\w\s]+-*[\w\s]+', '[\w\s]+ group of medicine called'), ('[\w\s] belongs to a group of medicines called [\'|\‘|\"|\‘][\w\s]+-*[\w\s]+[\'|\‘|\"|\'],*[\w\s]+', '[\w\s] belongs to a group of medicines called'), ('[\w\s] belongs to a group of medicines called[\w\s]+-*[\w\s]+.', '[\w\s] belongs to a group of medicines called'), ('[\w\s]+ group of medicines known as [\w\s]+-*[\w\s]+.', '[\w\s]+ group of medicines known as')]
     group = []
     purposes = []
     for para in paras:
@@ -159,28 +173,32 @@ def get_aliases(url):
                 title = re.sub(heading[1], '', title)
                 title = re.sub(heading[2], '', title)
                 title = re.sub('\n', '', title)
+                title = re.sub('•', '', title)
                 title = title.strip()
                 if title != '':
                     aliases.append(title.lower())
-                if (not title.endswith('Tablets')) or (not title.endswith('tablets')):
-                    title = title + ' ' + 'tablets'
-                    aliases.append(title.lower())
+                    if (not title.endswith('Tablets')) and (not title.endswith('tablets')):
+                        title = title + ' ' + 'tablets'
+                        aliases.append(title.lower())
                 for phrase_pair in groups_matches:
                     sentence = re.search(phrase_pair[0], para)
                     if sentence != None:
                         sentence =sentence.group(0)
+                        print(sentence)
                         sentence = re.sub(phrase_pair[1], '', sentence)
                         doc_sentence = nlp(u'' + sentence)
                         curr_group = ''
                         for tok in doc_sentence:
+                            print(tok)
                             if tok.text in ['\'', '"', '‘']:
                                 continue
-                            elif tok.is_stop or (tok.is_punct and tok.text != '-'):
+                            elif tok.is_stop or (tok.is_punct and (tok.text != '-')):
                                 curr_group = curr_group.strip()
                                 break
                             else:
                                 curr_group += tok.text + ' '
                         curr_group = re.sub(' - ', '-', curr_group)
+                        curr_group = curr_group.strip()
                         if curr_group != '':
                             group.append(curr_group.lower())
                             if curr_group[-1] == 's':
@@ -196,6 +214,9 @@ def get_aliases(url):
                 purposes += purpose
 
     group_of_meds = group
+    aliases = list(dict((alias, True) for alias in aliases).keys())
+    group_of_meds = list(dict((g, True) for g in group_of_meds).keys())
+    purposes = list(dict((p, True) for p in purposes).keys())
 
     return aliases, group_of_meds, purposes
 
@@ -247,8 +268,5 @@ def test_extract_purpose():
         print(purpose)
 
 # test_extract_purpose()
-# url = 'http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1440737849470.pdf'
-# url = 'http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1515129004813.pdf'
-# url = 'http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1450423174307.pdf'
-# url = 'http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1516338822280.pdf'
-# print(get_med_for('Topical corticosteroids are able to reduce the inflammation caused by a variety of skin conditions, and so allow it to get better.', spacy.load('en')))
+# aliases, group, purpose = get_aliases('http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1473655667813.pdf')
+# print(aliases, group, purpose)
