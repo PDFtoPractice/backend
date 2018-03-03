@@ -5,3 +5,5 @@ configparser==3.5.0
 awscli==1.14.34
 pdfminer.six
 requests
+nltk==3.2.5
+spacy

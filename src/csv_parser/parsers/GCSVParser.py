@@ -2,7 +2,7 @@ import pandas as pd
 import boto3
 
 # Read csv file into data frame
-dataFrame = pd.read_csv('/Users/gordonbuck/Documents/PyCharmProjects/GroupProject/backend/csv_parser/drug_instructions.csv')
+dataFrame = pd.read_csv('/Users/gordonbuck/Documents/PyCharmProjects/GroupProject/backend/src/csv_parser/csv/drug_instructions.csv')
 
 # Get database resource
 dynamodb = boto3.resource('dynamodb')
@@ -14,21 +14,13 @@ table = dynamodb.create_table(
         {
             'AttributeName': 'drug',
             'KeyType': 'HASH'
-        },
-        {
-            'AttributeName': 'advice',
-            'KeyType': 'RANGE'
         }
     ],
     AttributeDefinitions=[
         {
             'AttributeName': 'drug',
             'AttributeType': 'S'
-        },
-        {
-            'AttributeName': 'advice',
-            'AttributeType': 'S'
-        },
+        }
 
     ],
     ProvisionedThroughput={
