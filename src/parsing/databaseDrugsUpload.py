@@ -48,9 +48,6 @@ csvResponse = csvTable.scan()
 
 csvs = csvResponse['Items']
 
-n=0
-not_seen = True
-
 while 'LastEvaluatedKey' in linksResponse:
     linksResponse = linksTable.scan(
         ExclusiveStartKey=linksResponse['LastEvaluatedKey']
@@ -58,11 +55,6 @@ while 'LastEvaluatedKey' in linksResponse:
 
     for drug in linksResponse['Items']:
         active_substance = drug['drug']
-        n = n + 1
-
-        if not_seen and active_substance != 'LAMOTRIGINE':
-            continue
-        not_seen = False
 
         data = drug['data']
         seen = []
@@ -223,4 +215,3 @@ while 'LastEvaluatedKey' in linksResponse:
                 continue
 
             seen.append((product_name, type))
-
