@@ -6,7 +6,7 @@ import urllib
 from botocore.exceptions import ClientError
 import time
 import pdfminer.psparser as PE
-import sys
+
 # Get database resource
 dynamodb = boto3.resource('dynamodb')
 '''
