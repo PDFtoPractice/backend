@@ -2,14 +2,12 @@ import parsing.GParser as Parser
 import parsing.extractParagraphsLeaflet as extractParagraphsLeaflet
 import parsing.extractParagraphsSPC as extractParagraphsSPC
 import boto3
-import urllib
 from botocore.exceptions import ClientError
 import time
-import pdfminer.psparser as PE
 
 # Get database resource
 dynamodb = boto3.resource('dynamodb')
-'''
+
 # Create table for drugs data
 table = dynamodb.create_table(
     TableName='drugs',
@@ -38,21 +36,30 @@ table = dynamodb.create_table(
         'WriteCapacityUnits': 5
     }
 )
-'''
+
+# Get handle on the tables in the database
 csvTable = dynamodb.Table('csv_advice')
 linksTable = dynamodb.Table('leaflet_links')
 drugsTable = dynamodb.Table('drugs')
 
-linksResponse = linksTable.scan()
+# Scan the csv table and fetch the items
 csvResponse = csvTable.scan()
-
 csvs = csvResponse['Items']
 
+# Scan the links table
+linksResponse = linksTable.scan()
+not_first_iter = False
+
+# While there are more links to fetch from the table, scan the table
 while 'LastEvaluatedKey' in linksResponse:
-    linksResponse = linksTable.scan(
-        ExclusiveStartKey=linksResponse['LastEvaluatedKey']
+
+    # Do not scan if on the first iteration as we have already scanned
+    if (not_first_iter):
+        linksResponse = linksTable.scan(
+            ExclusiveStartKey=linksResponse['LastEvaluatedKey']
         )
 
+    # For each item in the links response get the active substance and data maps
     for drug in linksResponse['Items']:
         active_substance = drug['drug']
 
@@ -60,18 +67,22 @@ while 'LastEvaluatedKey' in linksResponse:
         seen = []
         csv = {}
 
+        # See if there is any information in the csv about the active substance
         for csv_ in csvs:
             name = csv_['drug']
             if (name.lower() in active_substance.lower() or active_substance.lower() in name.lower()):
                 csv = csv_
                 break
 
+        # For each product under the active substance fetch a leaflet and summary of product characteristics
+        # and extract the pdfs into paragraphs to be inserted into the database
         for product in data:
             link = product['link']
             product_name = product['product']
             pdf_name = product['pdf_name']
             type = 'leaflet' if pdf_name.startswith('leaflet') else 'spc' if pdf_name.startswith('spc') else ''
 
+            # We have already collected a leaflet of this type for the given product
             if (product_name, type) in seen:
                 continue
 
@@ -81,28 +92,27 @@ while 'LastEvaluatedKey' in linksResponse:
             print(pdf_name)
             print()
 
+            # The pdf is neither a leaflet or a summary of product characteristics - ignore the pdf
             if type == '':
                 continue
 
-            # Link to PDF expired
+            # Internal failure in the pdfminer.six library - the pdf cannot be parsed, or the url has expired - ignore the pdf
             try:
                 xml = Parser.convert_pdf(link, format='xml')
             except Exception as e:
                 continue
 
-            should_continue = False
-
             while (True):
                 try:
                     if type == 'leaflet':
-                        # Characters in PDF with no representation in the encoding used by the XML parser, ignore
                         paras = extractParagraphsLeaflet.extract_paragraphs(xml)
 
-                        # PDF contains no embedded text
+                        # PDF contains no embedded text - ignore it
                         if paras == []:
                             should_continue = True
                             break
 
+                        # Create item if not already in database, and add paragraphs
                         if product_name in [t[0] for t in seen]:
                             drugsTable.update_item(
                                 Key={
@@ -153,10 +163,12 @@ while 'LastEvaluatedKey' in linksResponse:
                     else:
                         paras = extractParagraphsSPC.extract_paragraphs(xml)
 
+                        # PDF contains no embedded text - ignore it
                         if paras == []:
                             should_continue = True
                             break
 
+                        # Create item if not already in database, and add paragraphs
                         if product_name in [t[0] for t in seen]:
                             drugsTable.update_item(
                                 Key={
@@ -206,12 +218,12 @@ while 'LastEvaluatedKey' in linksResponse:
                     break
 
                 except ClientError as e:
-                    # We have exceeded the provisioned database throughput, sleep before putting more items
+                    # We have exceeded the provisioned database throughput, sleep before putting more items to reduce the write rate
                     print('sleeping')
                     print()
                     time.sleep(1)
 
-            if (should_continue):
-                continue
-
+            # We no longer want to process pdfs of this type associated with the product
             seen.append((product_name, type))
+
+    not_first_iter = True

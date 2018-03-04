@@ -29,8 +29,10 @@ table = dynamodb.create_table(
     }
 )
 
+# Wait for the table to exist
 table.meta.client.get_waiter('table_exists').wait(TableName='csv_advice')
 
+# Batch write the csv pairs to the created table
 with table.batch_writer() as batch:
     for it in dataFrame.itertuples():
         batch.put_item(
