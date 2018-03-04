@@ -6,7 +6,7 @@ import urllib
 from botocore.exceptions import ClientError
 import time
 import pdfminer.psparser as PE
-
+import sys
 # Get database resource
 dynamodb = boto3.resource('dynamodb')
 '''
@@ -75,7 +75,7 @@ while 'LastEvaluatedKey' in linksResponse:
             if (product_name, type) in seen:
                 continue
 
-            print(active_substance + ' : number ' + str(n))
+            print(active_substance)
             print(product_name)
             print(link)
             print(pdf_name)
