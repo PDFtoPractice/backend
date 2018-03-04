@@ -6,7 +6,6 @@ dynamodb = boto3.resource('dynamodb', region_name='eu-west-1')
 
 table = dynamodb.Table('perioperative_csv')
 
-
 with open('csv\source\drug_instructions.csv', newline='') as csvfile:
     csvreader = csv.DictReader(csvfile, delimiter=',')
     for row in csvreader:
