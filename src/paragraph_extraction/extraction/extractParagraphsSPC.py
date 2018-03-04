@@ -1,5 +1,5 @@
 import re
-import GParser, ClearXML
+import paragraph_extraction.parsing.GParser as GParser
 import xml.etree.ElementTree as ET
 
 

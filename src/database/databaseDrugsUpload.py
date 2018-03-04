@@ -1,9 +1,11 @@
-import parsing.GParser as Parser
-import parsing.extractParagraphsLeaflet as extractParagraphsLeaflet
-import parsing.extractParagraphsSPC as extractParagraphsSPC
+import time
+
 import boto3
 from botocore.exceptions import ClientError
-import time
+
+import paragraph_extraction.extraction.extractParagraphsLeaflet as extractParagraphsLeaflet
+import paragraph_extraction.extraction.extractParagraphsSPC as extractParagraphsSPC
+import paragraph_extraction.parsing.GParser as Parser
 
 # Get database resource
 dynamodb = boto3.resource('dynamodb')
@@ -37,7 +39,7 @@ table = dynamodb.create_table(
     }
 )
 
-# Get handle on the tables in the database
+# Get handle on the sources in the database
 csvTable = dynamodb.Table('csv_advice')
 linksTable = dynamodb.Table('leaflet_links')
 drugsTable = dynamodb.Table('drugs')

@@ -1,5 +1,5 @@
-import GParser as GParser
-import extractParagraphsLeaflet as ExtractParasLflt
+import paragraph_extraction.parsing.GParser as GParser
+import paragraph_extraction.extraction.extractParagraphsLeaflet as ExtractParasLflt
 
 # from parsing import GParser # testing import needed
 import re

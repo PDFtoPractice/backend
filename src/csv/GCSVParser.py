@@ -2,7 +2,7 @@ import pandas as pd
 import boto3
 
 # Read csv file into data frame
-dataFrame = pd.read_csv('/Users/gordonbuck/Documents/PyCharmProjects/GroupProject/backend/src/csv_parser/csv/drug_instructions.csv')
+dataFrame = pd.read_csv('csv/source/drug_instructions.csv')
 
 # Get database resource
 dynamodb = boto3.resource('dynamodb')

@@ -5,7 +5,7 @@ import boto3
 dynamodb = boto3.resource('dynamodb')
 
 # Read in the table (which has been exported manually to a csv)
-df = pandas.read_csv('/Users/gordonbuck/Documents/PyCharmProjects/GroupProject/backend/src/parsing/tables/merged_tables.csv')
+df = pandas.read_csv('table/sources/merged_tables.csv')
 
 # Create table in the database
 table = dynamodb.create_table(

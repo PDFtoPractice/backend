@@ -1,12 +1,10 @@
 from __future__ import print_function # Python 2/3 compatibility
 import boto3
-import entityRecog as EntityRecog
+import aliases.entityRecog as EntityRecog
 import urllib
 
 dynamodb = boto3.resource('dynamodb')
 dynamodb = boto3.resource('dynamodb', region_name='eu-west-1')
-
-
 
 aliases_table = dynamodb.Table('aliases')
 

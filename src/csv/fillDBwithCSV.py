@@ -7,7 +7,7 @@ dynamodb = boto3.resource('dynamodb', region_name='eu-west-1')
 table = dynamodb.Table('perioperative_csv')
 
 
-with open('..\sources\drug_instructions.csv', newline='') as csvfile:
+with open('csv\source\drug_instructions.csv', newline='') as csvfile:
     csvreader = csv.DictReader(csvfile, delimiter=',')
     for row in csvreader:
         active_substance = row['Drug']
