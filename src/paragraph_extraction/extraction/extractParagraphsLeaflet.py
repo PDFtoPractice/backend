@@ -160,7 +160,7 @@ url9 = "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1510288705
 url10 = "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1513919093378.pdf" # Welfairin
 
 
-def test_url(url, sentence):
+def parse_url(url, sentence=""):
     str = GParser.convert_pdf(url, format='xml')
     # file = open('sample_outputs/orginalXML.xml', 'w', encoding="utf8")
     # file.write(str)
@@ -178,9 +178,9 @@ def test_url(url, sentence):
 
 
 def test_answer():
-    test_url(url1, "Other medicines and")
-    test_url(url2, "Pregnancy and breastfeeding")
-    test_url(url3, "Pregnancy and breast-feeding")
-    test_url(url5, "Pregnancy and breast-feeding")
-    test_url(url5, "Pregnancy and breast-feeding")
-    test_url(url8, "")
+    parse_url(url1, "Other medicines and")
+    parse_url(url2, "Pregnancy and breastfeeding")
+    parse_url(url3, "Pregnancy and breast-feeding")
+    parse_url(url5, "Pregnancy and breast-feeding")
+    parse_url(url5, "Pregnancy and breast-feeding")
+    parse_url(url8, "")
