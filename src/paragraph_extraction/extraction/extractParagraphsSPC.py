@@ -1,5 +1,5 @@
 import re
-import paragraph_extraction.parsing.GParser as GParser
+import src.paragraph_extraction.parsing.GParser as GParser
 import xml.etree.ElementTree as ET
 
 
@@ -37,14 +37,9 @@ def extract_paragraphs(xml_string):
     average_line_width = width_sum / line_num
 
     current_paragraph = ""
-    start_line = 0
-    line_num = 0
     previous_line_font_size = 0
     previous_line_text = ''
-    bold = False
-    previous_bold = False
     line_bold = False
-    previous_line_bold = False
 
     for line in root.iter("textline"):
         line_text_size_sum = 0
@@ -65,12 +60,13 @@ def extract_paragraphs(xml_string):
                 line_text_size_sum += float(size)
                 line_length += 1
 
-            # Get the character font name
-            font = text.get("font")
+            font = text.get("font")  # Get the character font name
+
+            # Insert bold html tags in the accurate positions
             if font and text.text.isalpha():
                 previous_bold = bold
                 if "Bold" in font \
-                        or "bold" in font\
+                        or "bold" in font \
                         or "Bd" in font:
                     bold = True
                 else:
@@ -82,15 +78,18 @@ def extract_paragraphs(xml_string):
                 if previous_bold and not bold:
                     line_text += "</b>"
 
-            line_text += text.text      # Append text to the line
+            line_text += text.text  # Append text to the line
 
+        if bold:
+            line_text += "</b>"  # If the last character was bold add closing tag
+
+        # Don't consider empty or very short lines as bold
         if len(line_text) < 5:
             line_bold = False
 
-        if bold:
-            line_text += "</b>"     # If the last character was bold add closing tag
+        # Calculate average line font size
+        line_font_size = line_text_size_sum / line_length if line_length > 0 else line_font_size
 
-        line_font_size = line_text_size_sum/line_length if line_length > 0 else 0
 
         # Delete whitespace at the beginning and end of the line
         line_text = re.sub(r'^\s*', '', line_text)
@@ -115,14 +114,12 @@ def extract_paragraphs(xml_string):
                 or re.match(r'^\s*$', previous_line_text)     # Previous line contained only whitespaces
                 or (not previous_line_bold and line_bold))    # Previous line wasn't bold and current is
                 and len(current_paragraph) > 60               # Each paragraph should have at least 60 chars
-                and not re.match(r'^-', line_text)
-                and not re.match(r':\s*(<.*>)*$', current_paragraph)):
-            current_paragraph = re.sub(r'</b>\s*<b>', '', current_paragraph)
-            current_paragraph = re.sub(r'^(<br>)*', '', current_paragraph)
-            if len(current_paragraph) == 0:
-                current_paragraph = "<br>"
-            paragraphs.append(current_paragraph)
-            # print("--------------\n" + current_paragraph)
+            and not re.match(r'^-', line_text)  # Next line does not start from bullet point
+            and not re.match(r':\s*(<.*>)*$', current_paragraph)):  # Paragraph is not ending with colon
+            current_paragraph = re.sub(r'</b>\s*<b>', '', current_paragraph)  # Delete unnecessary bold tags
+            current_paragraph = re.sub(r'^(<br>)*', '', current_paragraph)  # Delete line breaks from beginning
+            if not len(current_paragraph) == 0:
+                paragraphs.append(current_paragraph)
             current_paragraph = ""
 
         # Insert line break before the line
@@ -145,7 +142,6 @@ def extract_paragraphs(xml_string):
         current_paragraph += line_text
         previous_line_text = line_text
         previous_line_font_size = line_font_size
-        line_num += 1
 
     current_paragraph = re.sub(r'^(<br>)*', '', current_paragraph)
     current_paragraph = re.sub(r'</b>\s*<b>', '', current_paragraph)
@@ -162,13 +158,13 @@ def extract_paragraphs(xml_string):
 
 url1 = "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1492497354844.pdf"  # spc for doctor
 url2 = "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1475211116165.pdf"
-url3 = "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1514526226656.pdf" # Welfairin
+url3 = "http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1514526226656.pdf"  # Welfairin
 
 
 def test_url(url, sentence):
     str = GParser.convert_pdf(url, format='xml')
-    file = open('sample_outputs/orginalXML.xml', 'w', encoding="utf8")
-    file.write(str)
+    # file = open('sample_outputs/orginalXML.xml', 'w', encoding="utf8")
+    # file.write(str)
     paragraphs = extract_paragraphs(str)
     html = ""
     contains_sentence = False
@@ -177,8 +173,8 @@ def test_url(url, sentence):
         html += "<br>---------<br>\n"
         if sentence in text:
             contains_sentence = True
-    file = open('sample_outputs/paragraphs.html', 'w', encoding="utf8")
-    file.write(html)
+    # file = open('sample_outputs/paragraphs.html', 'w', encoding="utf8")
+    # file.write(html)
     assert contains_sentence
 
 
