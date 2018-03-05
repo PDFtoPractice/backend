@@ -1,14 +1,13 @@
-import paragraph_extraction.parsing.GParser as GParser
-import paragraph_extraction.extraction.extractParagraphsLeaflet as ExtractParasLflt
+import src.paragraph_extraction.parsing.GParser as GParser
+import src.paragraph_extraction.extraction.extractParagraphsLeaflet as ExtractParasLflt
 
-# from parsing import GParser # testing import needed
 import re
 import spacy
 from collections import OrderedDict
 
 
-urls = ['http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1492496435313.pdf', 'http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1510292397494.pdf', 'http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1512713289515.pdf', 'http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1517548373003.pdf', 'http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1515735504413.pdf']
-docs = [GParser.convert_pdf(url, format='text') for url in urls]
+# urls = ['http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1492496435313.pdf', 'http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1510292397494.pdf', 'http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1512713289515.pdf', 'http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1517548373003.pdf', 'http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1515735504413.pdf']
+# docs = [convert_pdf(url, format='text') for url in urls]
 
 
 # extract headings paras
@@ -184,12 +183,10 @@ def get_aliases(url):
                     sentence = re.search(phrase_pair[0], para)
                     if sentence != None:
                         sentence =sentence.group(0)
-                        print(sentence)
                         sentence = re.sub(phrase_pair[1], '', sentence)
                         doc_sentence = nlp(u'' + sentence)
                         curr_group = ''
                         for tok in doc_sentence:
-                            print(tok)
                             if tok.text in ['\'', '"', '‘']:
                                 continue
                             elif tok.is_stop or (tok.is_punct and (tok.text != '-')):
@@ -220,53 +217,45 @@ def get_aliases(url):
 
     return aliases, group_of_meds, purposes
 
-def conflicting_conditions(paras, nlp):
-    # loop through paras and get bit with if... if ... if ... bullet points
-    # do clean up
-    conditions = []
-    bullet_pts = []
-    for bullet_pt in bullet_pts:
-        # analyse structure of phrases and extract relevant bit, append to
-        cond = ''
-        if cond != '':
-            conditions.append(cond.lower())
-
-    return conditions
-
 
 
 def test_aliases():
     # text = GParser.convert_pdf(url, format='text')
     urls = ['http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1516338822280.pdf', 'http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1440737849470.pdf', 'http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1487918987625.pdf', 'http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1471582099226.pdf']
-    correct_group = [['antithrombotics', 'antithrombotic'], ['anti-thrombotic agents', 'anti-thrombotic agent', 'anti thrombotic agents', 'antithrombotic agents']]
-    correct_purpose = ['prevent blood clots', 'stop blood clots forming']
+    correct_aliases = [['abciximab', 'reopro', 'reopro tablets'],
+                       ['persantin tabletshow to take persantin tabletspossible side effects   how to store persantin tabletsfurther information1what persantin tablets are and what they are used for', 'dipyridamole', 'persantin tablets', 'dipyridamol tablets'],
+                        ['hydrocortisone butyrate', 'locoid', 'locoid tablets', 'hydrocortisone', 'hydrocortisone tablets'],
+                        ['lidocaine']]
+
+    correct_group_of_meds = [['antithrombotics', 'antithrombotic'], ['anti-thrombotic agents', 'anti-thrombotic agent', 'anti thrombotic agents', 'antithrombotic agents'], [],[] ]
+    correct_purposes = [['prevent blood clots', 'medicine to prevent blood clots'], ['take Persantin Tablets', 'medicine to take Persantin Tablets', 'medicine to take persantin tablets'], ['treat a variety', 'medicine to treat a variety', 'treat a variety of skin conditions', 'medicine to treat a variety of skin conditions', 'treat a variety of skin conditions such as eczema', 'medicine to treat a variety of skin conditions such as eczema', 'treat a variety of skin conditions such as eczema and dermatitis', 'medicine to treat a variety of skin conditions such as eczema and dermatitis'], ['relax muscles', 'medicine to relax muscles', 'relax muscles in general anaesthesia', 'medicine to relax muscles in general anaesthesia'] ]
     nlp = spacy.load('en')  # load vocab
     for i in range(len(urls)):
-        if i != 3:
-            continue
         xmldoc = GParser.convert_pdf(urls[i], format='xml')
         paras = ExtractParasLflt.extract_paragraphs(xmldoc)
         text = GParser.convert_pdf(urls[i], format='text')
-        # group_of_meds, purpose = get_purpose(paras, nlp)
-        # print(group_of_meds)
-        # print(purpose)
-        # print (group_of_meds == correct_group[i])
-        # print (purpose == correct_purpose[i])
-        print(get_aliases(urls[i]))
-        # print(get_active_subst(text, nlp))
+        aliases, group_of_meds, purposes = get_aliases(urls[i])
+        assert aliases == correct_aliases[i]
+        assert group_of_meds == correct_group_of_meds[i]
+        assert purposes == correct_purposes[i]
 
-# test_aliases()
 
 
 
 def test_extract_purpose():
     txt = ['and binds to proteins in your blood to help to prevent blood clots.', 'and binds to proteins in your blood to help to prevent blood clots in the brain.', 'and is used to prevent blood clots.', 'and is used to decrease blood pressure.', 'and is used to decrease blood pressure and alleviate chest pain.', 'used for preventing blood clots.']
+    correct_purpose = [['prevent blood clots', 'prevent blood clots', 'medicine to prevent blood clots', 'medicine to prevent blood clots'],
+                        ['prevent blood clots', 'prevent blood clots', 'medicine to prevent blood clots', 'medicine to prevent blood clots', 'prevent blood clots in the brain', 'medicine to prevent blood clots in the brain'],
+                        ['prevent blood clots', 'prevent blood clots', 'medicine to prevent blood clots', 'medicine to prevent blood clots'],
+                        ['decrease blood pressure', 'decrease blood pressure', 'medicine to decrease blood pressure', 'medicine to decrease blood pressure'],
+                        ['decrease blood pressure', 'decrease blood pressure', 'medicine to decrease blood pressure', 'medicine to decrease blood pressure'],
+                        ['preventing blood clots', 'medicines for preventing blood clots', 'prevent blood clots', 'medicine to prevent blood clots', 'prevent blood clots']
+                        ]
     nlp = spacy.load('en')  # load vocab
-    for t in txt:
-        print(t)
-        purpose = get_med_for(t, nlp)
-        print(purpose)
+    for i in range(len(txt)):
+        purpose = get_med_for(txt[i], nlp)
+        assert purpose == correct_purpose[i]
 
 # test_extract_purpose()
-# aliases, group, purpose = get_aliases('http://www.mhra.gov.uk/home/groups/spcpil/documents/spcpil/con1473655667813.pdf')
-# print(aliases, group, purpose)
+# test_aliases()
+
